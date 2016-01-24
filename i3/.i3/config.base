@@ -1,0 +1,178 @@
+# ! Don't edit me!!!  Edit config.base or changes will be overwrittend by
+# j4-config-...!
+#
+# i3 config file (v4)
+#
+# Please see http://i3wm.org/docs/userguide.html for a complete reference!
+
+# Set mod key
+set $m Mod1
+
+# Font
+font pango:Terminus 16
+
+# Gaps (must have i3-gaps installed)
+for_window [class="^.*"] border pixel 0 # must dissable titlebars
+gaps inner 15
+gaps outer 0
+
+# i3-bar
+bar {
+        status_command ~/bin/conky-i3bar
+        tray_output primary
+	font pango:Terminus 16
+	
+	# $i3-theme-bar
+}
+
+# $i3-theme-window
+
+# use these keys for focus, movement, and resize directions when reaching for
+# the arrows is not convenient
+set $up l
+set $down k
+set $left j
+set $right semicolon
+
+# use Mouse+Mod1 to drag floating windows to their wanted position
+floating_modifier $m
+
+# start a terminal
+#bindsym $m+Return exec i3-sensible-terminal
+bindsym $m+Return exec urxvt -e fish
+
+# kill focused window
+bindsym $m+Shift+q kill
+
+# start dmenu (a program launcher)
+bindsym $m+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -l 5 -y 500 -x 700 -w 500 -fn Terminus-16:normal' 
+
+
+# change focus
+bindsym $m+$left focus left
+bindsym $m+$down focus down
+bindsym $m+$up focus up
+bindsym $m+$right focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $m+Left focus left
+bindsym $m+Down focus down
+bindsym $m+Up focus up
+bindsym $m+Right focus right
+
+# move focused window
+bindsym $m+Shift+$left move left
+bindsym $m+Shift+$down move down
+bindsym $m+Shift+$up move up
+bindsym $m+Shift+$right move right
+
+# alternatively, you can use the cursor keys:
+bindsym $m+Shift+Left move left
+bindsym $m+Shift+Down move down
+bindsym $m+Shift+Up move up
+bindsym $m+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $m+h split h
+
+# split in vertical orientation
+bindsym $m+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $m+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $m+s layout stacking
+bindsym $m+w layout tabbed
+bindsym $m+e layout toggle split
+
+# toggle tiling / floating
+bindsym $m+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $m+space focus mode_toggle
+
+# focus the parent container
+bindsym $m+a focus parent
+
+# focus the child container
+#bindsym $m+d focus child
+
+# move the currently focused window to the scratchpad
+bindsym $m+Shift+minus move scratchpad
+
+# Show the next scratchpad window or hide the focused scratchpad window.
+# If there are multiple scratchpad windows, this command cycles through them.
+bindsym $m+minus scratchpad show
+
+# switch to workspace
+bindsym $m+1 workspace 1
+bindsym $m+2 workspace 2
+bindsym $m+3 workspace 3
+bindsym $m+4 workspace 4
+bindsym $m+5 workspace 5
+bindsym $m+6 workspace 6
+bindsym $m+7 workspace 7
+bindsym $m+8 workspace 8
+bindsym $m+9 workspace 9
+bindsym $m+0 workspace 10
+
+# move focused container to workspace
+bindsym $m+Shift+1 move container to workspace 1
+bindsym $m+Shift+2 move container to workspace 2
+bindsym $m+Shift+3 move container to workspace 3
+bindsym $m+Shift+4 move container to workspace 4
+bindsym $m+Shift+5 move container to workspace 5
+bindsym $m+Shift+6 move container to workspace 6
+bindsym $m+Shift+7 move container to workspace 7
+bindsym $m+Shift+8 move container to workspace 8
+bindsym $m+Shift+9 move container to workspace 9
+bindsym $m+Shift+0 move container to workspace 10
+
+# reload the configuration file
+bindsym $m+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $m+Shift+r restart
+# exit i3 (logs you out of your X session)
+bindsym $m+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# Multimedia Keys
+# increase volume
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+ unmute
+# decrease volume
+bindsym XF86AudioLowerVolume exec amixer -q set Master 5%- unmute
+# mute volume
+bindsym XF86AudioMute exec amixer -q set Master mute
+# pause / play / next / previous
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
+# Sreen brightness controls
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
+
+# resize window (you can also use the mouse for that)
+bindsym $m+r mode "resize"
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym $left       resize shrink width 5 px or 5 ppt
+        bindsym $down       resize grow height 5 px or 5 ppt
+        bindsym $up         resize shrink height 5 px or 5 ppt
+        bindsym $right      resize grow width 5 px or 5 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left        resize shrink width 5 px or 5 ppt
+        bindsym Down        resize grow height 5 px or 5 ppt
+        bindsym Up          resize shrink height 5 px or 5 ppt
+        bindsym Right       resize grow width 5 px or 5 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}

@@ -1,0 +1,95 @@
+# Conky Configs adapted from:
+# http://i3wm.org/docs/user-contributed/conky-i3bar.html
+
+out_to_x no
+own_window no
+out_to_console yes
+background no
+max_text_width 0
+
+# Update interval in seconds
+update_interval 1.0
+
+# This is the number of times Conky will update before quitting.
+# Set to zero to run forever.
+total_run_times 0
+
+# Shortens units to a single character (kiB->k, GiB->G, etc.). Default is off.
+short_units yes
+
+# How strict should if_up be when testing an interface for being up?
+# The value is one of up, link or address, to check for the interface
+# being solely up, being up and having link or being up, having link
+# and an assigned IP address. 
+if_up_strictness address
+
+# Add spaces to keep things from moving about?  This only affects certain objects.
+# use_spacer should have an argument of left, right, or none
+#use_spacer left
+
+# Force UTF8? note that UTF8 support required XFT
+override_utf8_locale no
+
+# number of cpu samples to average
+# set to 1 to disable averaging
+cpu_avg_samples 2
+
+# Define Colors: Tangoesque
+# Black
+color0      202020
+color8      606060
+# Red
+color1      ff6565
+color9      ff8d8d
+# Green
+color2      93d44f
+color10     c8e7a8
+# Yellow
+color3      eab93d
+color11     ffc123
+# Blue
+color4      204a87
+color12     3465a4
+# Mangenta
+color5      ce5c00
+color13     f57900
+# Cyan 
+color6      89b6e2
+color14     46a4ff
+# White
+color7      cccccc
+color15     ffffff
+
+
+# Stuff after 'TEXT' will be formatted on screen
+TEXT
+
+# JSON for i3bar
+
+ [
+  { "full_text" : "${moc_state} " , "color" : "\#ffc123" },
+  { "full_text" : "${scroll 40 ${moc_album} / ${moc_artist} / ${moc_song}}" , 
+    "color" : "\#cccccc" },
+  { "full_text" : "${moc_timeleft}" , "color" : "\#ce5c00" },
+  { "full_text" : 
+    "Vol:${exec amixer -c 0 get Master | grep Mono: | cut -d " " -f6}", 
+    "color" : "\#46a4ff" },
+  { "full_text" : "/ ${fs_used /}/${fs_size /}" , "color" : "\#c8e7a8" },
+  { "full_text" : 
+    "~/media ${fs_used /home/akraker/media}/${fs_size /home/akraker/media}" , 
+    "color" : "\#c8e7a8" },
+  { "full_text" : 
+    "${wireless_essid wlp2s0} ${wireless_link_qual_perc wlp2s0}%" , 
+    "color" :"\#eab93d" },
+  { "full_text" : "RAM ${memperc}%" , 
+    "color" : 
+      ${if_match ${memperc}<90}"\#89b6e2"
+        ${else}"\#ff6565"
+      ${endif} },
+  { "full_text" : "CPU ${cpu}%" , "color" : "\#89b6e2"  },
+  { "full_text" : "BAT ${battery_short} ${battery_time}" , "color" :
+      ${if_match ${battery_percent}<10}"red"
+        ${else}"\#f57900"
+      ${endif} },
+  { "full_text" : "${time %a, %d.%m.%y} ${time %H:%M}" , "color" : "\#93d44f" }
+  ],

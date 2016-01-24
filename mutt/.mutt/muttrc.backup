@@ -1,0 +1,71 @@
+# vim: filetype=muttrc
+
+# A basic .muttrc for use with Gmail
+
+# Change the following six lines to match your Gmail account details
+set imap_user = "alex.kraker@gmail.com"
+set imap_pass = "bikeman27"
+set smtp_url = "smtps://alex.kraker@gmail.com@smtp.gmail.com:465"
+set smtp_pass = "bikeman27"
+set from = "alex.krker@gmail.com"
+set realname = "Alex Kraker"
+
+# Change the following line to a different editor you prefer.
+set editor = "nvim"
+
+# Basic config, you can leave this as is
+set folder = "imaps://imap.gmail.com:993"
+set spoolfile = "+INBOX"
+set imap_check_subscribed
+set hostname = gmail.com
+set mail_check = 120
+set timeout = 300
+set imap_keepalive = 300
+set postponed = "+[Gmail]/Drafts"
+set record = "+[Gmail]/Sent Mail"
+set header_cache=~/.mutt/cache/headers
+set message_cachedir=~/.mutt/cache/bodies
+set certificate_file=~/.mutt/certificates
+set move = no
+set include
+set sort = reverse-threads
+set sort_aux = last-date-received
+set auto_tag = yes
+ignore "Authentication-Results:"
+ignore "DomainKey-Signature:"
+ignore "DKIM-Signature:"
+hdr_order Date From To Cc
+alternative_order text/plain text/enriched text/html *
+auto_view text/html
+set mailcap_path =~/.mutt/mailcap
+
+# Gmail-style keyboard shortcuts
+macro index,pager A "unset trash\n" "Gmail archive message"
+# macro index,pager d "set trash=\"imaps://imap.googlemail.com/[GMail]/Bin\"\n " "Gmail delete message"
+macro index,pager gi "=INBOX" "Go to inbox"
+macro index,pager ga "=[Gmail]/All Mail" "Go to all mail"
+macro index,pager gs "=[Gmail]/Starred" "Go to starred messages"
+macro index,pager gd "=[Gmail]/Drafts" "Go to drafts"
+#macro index,pager y "<save-message>=[Gmail]/All Mail<enter><enter>" "Archive"
+#macro index,pager d "<save-message>=[Gmail]/Trash<enter><enter>" "Trash"
+
+# Use ssl
+set ssl_starttls = yes
+set ssl_force_tls = yes
+
+## Use abook for Address Book
+set query_command= "abook --mutt-query '%s'"
+macro index,pager  a "<pipe-message>abook --add-email<return>" "Add this sender to Abook"
+bind editor        <Tab> complete-query
+
+# GooBook setup for google address book
+#set query_command="goobook query '%s'"
+macro index,pager a "<pipe-message>goobook add<return>" "add sender to google contacts"
+#bind editor <Tab> complete-query
+
+#### COLORS ####
+
+#source ~/.mutt/themes/nice_theme
+#source ~/.mutt/themes/arch
+#source ~/.mutt/themes/default
+source ~/.mutt/themes/starynight

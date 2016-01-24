@@ -1,0 +1,92 @@
+Delivered-To: alex.kraker@gmail.com
+Received: by 10.107.137.165 with SMTP id t37csp3245434ioi;
+        Tue, 19 Jan 2016 13:06:00 -0800 (PST)
+X-Received: by 10.194.188.100 with SMTP id fz4mr27291485wjc.126.1453237560762;
+        Tue, 19 Jan 2016 13:06:00 -0800 (PST)
+Return-Path: <eniessenderry@gmail.com>
+Received: from mail-wm0-x22d.google.com (mail-wm0-x22d.google.com. [2a00:1450:400c:c09::22d])
+        by mx.google.com with ESMTPS id k128si35611519wma.55.2016.01.19.13.06.00
+        for <alex.kraker@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 19 Jan 2016 13:06:00 -0800 (PST)
+Received-SPF: pass (google.com: domain of eniessenderry@gmail.com designates 2a00:1450:400c:c09::22d as permitted sender) client-ip=2a00:1450:400c:c09::22d;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of eniessenderry@gmail.com designates 2a00:1450:400c:c09::22d as permitted sender) smtp.mailfrom=eniessenderry@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wm0-x22d.google.com with SMTP id 123so107256442wmz.0
+        for <alex.kraker@gmail.com>; Tue, 19 Jan 2016 13:06:00 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :cc:content-type;
+        bh=uxWaNpUjl8rW+eaG5B3iJ5AUFLBsPh3ZLKw/KCSbPbo=;
+        b=diGvHrmPUVnIjjzFZc010qDk39wH31LYg9ywFotQJTb0JTVHDd0nNqqe5CcErZAoCR
+         dlFLd6yNazfD9vheOvo5q5xmv7pPReYfkEPsMD5axz9ZecQhZHbviX9h8iJScU0XNDn/
+         ABn+k498vQ888EmE8EypaIt7eqmeQRheyOzJgGEO34VrkKFpLN+WJXOxUgdi8HN2JQnn
+         c1//pL9Yxf3BDjNWsyLrwZLJ4CNbxx8azy0kEEmaI3JDtLD4RRLOlXXLeN84jPXCbcRu
+         zvIXehLLi+SVJOAHjGryExwjUC6CGjpsYsdEFfwxMO7GiaPtEQuQshRXnWvd/pTpU1EY
+         uG0g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:date
+         :message-id:subject:from:to:cc:content-type;
+        bh=uxWaNpUjl8rW+eaG5B3iJ5AUFLBsPh3ZLKw/KCSbPbo=;
+        b=ZdSsXkXWxLqS039tAopBihB5oZ9dBKxwVU48m2JpblzepvQ+PZOhEbXFWJZ7Y9HFIn
+         LOQZZMsXM/SaEItXF4w5RfGZGH2GQ43Zc18U9yzUf0+UCD88wmquz9g04SNryeV6hEL3
+         xHxaFTtP01OK8qmLjTnvYNnYhdzcF+8t4jv3S476ScnBGCNIydgFctQuLwcYOaxgIfGZ
+         S0+YBHOMKPMaB2hmDclc7xl9EIGb5ezajYk5biFRvxpwe9sr+LxtJ7fPwTAxohGPoMJU
+         2eB0G6Rv/VdeEnJJSXdEkrXJQXZLQAaapsBKgM1CLYTslLSZ33kjPOUrs0zDl+r5FxaZ
+         OJdw==
+X-Gm-Message-State: AG10YOSCGZgawR9+IY50mzBwIoy5+jI49BNGVhCmBfiHfggjWqi3dIjaC3Au7vB5VvrnWKfYYIu/9elH/j/oqw==
+MIME-Version: 1.0
+X-Received: by 10.28.215.136 with SMTP id o130mr58262wmg.33.1453237560528;
+ Tue, 19 Jan 2016 13:06:00 -0800 (PST)
+Received: by 10.27.11.169 with HTTP; Tue, 19 Jan 2016 13:06:00 -0800 (PST)
+Received: by 10.27.11.169 with HTTP; Tue, 19 Jan 2016 13:06:00 -0800 (PST)
+In-Reply-To: <D52A4AD5-1DAF-4104-854F-9B0608E4986B@schedulepal.com>
+References: <D52A4AD5-1DAF-4104-854F-9B0608E4986B@schedulepal.com>
+Date: Tue, 19 Jan 2016 15:06:00 -0600
+Message-ID: <CABO7=CPx2Tm7Jbcv0q1n8eir99NyHZOqKUTqrr79_p9N1G=fQw@mail.gmail.com>
+Subject: Re: Blog
+From: Evan Niessen-Derry <eniessenderry@gmail.com>
+To: Amy Anderson <Amy@schedulepal.com>
+Cc: Alexander Kraker <alex.kraker@gmail.com>
+Content-Type: multipart/alternative; boundary=001a11468e0491da3e0529b63cba
+
+--001a11468e0491da3e0529b63cba
+Content-Type: text/plain; charset=UTF-8
+
+Awesome! Glad to see more of the parts coming together.
+On Jan 16, 2016 10:09 PM, "Amy Anderson" <Amy@schedulepal.com> wrote:
+
+> I finally started the blog for SchedulePal. So far it's just about why I'm
+> starting it. But hopefully we can do some posts about progress as we go.
+>
+> SchedulePal.com/blog
+>
+> Open to feedback if you love or hate it. I'm sure I will find a voice one
+> of these days.
+>
+> Amy
+
+--001a11468e0491da3e0529b63cba
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<p dir=3D"ltr">Awesome! Glad to see more of the parts coming together. </p>
+<div class=3D"gmail_quote">On Jan 16, 2016 10:09 PM, &quot;Amy Anderson&quo=
+t; &lt;<a href=3D"mailto:Amy@schedulepal.com">Amy@schedulepal.com</a>&gt; w=
+rote:<br type=3D"attribution"><blockquote class=3D"gmail_quote" style=3D"ma=
+rgin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">I finally star=
+ted the blog for SchedulePal. So far it&#39;s just about why I&#39;m starti=
+ng it. But hopefully we can do some posts about progress as we go.<br>
+<br>
+SchedulePal.com/blog<br>
+<br>
+Open to feedback if you love or hate it. I&#39;m sure I will find a voice o=
+ne of these days.<br>
+<br>
+Amy</blockquote></div>
+
+--001a11468e0491da3e0529b63cba--

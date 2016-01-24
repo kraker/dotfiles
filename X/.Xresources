@@ -1,0 +1,7 @@
+! Xresources alex.kraker@gmail.com
+! Migrated to folder based system since files were getting too long
+
+#include ".Xresources.d/rxvt-unicode"
+#include ".Xresources.d/fonts"
+#include ".Xresources.d/xscreensaver"
+#include ".Xresources.d/themes/tangoesque"

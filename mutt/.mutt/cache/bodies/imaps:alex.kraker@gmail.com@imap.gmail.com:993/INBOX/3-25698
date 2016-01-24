@@ -1,0 +1,243 @@
+Delivered-To: alex.kraker@gmail.com
+Received: by 10.107.147.137 with SMTP id v131csp123160iod;
+        Wed, 16 Dec 2015 18:33:25 -0800 (PST)
+X-Received: by 10.112.173.202 with SMTP id bm10mr20530520lbc.56.1450319604932;
+        Wed, 16 Dec 2015 18:33:24 -0800 (PST)
+Return-Path: <chill005@gmail.com>
+Received: from mail-lf0-x22b.google.com (mail-lf0-x22b.google.com. [2a00:1450:4010:c07::22b])
+        by mx.google.com with ESMTPS id rd5si6066901lbb.67.2015.12.16.18.33.24
+        for <alex.kraker@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 16 Dec 2015 18:33:24 -0800 (PST)
+Received-SPF: pass (google.com: domain of chill005@gmail.com designates 2a00:1450:4010:c07::22b as permitted sender) client-ip=2a00:1450:4010:c07::22b;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of chill005@gmail.com designates 2a00:1450:4010:c07::22b as permitted sender) smtp.mailfrom=chill005@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-lf0-x22b.google.com with SMTP id z124so37644527lfa.3
+        for <alex.kraker@gmail.com>; Wed, 16 Dec 2015 18:33:24 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=AiXKmccq55CkUgfFqIUOzwMWnLz8BbX2SKeCQjGJ2YU=;
+        b=dtR6ywzllGdxUIAtfJ5+vVDkXGjt1b8GlnTv6M6UXl8DtOEhseerk1RizHevfxy5HQ
+         kymcjxRAOUg9+YQQNqM2IsHmEjR34qBw+MmbI3tRp5qiyJoOpysQ/+4/5Ckl2h35nLBy
+         P8ygCUpu5J6CTOsDrP2tUUXEniw1korIGI9FHTNcWW3wMBa6rniinSvjrovWWl+OWyeJ
+         L77T4uamTuClpi6IewrT9fV9QA8RiZ8KcZOXCw0ibG5pPlAJmV4EYY97w13D4FomWY+E
+         pqmWo42m+FO11xmn+KhrC0slqHbjGY9kCsWbtN8sVkszG8O12D1uKTSlvQjZD5RgT1tm
+         l7yg==
+MIME-Version: 1.0
+X-Received: by 10.25.33.4 with SMTP id h4mr16475473lfh.3.1450319604525; Wed,
+ 16 Dec 2015 18:33:24 -0800 (PST)
+Received: by 10.25.213.134 with HTTP; Wed, 16 Dec 2015 18:33:24 -0800 (PST)
+In-Reply-To: <e2b39a57ce3a464a9f095c5979519ff6@LMKIP-HEXSVR04.lm.lmig.com>
+References: <e2b39a57ce3a464a9f095c5979519ff6@LMKIP-HEXSVR04.lm.lmig.com>
+Date: Wed, 16 Dec 2015 20:33:24 -0600
+Message-ID: <CAN5BY08s3iPBToZT0i87TtFULHAxPzU6QoHK7h3Dm=jX=V2Oiw@mail.gmail.com>
+Subject: Re: Liberty Mutual Claim #032825035
+From: connie hill <chill005@gmail.com>
+To: "Lay, Jana" <Jana.Lay@libertymutual.com>, Alexander Kraker <alex.kraker@gmail.com>
+Content-Type: multipart/related; boundary=001a113f232cd72aa505270ed855
+
+--001a113f232cd72aa505270ed855
+Content-Type: multipart/alternative; boundary=001a113f232cd72aa005270ed854
+
+--001a113f232cd72aa005270ed854
+Content-Type: text/plain; charset=UTF-8
+
+Hello Jana,
+
+I spoke with Alex tonight, and had also forwarded your message to him.
+Please call him at 612-567-2539 tomorrow morning (Thursday, 12/17), or
+afternoon or Friday if you don't reach him in the morning. If he does not
+receive your call he will also try to reach you again.
+
+Thank you.
+
+Irene Hill
+651-270-9144
+
+On Wed, Dec 16, 2015 at 2:53 PM, Lay, Jana <Jana.Lay@libertymutual.com>
+wrote:
+
+> Dear Ms. Hill,
+>
+>
+>
+> As we discussed, please indicate a convenient time in which to contact
+> Alexander for his recorded statement.
+>
+>
+>
+> Please be advised that my office hours are Monday-Friday between the hours
+> of 8am-5pm (central standard time).
+>
+>
+>
+> Thank you,
+>
+>
+>
+> *Jana Lay*
+>
+> Sr. Customer Claims Representative
+>
+> Liberty Mutual Insurance
+>
+> P.O. Box 100129
+>
+> Marietta, GA 30061
+>
+> Direct Dial: 800-838-7103 ext. 74178
+>
+> [image: cid:image002.png@01CF3560.A10BC770]
+>
+>
+>
+> *Access your claim through the Claim Self Service at *
+> *http://www.libertymutual.com/customer-service/online-account*
+> <http://www.libertymutual.com/customer-service/online-account>
+>
+>
+>
+> *If you are not the intended recipient of this email, you are hereby
+> notified that any dissemination, distribution or copying of this email, and
+> any attachments thereto, is strictly prohibited. If you have received this
+> email in error, please notify me via return email and via telephone at
+> XXX-XXX-XXXX and permanently delete the original and any copy of any email,
+> attachment, and any printout thereof. Thank you.*
+>
+>
+>
+>
+>
+
+--001a113f232cd72aa005270ed854
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div><div><div>Hello Jana,<br><br></div>I spoke with Alex =
+tonight, and had also forwarded your message to him. Please call him at 612=
+-567-2539 tomorrow morning (Thursday, 12/17), or afternoon or Friday if you=
+ don&#39;t reach him in the morning. If he does not receive your call he wi=
+ll also try to reach you again.<br><br></div>Thank you.<br><br></div>Irene =
+Hill<br>651-270-9144<br></div><div class=3D"gmail_extra"><br><div class=3D"=
+gmail_quote">On Wed, Dec 16, 2015 at 2:53 PM, Lay, Jana <span dir=3D"ltr">&=
+lt;<a href=3D"mailto:Jana.Lay@libertymutual.com" target=3D"_blank">Jana.Lay=
+@libertymutual.com</a>&gt;</span> wrote:<br><blockquote class=3D"gmail_quot=
+e" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">
+
+
+
+
+
+<div link=3D"#0563C1" vlink=3D"#954F72" lang=3D"EN-US">
+<div>
+<p class=3D"MsoNormal">Dear Ms. Hill,<u></u><u></u></p>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+<p class=3D"MsoNormal">As we discussed, please indicate a convenient time i=
+n which to contact Alexander for his recorded statement.<u></u><u></u></p>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+<p class=3D"MsoNormal">Please be advised that my office hours are Monday-Fr=
+iday between the hours of 8am-5pm (central standard time).<u></u><u></u></p=
+>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+<p class=3D"MsoNormal">Thank you,<u></u><u></u></p>
+<p class=3D"MsoNormal" style=3D"line-height:120%;text-autospace:none"><span=
+ style=3D"font-size:12.0pt;line-height:120%;font-family:&quot;Arial&quot;,s=
+ans-serif;color:black"><u></u>=C2=A0<u></u></span></p>
+<p class=3D"MsoNormal" style=3D"line-height:120%;text-autospace:none"><b><s=
+pan style=3D"font-size:12.0pt;line-height:120%;font-family:&quot;Arial&quot=
+;,sans-serif;color:#003d7d">Jana Lay</span></b><span style=3D"font-family:&=
+quot;Arial&quot;,sans-serif;color:black"><u></u><u></u></span></p>
+<p class=3D"MsoNormal" style=3D"line-height:120%;text-autospace:none"><span=
+ style=3D"font-family:&quot;Arial&quot;,sans-serif;color:gray">Sr. Customer=
+ Claims Representative<u></u><u></u></span></p>
+<p class=3D"MsoNormal" style=3D"line-height:120%;text-autospace:none"><span=
+ style=3D"font-family:&quot;Arial&quot;,sans-serif;color:gray">Liberty Mutu=
+al Insurance<u></u><u></u></span></p>
+<p class=3D"MsoNormal" style=3D"line-height:120%;text-autospace:none"><span=
+ style=3D"font-family:&quot;Arial&quot;,sans-serif;color:gray">P.O. Box 100=
+129<u></u><u></u></span></p>
+<p class=3D"MsoNormal" style=3D"line-height:120%;text-autospace:none"><span=
+ style=3D"font-family:&quot;Arial&quot;,sans-serif;color:gray">Marietta, GA=
+ 30061<u></u><u></u></span></p>
+<p class=3D"MsoNormal" style=3D"line-height:120%;text-autospace:none"><span=
+ style=3D"font-family:&quot;Arial&quot;,sans-serif;color:gray">Direct Dial:=
+ <a href=3D"tel:800-838-7103%20ext.%2074178" value=3D"+18008387103" target=
+=3D"_blank">800-838-7103 ext. 74178</a><u></u><u></u></span></p>
+<p class=3D"MsoNormal" style=3D"line-height:120%;text-autospace:none"><span=
+ style=3D"font-size:12.0pt;line-height:120%;font-family:MinionPro-Regular;c=
+olor:black"><img src=3D"cid:image001.gif@01D13811.722D83C0" alt=3D"cid:imag=
+e002.png@01CF3560.A10BC770" height=3D"77" width=3D"173"><u></u><u></u></spa=
+n></p>
+<p class=3D"MsoNormal" style=3D"line-height:120%;text-autospace:none"><span=
+ style=3D"font-family:&quot;Arial&quot;,sans-serif;color:gray"><u></u>=C2=
+=A0<u></u></span></p>
+<p class=3D"MsoNormal" style=3D"line-height:120%;text-autospace:none"><b><i=
+><span style=3D"font-size:10.0pt;line-height:120%;font-family:ArialMT;color=
+:#003daf">Access your claim through the Claim Self Service at
+</span></i></b><span style=3D"font-size:12.0pt;line-height:120%;font-family=
+:MinionPro-Regular;color:black"><a href=3D"http://www.libertymutual.com/cus=
+tomer-service/online-account" target=3D"_blank"><i><span style=3D"font-size=
+:10.0pt;line-height:120%;font-family:ArialMT;color:blue">http://www.liberty=
+mutual.com/customer-service/online-account</span></i></a><u></u><u></u></sp=
+an></p>
+<p class=3D"MsoNormal" style=3D"line-height:120%;text-autospace:none"><span=
+ style=3D"font-family:&quot;Arial&quot;,sans-serif;color:gray"><u></u>=C2=
+=A0<u></u></span></p>
+<p class=3D"MsoNormal" style=3D"line-height:120%;text-autospace:none"><i><s=
+pan style=3D"font-size:10.0pt;line-height:120%;font-family:ArialMT;color:gr=
+ay">If you are not the intended recipient of this email, you are hereby not=
+ified that any
+ dissemination, distribution or copying of this email, and any attachments =
+thereto, is strictly prohibited. If you have received this email in error, =
+please notify me via return email and via telephone at XXX-XXX-XXXX and per=
+manently delete the original and
+ any copy of any email, attachment, and any printout thereof. Thank you.<u>=
+</u><u></u></span></i></p>
+<p class=3D"MsoNormal" style=3D"line-height:120%;text-autospace:none"><span=
+ style=3D"font-family:&quot;Arial&quot;,sans-serif;color:gray"><u></u>=C2=
+=A0<u></u></span></p>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+</div>
+</div>
+
+</blockquote></div><br></div>
+
+--001a113f232cd72aa005270ed854--
+--001a113f232cd72aa505270ed855
+Content-Type: image/gif; name="image001.gif"
+Content-Disposition: inline; filename="image001.gif"
+Content-Transfer-Encoding: base64
+Content-ID: <image001.gif@01D13811.722D83C0>
+X-Attachment-Id: 5dc1ddbbbb491693_0.1
+
+R0lGODlhrQBNAHcAMSH/C01TT0ZGSUNFOS4wDQAAAAFzUkdCAkDAfcUAIf8LTVNPRkZJQ0U5LjAY
+AAAADG1zT1BNU09GRklDRTkuMAuIRQwyACH/C01TT0ZGSUNFOS4wFQAAAAlwSFlzAAAOxAAADsQB
+lSsOGwAh/hpTb2Z0d2FyZTogTWljcm9zb2Z0IE9mZmljZQAh+QQBAAAAACwAAAAArQBNAIQAAAAR
+ERIdLlIiLl87f8kvqklZXGHEGzLtIkv4qB7+/v4BAgMBAgMBAgMBAgMBAgMBAgMBAgMBAgMBAgMB
+AgMBAgMBAgMBAgMBAgMBAgMBAgMBAgMBAgMBAgMBAgMBAgME/xDISau9OOvNu/9gKI5kaZ5oqq5s
+676wNMR0bbdDrs/z7f9ATE5BJA57waSSNig6FcildJpqPnXUrHa0g+a24DBnCPWKz2jJsxhNu6fW
+XfP7BhoMdZl3fsz/7n5dfHR+NoB5ckZYQoUrh4iDZhmEjSaPGgKZmpucmgefoKGio6EWcnGMlJUk
+lxmdr5yksrMHF3NlUBOnO44Sd3hirRiwxAJrx8hOtnGKu2SLMhm/wBSPwlnXFpkKxdvbyeBPQkZs
+znGLqhW/G9ki1CjtFJzc3bT2pbZr5udd7O8Y8T4EBDEQwLxuAu4pFKKj3JEue/poGFjQ3z9LFy8g
+7BSuI5FJZP+a8RNpxJ+Fdb6AoZyA59A0AICmyVRZEWZGbcYO6vTYcYMVkiIbSpLR5po1l9ZY0nxp
+s1pSgTcrbIyl0J7PKw1/KmoGAJrSC0edplTastUllFEBpp2gUxMRqlVnXXWSaE+Zum3GnqR2NmbG
+lXq/wgxRcOomnuHmOgxZzgsbteqaBpZs1Ow/wFA7GHaLOJlPrXcHMcOVVzBLyagpn7V5+SLmDoVz
+dqPX2bMGxrhyO45YOiVf35OPlgWurqVpgmslbM4Ul9ZnrM8e8gY70+86mZB9Wz45Ivbm5nJBgq4L
+3euqickB1F6P7LbQoMjkvElPvQP7+8rEj7SLdc952OmBJ6D/LO49A90VIp2BVk2pZTDgg/gwBBFd
+oDnGC3WW0cfKOwwWhN+HBb4X0TH8SJMhQSd0mN6H+IUY0k8iWtjbccN5wGB9mXEA4Y4uwthYeTOW
+9ZtZkbFWZI42Brjjgz2SQyFv6RS5HXFGBraScH0hZx+L7H0m1Hjy2QjcUqZdySFfv1mpYYMYcNml
+i076F+VEY1IpHI1o4sgmeh0sySScofEwI512hlWoWMHVuKeJffopoJdHSDIoVGjmeWiZZKKm4n9d
+ZfXFnABW4xRSmaa2oJBqHqfnKqcQhZGoZC2FXaHWGWmmShzcGMZDnSaBq0Av6ApCABwgUAIvoHLq
+zpoSEODs/7MYBCDttBcgYKy1xopAx6TKagkCARY4S4G0FZA7gbUVoKttr92mwCC4F8ALgLnlEitB
+thbgC0Ky7XrbgbjxwmvvBfbqm26/U9Qkb7zzDmxBwRmoi7CvGi4cbgIJaFBAAAVsYDA2voR8msiD
+NZhmyXtVpDAGGIMbAMYXbCxBATRX+zEVNKE8XJqKluySnYRVbDEALQtMNAU1QwxAxwcHM9bJOof8
+M67GEenvvxVkDIC89mq9tAQDG8s0BTfjLPWZxol8pc+DpT0qkv8unDHAYB/9Nb0AZDt23mj86pra
+Usfqs98kJxkCtEQP3XDGGzt8LwIdY5sG4bSO7HbahrJGn5+wWxPgdbR72zwxNsxmnYHWoVeQ+uhK
+cC4BzBegvvrXrJN+wucTwE67BbPXbkfpWeOu+8x71+w7zsBbgPHyGNDs/PFauA799NRXb/312Gev
+/fbcd+/99+C3gHngbP+Ko/mWo8x2+O6UfxrVdP6s/tPqo8++RcQNSb7Oq73WtttVul/72va+/QGE
+fH+LCaySxz7zGcp/YBlZ+l4CNQEKMAIAOw==
+--001a113f232cd72aa505270ed855--

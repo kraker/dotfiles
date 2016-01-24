@@ -1,0 +1,92 @@
+# vim: filetype=muttrc
+##############################
+# muttrc alex.kraker@gmail.com
+# Mutt/OfflineImap/Msmtp
+# Gmail
+##############################
+
+# Editor
+set editor = "nvim"
+
+# Vim related
+set text_flowed		# Allow for better reading experience in email clients
+
+# COLORS 
+#source ~/.mutt/themes/nice_theme
+#source ~/.mutt/themes/arch
+#source ~/.mutt/themes/default
+source ~/.mutt/themes/starynight
+
+#### Gmail ####
+set mbox_type 		= Maildir
+set sendmail 		= /usr/bin/msmtp
+set folder 		= ~/mail/Gmail
+set spoolfile 		= "+INBOX"
+set mbox 		= "+[Gmail]/All Mail"
+set postponed 		= "+[Gmail]/Drafts"
+unset record
+set signature		= ~/.mutt/signature
+
+mailboxes +INBOX
+
+macro index D \
+	"<save-message>+[Gmail]/Trash<enter>" \
+	"move message to the trash"
+
+macro index S \
+	"<save-message>+[Gmail]/Spam<enter>" \
+	"mark message as spam"
+
+# main options
+set realname		= "Alex Kraker"
+set from		= "alex.kraker@gmail.com"
+set mail_check 		= 0
+set envelope_from
+
+unset move 		# gmail does that
+set delete		# don't ask, just do
+unset confirmappend	# don't ask, just do!
+set quit 		# don't ask, just do!!!
+unset mark_old 		# read/new is good enough for me
+
+# sort/threading
+set sort 		= threads
+set sort_aux 		= reverse-last-date-received
+set sort_re
+
+# look and feel
+set pager_index_lines 	= 8
+set pager_context 	= 5
+set pager_stop
+set menu_scroll
+set smart_wrap
+set tilde
+unset markers
+set date_format		= "%d.%m.%y %T"
+
+# View HTML in Mutt
+set mailcap_path 	= ~/.mutt/mailcap
+auto_view 		text/html
+#alternative_order	text/plain text/html	# View as text first when poss.
+
+# composing
+set fcc_attach
+unset mime_forward
+set forward_format 	= "Fwd: %s"
+set include
+set forward_quote
+
+ignore 		* 				# first, ignore all headers
+unignore 	from: to: cc: date: subject: 	# then, show only these
+hdr_order 	from: to: cc: date: subject: 	# and in this order
+
+## Use abook for Address Book
+set query_command	= "abook --mutt-query '%s'"
+macro index,pager a \
+	"<pipe-message>abook --add-email<return>" "Add this sender to Abook"
+bind editor        	<Tab> complete-query
+
+# GooBook setup for google address book
+#set query_command="goobook query '%s'"
+macro index,pager a \
+	"<pipe-message>goobook add<return>" "add sender to google contacts"

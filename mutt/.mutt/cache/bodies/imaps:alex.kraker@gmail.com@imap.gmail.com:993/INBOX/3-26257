@@ -1,0 +1,72 @@
+Delivered-To: alex.kraker@gmail.com
+Received: by 10.107.137.165 with SMTP id t37csp1538507ioi;
+        Sat, 16 Jan 2016 20:09:32 -0800 (PST)
+X-Received: by 10.182.148.39 with SMTP id tp7mr14369548obb.87.1453003772701;
+        Sat, 16 Jan 2016 20:09:32 -0800 (PST)
+Return-Path: <Amy@schedulepal.com>
+Received: from na01-by2-obe.outbound.protection.outlook.com (mail-by2on0056.outbound.protection.outlook.com. [207.46.100.56])
+        by mx.google.com with ESMTPS id h6si21033299obr.97.2016.01.16.20.09.31
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Sat, 16 Jan 2016 20:09:32 -0800 (PST)
+Received-SPF: pass (google.com: domain of Amy@schedulepal.com designates 207.46.100.56 as permitted sender) client-ip=207.46.100.56;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of Amy@schedulepal.com designates 207.46.100.56 as permitted sender) smtp.mailfrom=Amy@schedulepal.com;
+       dkim=pass header.i=@netorg783731.onmicrosoft.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=netorg783731.onmicrosoft.com; s=selector1-schedulepal-com;
+ h=From:To:Date:Subject:Message-ID:Content-Type:MIME-Version;
+ bh=lzMrJkFq6nJi9yEs18gkImpUn6d+28mwHlCPknCieNs=;
+ b=WOZTwJy1g8LymLzFHMEdiUxaPy8Eh6eDbhCN2BwsCT3OJk/D/++DzGV+h+OIz6tmUJbik4Hi8d1MpUssWLvr1wMu0n6A7bwHQamBjyRPCx++ElPswEJvQHzxoNdSEomwoGOwTcstxEh6jEikjn8k2xayLJnZJ9AAIlguwWYE/yA=
+Received: from BLUPR18MB0241.namprd18.prod.outlook.com (10.162.236.144) by
+ BLUPR18MB0242.namprd18.prod.outlook.com (10.162.236.145) with Microsoft SMTP
+ Server (TLS) id 15.1.365.19; Sun, 17 Jan 2016 04:09:29 +0000
+Received: from BLUPR18MB0241.namprd18.prod.outlook.com ([10.162.236.144]) by
+ BLUPR18MB0241.namprd18.prod.outlook.com ([10.162.236.144]) with mapi id
+ 15.01.0365.023; Sun, 17 Jan 2016 04:09:29 +0000
+From: Amy Anderson <Amy@schedulepal.com>
+To: Evan Niessen-Derry <eniessenderry@gmail.com>, Alex Kraker
+	<alex.kraker@gmail.com>
+Subject: Blog
+Thread-Topic: Blog
+Thread-Index: AQHRUNzbJvMDKaVVEk6OXpDpv3n5PA==
+Date: Sun, 17 Jan 2016 04:09:28 +0000
+Message-ID: <D52A4AD5-1DAF-4104-854F-9B0608E4986B@schedulepal.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: spf=none (sender IP is )
+ smtp.mailfrom=Amy@schedulepal.com; 
+x-originating-ip: [2601:449:201:cf13:701a:b766:acdd:57de]
+x-microsoft-exchange-diagnostics: 1;BLUPR18MB0242;5:EOlkZKiT/Oj/rBpB873tThVrmIfGkcIcPHIAGnX5bJZThiHQIM06Se1TeCE9EdiziArIGxWXxTzofvrWA6RWqA+k7886rHWeb6IA8NMvwHUgFnC1iXjofeDsqZtufsSYpwiCgLsgBEMI0QaqpXRyeA==;24:NpFevrK3LfgFkb55atoK6YtjrL9+ecpF630b5H/IbsipBKV6e5nRPvnsNUx8XJjKTqY0J05SwCmqVqJYkahsrkm1AfOO31WUmz48AKT8rTw=
+x-microsoft-antispam: UriScan:;BCL:0;PCL:0;RULEID:;SRVR:BLUPR18MB0242;
+x-ms-office365-filtering-correlation-id: 377cb7ce-f23f-4d48-1806-08d31ef3fef6
+x-microsoft-antispam-prvs: <BLUPR18MB024258CB8BF9EC129EC8EDE4B8CF0@BLUPR18MB0242.namprd18.prod.outlook.com>
+x-exchange-antispam-report-test: UriScan:;
+x-exchange-antispam-report-cfa-test: BCL:0;PCL:0;RULEID:(601004)(2401047)(8121501046)(5005006)(520078)(10201501046)(3002001);SRVR:BLUPR18MB0242;BCL:0;PCL:0;RULEID:;SRVR:BLUPR18MB0242;
+x-forefront-prvs: 082465FB26
+x-forefront-antispam-report: SFV:NSPM;SFS:(10009020)(6009001)(199003)(189002)(102836003)(122556002)(5001770100001)(107886002)(10400500002)(586003)(11100500001)(105586002)(99286002)(86362001)(40100003)(1220700001)(36756003)(1096002)(77096005)(106116001)(229853001)(83716003)(97736004)(5002640100001)(5001960100002)(87936001)(6116002)(19580395003)(92566002)(54356999)(221733001)(81156007)(450100001)(558084003)(5008740100001)(106356001)(82746002)(5004730100002)(101416001)(189998001)(80792005)(33656002)(2900100001)(50986999)(2906002)(3826002)(104396002);DIR:OUT;SFP:1101;SCL:1;SRVR:BLUPR18MB0242;H:BLUPR18MB0241.namprd18.prod.outlook.com;FPR:;SPF:None;PTR:InfoNoRecords;A:1;MX:1;LANG:en;
+received-spf: None (protection.outlook.com: schedulepal.com does not designate
+ permitted sender hosts)
+spamdiagnosticoutput: 1:23
+spamdiagnosticmetadata: NSPM
+Content-Type: text/plain; charset="us-ascii"
+Content-ID: <F4FFC90E4E84E24A8BDE18FD93743EEF@netorg783731.onmicrosoft.com>
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+X-OriginatorOrg: schedulepal.com
+X-MS-Exchange-CrossTenant-originalarrivaltime: 17 Jan 2016 04:09:28.2954
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 4857a86e-9236-455d-857e-c81f44e68fe8
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BLUPR18MB0242
+
+I finally started the blog for SchedulePal. So far it's just about why I'm =
+starting it. But hopefully we can do some posts about progress as we go.=20
+
+SchedulePal.com/blog
+
+Open to feedback if you love or hate it. I'm sure I will find a voice one o=
+f these days.=20
+
+Amy=

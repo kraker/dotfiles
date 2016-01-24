@@ -1,0 +1,605 @@
+Delivered-To: alex.kraker@gmail.com
+Received: by 10.107.137.165 with SMTP id t37csp2181700ioi;
+        Mon, 18 Jan 2016 01:54:17 -0800 (PST)
+X-Received: by 10.107.133.143 with SMTP id p15mr19845477ioi.58.1453110857543;
+        Mon, 18 Jan 2016 01:54:17 -0800 (PST)
+Return-Path: <bounce-12989_HTML-120350886-693735-7004424-38086@bounce.mail.republicwireless.com>
+Received: from mta.mail.republicwireless.com (mta.mail.republicwireless.com. [199.122.124.233])
+        by mx.google.com with ESMTP id s20si27301872ios.38.2016.01.18.01.54.17
+        for <alex.kraker@gmail.com>;
+        Mon, 18 Jan 2016 01:54:17 -0800 (PST)
+Received-SPF: pass (google.com: domain of bounce-12989_HTML-120350886-693735-7004424-38086@bounce.mail.republicwireless.com designates 199.122.124.233 as permitted sender) client-ip=199.122.124.233;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of bounce-12989_HTML-120350886-693735-7004424-38086@bounce.mail.republicwireless.com designates 199.122.124.233 as permitted sender) smtp.mailfrom=bounce-12989_HTML-120350886-693735-7004424-38086@bounce.mail.republicwireless.com;
+       dkim=pass (test mode) header.i=@mail.republicwireless.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=200608; d=mail.republicwireless.com;
+ h=From:To:Subject:Date:MIME-Version:Reply-To:Message-ID:Content-Type:Content-Transfer-Encoding; i=no-reply@mail.republicwireless.com;
+ bh=Mh/qXXH/4nlv16qytX2985X8XfU=;
+ b=mxOmN3lvZGid7DqjOrcUQAC4zm2oZY5g+aUObtMCnt5lWNdj0H8bcgSYRGYEeORE5ExR0QR4hyR0
+   kE2LlyI1IDOVPTfz4iALelC9ZmwqM+fX257+jg6IlLRjJnDOeMJkLp098Wu9pOC0+vkPueiFkNSc
+   3Vw64Jwxy6kP/bsxPbw=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=200608; d=mail.republicwireless.com;
+ b=U7CzEPRftJN3513D7P5uN17Iu1QWo/NbsytFE2VD8Oion+rw4fXvL6ARj4vpBGYf56jztuUNsr1d
+   AiRNM6iaFpVs+A3leLGEKLza5sPpdFW8XAQuJjJ294dpUqGi9iDDEVMGSgvrcH53Eq27FEoubsfV
+   IWxCULKMeSAMkqZNx18=;
+Received: by mta.mail.republicwireless.com id hjir4i163hsk for <alex.kraker@gmail.com>; Mon, 18 Jan 2016 03:49:24 -0600 (envelope-from <bounce-12989_HTML-120350886-693735-7004424-38086@bounce.mail.republicwireless.com>)
+From: "Republic Wireless" <no-reply@mail.republicwireless.com>
+To: <alex.kraker@gmail.com>
+Subject: Republic Wireless Billing & Payment Notification
+Date: Mon, 18 Jan 2016 03:49:24 -0600
+MIME-Version: 1.0
+Reply-To: "Republic Wireless" <reply-febe127976630778-12989_HTML-120350886-7004424-38086@mail.republicwireless.com>
+x-job: 7004424_693735
+Message-ID: <66deafe6-4823-475f-af4d-0feee1f8b609@xtinp2mta1161.xt.local>
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+<html><body>
+
+
+<img src="http://click.mail.republicwireless.com/open.aspx?ffcb10-febe127976630778-fe1611777d60007a721378-fe9a13707560007f71-fef215727c6c0d-fe2e15727567017d7d1c76-fef61778756c02" width="1" height="1">
+
+<div id="Section 1">
+  <table border="0" cellpadding="0" style="width: 100%; background: none repeat scroll 0% 0% #ffffff;" width="100%">
+    <tbody>
+      <tr>
+        <td align="center" valign="middle">
+
+            <!-- Email Content -->
+            <table style="font-family: Verdana; background: #ffffff; color: #444; line-height: 22px; font-size: 9px; margin-top: 20px; width: 650px;" border="0" cellspacing="0" cellpadding="0">
+  	      <tbody>
+    	        <tr>
+                  <td height="40px" align="center"></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table style="font-family: arial; background: #ffffff; color: #444; line-height: 22px; font-size: 12px; margin-top: 20px; border: 1px solid #CCC; width: 650px;" border="0" cellspacing="0" cellpadding="0">
+              <tbody>
+                <tr>
+                  <td>
+
+  <!-- Begin Masthead -->
+  <table border="0" cellpadding="0" cellspacing="0" style="max-width: 650px; width: 100%; border-bottom: #ebebeb solid;" width="100%">
+    <tbody>
+      <tr>
+        <td style="width: 20px;">&nbsp;</td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+
+        <td style="width: 20px;">&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <a href="http://click.mail.republicwireless.com/?qs=d3211833e1c43f56a34b89aa44b1ebee74f887162477fb002c54bf1a284596755d1e8c9a3c0ca975"><img alt="" height="15" src="http://image.mail.republicwireless.com/lib/fe9a13707560007f71/m/1/eml_img_arc.png" width="41"></a>
+        </td>
+
+        <td align="right">
+          <p style="font-family: Arial; font-size: 8px; letter-spacing: 5px; margin-top: 0px; margin-bottom: 0px; line-height: 16px;"><a href="http://click.mail.republicwireless.com/?qs=87f1286225a5fed56ac30d6d0e09f869b10464fc9945df66d633fdbc64e0204f81be8452675e00e8" style="text-decoration: none; color: #000;">BLOG</a> &#8226; <a href="http://click.mail.republicwireless.com/?qs=c2e49d9c7b5d8d657c647b3c39d36864790fe0089051c5e4b53bbcf7d8bab10b9361aa6a7a539216" style="text-decoration: none; color: #000;">COMMUNITY</a> &#8226; <a href="http://click.mail.republicwireless.com/?qs=cb7a9bff66136cb655ac273f2ab3e7c0caeecc629152943932bb6c828f07e76a0740bd4f1520dd3b" style="text-decoration: none; color: #000;">HELP</a></p>
+        </td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table><!-- End Masthead -->
+
+<div style="margin: 0px 32px;">
+
+  <table border="0" cellpadding="0" cellspacing="0" style="max-width: 650px; width: 100%; margin: 20px 0px;" width="100%">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><p style="font-family: Helvetica, Arial, sans-serif; font-size: 30px; color: #78d264; letter-spacing: 5px; margin: 0px;">January</p></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Begin 1 -->
+
+
+
+  <!-- Begin 1 -->
+
+  <table border="0" cellpadding="0" cellspacing="0" style="max-width: 650px; width: 100%; margin-bottom: 40px;" width="100%">
+    <tbody>
+      <tr>
+        <td valign="top">
+
+        <!-- Begin Itemized -->
+<table class="table" style="border: thin solid #ebebeb; border-bottom: medium solid #ebebeb; font-family: Helvetica, Arial, sans-serif; font-size: 11px; line-height: 14px; color: #4b5854;" width="100%" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="top" style="padding: 7px 10px; border-bottom: thin solid #ebebeb;"><p><span style="font-size: 14px;"><strong>Itemized Invoice</strong></span></p></td>
+      <td align="right" valign="top" style="padding: 7px 10px; border-bottom: thin solid #ebebeb;"><p></p></td>
+    </tr>
+
+    <tr>
+      <td width="80%" valign="top" style="padding: 7px 10px; border-bottom: thin solid #ebebeb;"><p>
+        (612) 361-4105 with Republic Refund (TM) Base Plan + 2 GB Cell Data</p></td>
+      <td align="right" valign="top" style="padding: 7px 10px; border-bottom: thin solid #ebebeb;"><p>$40.00 </p></td>
+    </tr>
+
+    <tr>
+      <td valign="top" style="padding: 7px 10px; border-bottom: thin solid #ebebeb;"><p>Monthly Service Subtotal</p></td>
+      <td align="right" valign="top" style="padding: 7px 10px; border-bottom: thin solid #ebebeb;"><p>$40.00</p></td>
+    </tr>
+    <tr>
+      <td valign="top" style="padding: 7px 10px; border-bottom: thin solid #ebebeb;"><p>Total Taxes<sup style="padding-left:1px;">1</sup></p></td>
+      <td align="right" valign="top" style="padding: 7px 10px; border-bottom: thin solid #ebebeb;"><p>$2.59</p></td>
+    </tr>
+
+
+<tr>
+      <td valign="top" style="padding: 7px 10px; border-bottom: thin solid #ebebeb;"><p style="color: #78d264;">Republic Refund&trade;<sup style="padding-left:1px;">2</sup> from Previous Billing Cycle</p></td>
+      <td align="right" valign="top" style="padding: 7px 10px; border-bottom: thin solid #ebebeb;"><p>-$7.75</p></td>
+    </tr>
+
+    <tr>
+      <td valign="top" style="padding: 7px 10px;"><p><strong>Total Payment</strong></p></td>
+      <td align="right" valign="top" style="padding: 7px 10px;"><p><strong>$34.84</strong></p></td>
+    </tr>
+  </tbody>
+</table>
+
+        <!-- End Itemized -->
+        </td>
+        <td style="width: 15px;">&nbsp;</td>
+        <td valign="top">
+        <!-- Begin Billing Details -->
+        
+        <table class="table" style="border: thin solid #ebebeb; border-bottom: medium solid #ebebeb; font-family: Helvetica, Arial, sans-serif; font-size: 10px; line-height: 18px; color: #4b5854;" width="100%" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td colspan="2" style="padding: 7px 10px;">
+                <p style="font-size: 12px; line-height: 20px;"><strong>Billing Details</strong></p>
+              </td>
+            </tr>
+          
+            <tr>
+              <td valign="top" colspan="2" style="padding: 1px 10px;"><strong>Name:</strong> Alexander Kraker</td>
+            </tr>
+            <tr>
+              <td valign="top" style="padding: 1px 1px 1px 10px; width:80px;"><strong>Billing Address:</strong></td>
+              <td valign="top" style="padding: 1px 10px 1px 1px;">
+                <table border="0" cellpadding="0" cellspacing="0" style="font-family: Helvetica, Arial, sans-serif; font-size: 10px; line-height: 18px; color: #4b5854; width: 100%;" width="100%">
+                  <tbody>
+                  <tr><td style="padding: 0px;">483 Lynnhurst Ave W</td></tr>
+                    <tr><td style="padding: 0px;">Apt 6</td></tr>
+                  <tr><td style="padding: 0px;">Saint Paul, MN 55104-3414</td></tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td valign="top" colspan="2" style="padding: 1px 10px;"><strong>Invoice:</strong> INV06815014</td>
+            </tr>
+            <tr>
+              <td valign="top" colspan="2" style="padding: 1px 10px;"><strong>Date:</strong> January 18, 2016</td>
+            </tr>
+            <tr>
+              <td valign="top" colspan="2" style="padding: 1px 10px 10px 10px;"><strong>Billing Card:</strong> MasterCard ************2025</td>
+            </tr>
+            </tbody>
+          </table>
+
+        <!-- End Billing Details -->
+        </td>
+      </tr>
+    </tbody>
+  </table><!-- End 1 -->
+
+  <!-- End 1 -->
+
+  <!-- Begin 2 -->
+
+
+
+<!-- Begin 2 -->
+
+  <table border="0" cellpadding="0" cellspacing="0" style="max-width: 650px; width: 100%; margin-bottom: 5px;" width="100%">
+    <tbody>
+      <tr>
+        <td>
+
+        <table class="table" style="font-family: Helvetica, Arial, sans-serif; font-size: 11px; line-height: 24px; color: #4b5854; border: thin solid #ebebeb; border-bottom: medium solid #ebebeb;" width="100%" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td style="padding: 7px 10px; border-bottom: thin solid #ebebeb;" colspan="5" valign="top"><p><span style="font-size: 16px;">Data Usage &amp; Refund&trade; from Previous Billing Cycle</span></p></td>
+    </tr>
+    <tr>
+      <td style="padding: 7px 10px; border-bottom: thin solid #ebebeb;" width="100px" valign="top"><p><strong>Name<sup>&nbsp;</sup></strong></p></td>
+      <td style="padding: 7px 10px; border-bottom: thin solid #ebebeb;" width="90px" valign="top"><p><strong>Phone Number<sup>&nbsp;</sup></strong></p></td>
+      <td style="padding: 7px 10px; border-bottom: thin solid #ebebeb;" width="120px" align="right" valign="top"><p><strong>Cell Data Usage<sup style="padding-left: 1px;">3</sup></strong></p></td>
+      <td style="padding: 7px 10px; border-bottom: thin solid #ebebeb;" width="100px" align="right" valign="top"><p><strong>Wi-Fi Data Usage<sup>&nbsp;</sup></strong></p></td>
+      <td style="padding: 7px 10px; border-bottom: thin solid #ebebeb;" width="100px" align="right" valign="top"><p style="color: #78d264;"><strong>Republic Refund&trade;<sup style="padding-left: 1px;">2</sup></strong></p></td>
+    </tr>
+
+    <tr>
+      <td style="padding: 7px 10px; width: 100px; border-bottom: thin solid #ebebeb;" valign="top"><p>Alexander</p></td>
+      <td style="padding: 7px 10px; width: 90px; border-bottom: thin solid #ebebeb;" valign="top"><p>(612) 361-4105</p></td>
+      <td style="padding: 7px 10px; width: 120px; border-bottom: thin solid #ebebeb;" align="right" valign="top"><p>3.5 GB of 4.0 GB</p></td>
+      <td style="padding: 7px 10px; width: 100px; border-bottom: thin solid #ebebeb;" align="right" valign="top"><p>15.6 GB of <strong style="font-size:14px;">&#8734;</strong></p></td>
+      <td style="padding: 7px 10px; width: 100px; border-bottom: thin solid #ebebeb;" align="right" valign="top"><p style="color: #78d264;">$7.75</p></td>
+    </tr>
+
+    <tr>
+      <td style="padding: 7px 10px; width: 100px;" valign="top"><p><strong>Total</strong></p></td>
+      <td style="padding: 7px 10px; width: 90px;" valign="top"><p></p></td>
+      <td style="padding: 7px 10px; width: 120px;" align="right" valign="top"><p>3.5 GB of 4.0 GB</p></td>
+      <td style="padding: 7px 10px; width: 100px;" align="right" valign="top"><p>15.6 GB of <strong style="font-size:14px;">&#8734;</strong></p></td>
+      <td style="padding: 7px 10px; width: 100px;" align="right" valign="top"><p style="color: #78d264;">$7.75</p></td>
+    </tr>
+    </tbody>
+</table>
+        
+        <!-- End Account List -->
+        </td>
+      </tr>
+    </tbody>
+  </table><!-- End 2 -->
+
+
+
+  <!-- End 2 -->
+
+  <!-- Begin 3 -->
+<table border="0" cellpadding="0" cellspacing="0" style="max-width: 650px; width: 100%; margin: 5px 0px;" width="100%">
+  <tbody>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="center">
+        <p style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; line-height: 24px; color: #4b5854;">Better Understanding Data</p>
+      </td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td valign="top" style="width: 276px;">
+                <table style="border-bottom: #f1f1f1 solid; background: #fafafa; width:100%; height:230px;" width="100%" height="230" border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td valign="top" style="width: 25px; height: 22px;">&nbsp;</td>
+                      <td valign="top">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td valign="top">&nbsp;</td>
+                      <td valign="top">
+                        <p style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; line-height: 20px; color: #4b5854;">&quot;Data&quot; Defined</p>
+                        <p style="font-family: Helvetica, Arial, sans-serif; font-size: 12px; line-height: 20px; color: #4b5854;">Confused about what's considered WiFi<br>
+                          data, or cell data?<br>
+                          <a href="#"><img src="http://image.mail.republicwireless.com/lib/fe9a13707560007f71/m/1/img_dup_arrow.png" width="27" height="27" alt=""/></a> <a style="color: #06caf2;"href="https://community.republicwireless.com/docs/DOC-1782?stop_mobi=yes&utm_source=community_link&utm_medium=email&utm_campaign=DUP&utm_term=member&utm_content=DUP_Invoice#jive_content_id_FAQ__Republic_Wireless_20_Plans">Read More</a>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="top">&nbsp;</td>
+                      <td valign="top">&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td style="width: 35px;">&nbsp;</td>
+              <td valign="top" style="width: 276px;">
+                <table style="border-bottom: #f1f1f1 solid; background: #fafafa; width:100%; height:230px;" width="100%" height="230" border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td valign="top" style="width: 25px; height: 22px;">&nbsp;</td>
+                      <td valign="top">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td valign="top">&nbsp;</td>
+                      <td valign="top">
+                        <p style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; line-height: 20px; color: #4b5854;">Track Your Data</p>
+                        <p style="font-family: Helvetica, Arial, sans-serif; font-size: 12px; line-height: 20px; color: #4b5854;">Keep track of all your data usage,<br>
+                          including which apps are using the<br>
+                          most data, by going to the<br>
+                          Republic App.<br>
+                          <a href="#"><img src="http://image.mail.republicwireless.com/lib/fe9a13707560007f71/m/1/img_dup_arrow.png" width="27" height="27" alt=""/></a> <a style="color: #06caf2;" href="http://click.mail.republicwireless.com/?qs=612b24272ad168236e60e65ce41b5baaefbef72115623a44cd42091e79ea8e40d2cbd9d528fe2f85">Read More</a>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="top">&nbsp;</td>
+                      <td valign="top">&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>
+        <table style="border-bottom: #f1f1f1 solid; background: #fafafa;" width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td style="width: 23px;">&nbsp;</td>
+              <td style="width: 46px;">&nbsp;</td>
+              <td>&nbsp;</td>
+              <td  style="width: 70px;">&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td valign="top"><img src="http://image.mail.republicwireless.com/lib/fe9a13707560007f71/m/1/img_dup_paw.png" width="26" height="26" alt=""/></td>
+              <td valign="top">
+                <p style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; line-height: 20px; color: #4b5854;">Reduce Your Cellular Footprint</p>
+                <p style="font-family: Helvetica, Arial, sans-serif; font-size: 12px; line-height: 20px; color: #4b5854;">WiFi is your best friend. The more WiFi you use, the less cellular data you need and the less cell data you need, the more money you get back as part of your Republic Refund&trade;!<br>
+                  Learn some tips and tricks on how to reduce your cellular footprint.<br>
+                  <a href="#"><img src="http://image.mail.republicwireless.com/lib/fe9a13707560007f71/m/1/img_dup_arrow.png" width="27" height="27" alt=""/></a> <a style="color: #06caf2;" href="http://click.mail.republicwireless.com/?qs=04fbac98b9814665884662f15c896d1b59d72925194936cab908825df0a458e1dcb61ed25e00c8e2">Read More</a>
+                </p>
+              </td>
+              <td valign="top">&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+  <!-- End 3 -->
+
+  <!-- Begin 4 -->
+  <table border="0" cellpadding="0" cellspacing="0" style="max-width: 650px; width: 100%; margin-bottom: 10px;" width="100%">
+    <tbody>
+      <tr>
+        <td style="width: 58px;">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td style="width: 58px;">&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+        <td>
+          <p style="font-family: Helvetica, Arial, sans-serif; font-size: 14px; line-height: 24px; color: #4b5854;">We're always here to help, so if you have any questions, please visit <a style="color: #06caf2;" href="http://click.mail.republicwireless.com/?qs=b14bde00124d98ec6c629b13d0e6ac33ca11cda31673a2421e62fc22758968f162ba87c34ade6fa0">Republic Help</a>.</p>
+          <p style="font-family: Helvetica, Arial, sans-serif; font-size: 14px; line-height: 24px; color: #4b5854;">Thanks,<br/>Republic Wireless</p>
+        </td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td style="border-bottom: #55655f thin solid;">&nbsp;</td>
+        <td style="border-bottom: #55655f thin solid;">&nbsp;</td>
+        <td style="border-bottom: #55655f thin solid;">&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- End 4 -->
+
+</div>
+
+  <!-- Begin Social -->
+
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody>
+      <tr align="center" valign="middle">
+        <td height="50" width="21%">&nbsp;</td>
+
+        <td width="7%">&nbsp;</td>
+
+        <td width="7%">&nbsp;</td>
+
+        <td width="7%">&nbsp;</td>
+
+        <td width="7%">&nbsp;</td>
+
+        <td width="7%">&nbsp;</td>
+
+        <td width="7%">&nbsp;</td>
+
+        <td width="21%">&nbsp;</td>
+      </tr>
+
+      <tr align="center" valign="middle">
+        <td>&nbsp;</td>
+
+        <td width="50">
+          <a href="http://click.mail.republicwireless.com/?qs=2aca72823d80b2ed5a3bc382e1efa877aff808995c9259feb1031b3ffc71b799c1c05b933b0bf087"><img alt="Facebook" height="34" src="http://image.mail.republicwireless.com/lib/fe9a13707560007f71/m/1/eml_img_bw_social-facebook_bw.png" width="34"></a>
+        </td>
+
+        <td width="50">
+          <a href="http://click.mail.republicwireless.com/?qs=764095c5ce991d94208e3f8bf436bdd9bac333ca0651d71d2699f57cb0303cb4bbfbeca6fe9a4499"><img alt="Twitter" height="34" src="http://image.mail.republicwireless.com/lib/fe9a13707560007f71/m/1/eml_img_bw_social-twitter.png" width="34"></a>
+        </td>
+
+        <td width="50">
+          <a href="http://click.mail.republicwireless.com/?qs=18007f3ec0ddcf04010e7b135e526f81454516c6d3f76018fbb7de6f1f0b9160dabba326157f1b40"><img alt="Google" height="34" src="http://image.mail.republicwireless.com/lib/fe9a13707560007f71/m/1/eml_img_bw_social-google.png" width="34"></a>
+        </td>
+
+        <td width="50">
+          <a href="http://click.mail.republicwireless.com/?qs=fc4db95b682a8fac42343a5d95e26fab1f54c1914370fac56c584c3a041e3b19d45a7c7ba7ef4c24"><img alt="Pinterest" height="34" src="http://image.mail.republicwireless.com/lib/fe9a13707560007f71/m/1/eml_img_bw_social-pinterest.png" width="34"></a>
+        </td>
+
+        <td width="50">
+          <a href="http://click.mail.republicwireless.com/?qs=3bf6b94e5dc58b9359641a5f43801523f614d72936dd450911b60fd0c795394a33e29b779747f86c"><img alt="YouTube" height="34" src="http://image.mail.republicwireless.com/lib/fe9a13707560007f71/m/1/eml_img_bw_social-youtube.png" width="34"></a>
+        </td>
+
+        <td width="50">
+          <a href="http://click.mail.republicwireless.com/?qs=5bfd316075d3febc900c48cddd162737163296fca087dfe26a80fe584ccb8fbaa1112572f3946b68"><img alt="Instagram" height="34" src="http://image.mail.republicwireless.com/lib/fe9a13707560007f71/m/1/eml_img_bw_social-instagram.png" width="34"></a>
+        </td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr align="center" valign="middle">
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table><!-- End Social -->
+  <!-- Begin Footer Links -->
+
+  <table border="0" cellpadding="0" cellspacing="0" style="font-family: Verdana; font-size: 10px; width: 320px; margin: 0 auto;">
+    <tbody>
+      <tr align="center" valign="middle">
+        <td style="border-right: thin solid #444;">
+          <a href="http://click.mail.republicwireless.com/?qs=0deaddc26fe98a695fc0007e3a9fc6fbde098b3bf1b3e296fd97b7eea9c42a0055390556c1042d5b" style="color: #000;">www.republicwireless.com</a>
+        </td>
+
+        <td style="border-right: thin solid #444; width: 95px;">
+          <a href="http://click.mail.republicwireless.com/?qs=b9228d1bc29fa3a6519fda22a416c3af8791feb2c4299138f8d6316f0561d65517e2840c13fc4da5" style="color: #000;">Community</a>
+        </td>
+
+        <td style="width: 55px;">
+          <a href="http://click.mail.republicwireless.com/?qs=bb064b2008d6331d78a83e97596bce31e2ddc9e38b028ac057b85917b029163f44e274ede09b84f6" style="color: #000;">Blog</a>
+        </td>
+      </tr>
+
+      <tr>
+        <td height="50">&nbsp;</td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table><!-- End Footer Links -->
+
+<div style="margin: 0px 32px;">
+  <!-- Begin 5 -->
+  <table border="0" cellpadding="0" cellspacing="0" style="max-width: 650px; width: 100%;" width="100%">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+        <td valign="top" style="font-family: Helvetica, Arial, sans-serif; font-size: 8px; line-height: 12px; color: #4b5854;">
+          <p>
+            <sup>1</sup> Have questions about taxes? <a href="http://click.mail.republicwireless.com/?qs=006eb1485dbafd7b2fd6f4ba330b6acca49677f68934f057cae2566475ef05500870b94111ffbba8">Log into your account</a> to view the breakdown of taxes by line. Or read how taxes are calculated <a href="http://click.mail.republicwireless.com/?qs=0975e4eda5eb86e233ca11cd73bebfdcc72958ac3aacd65ebc69e03d3b0971f2b75eba09ad675984">here</a>.
+
+<br/>
+            <sup>2</sup> Republic Refund&trade; is applied as a credit to your account and will be used towards the monthly plan charge that follows the usage month in which the Republic Refund was earned. If Republic Refund amount is $0.00, that means one of three things: (1) You have a Republic Refund-eligible Cell Data Plan and used your entire allotment of cell data, (2) You have a $5 WiFi-Only or $10 WiFi, Talk & Text plan with no available Cell Data or (3) You have a $25 or $40 WiFi, Talk, Text & Data plan and have not yet switched over to a plan eligible for Republic Refund.
+            <br/>
+            <sup>3</sup> The cellular data usage shown within this email reflects both on-network cellular data usage and roaming cellular data usage. It was calculated on the basis of your unique billing cycle.
+
+          </p>
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- End 5 -->
+</div>
+                        
+                        </td>
+					</tr>
+					<tr>
+						<td><table style="background: #ccc;" width="650px" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="325px"><img align="bottom" border="0" src="http://image.mail.republicwireless.com/lib/fe9a13707560007f71/m/1/spacer.png" style="margin:0;margin-right:0px;margin-left:0px;padding:0;background:none;border:none;white-space:normal;line-height:normal;vertical-align:bottom;min-width:325px;min-height:1px;display:block" width="325px" height="1"></td>
+    <td width="325px"><img align="bottom" border="0" src="http://image.mail.republicwireless.com/lib/fe9a13707560007f71/m/1/spacer.png" style="margin:0;margin-right:0px;margin-left:0px;padding:0;background:none;border:none;white-space:normal;line-height:normal;vertical-align:bottom;min-width:325px;min-height:1px;display:block" width="325px" height="1"></td>
+  </tr>
+</table></td>
+					</tr>
+				</tbody>
+			</table>
+            <!-- End Email Content -->
+            
+            <!-- Subscriber Management and Legal -->
+            <table border="0" cellpadding="0" cellspacing="0" style="font-family: Verdana; background: #ffffff; color: #444; line-height: 16px; font-size: 9px; width: 650px;">
+              <tbody>
+                <tr>
+                  <td style="width: 20px; height: 20px;">&nbsp;</td>
+
+                  <td style="height: 20px;" valign="middle">&nbsp;</td>
+
+                  <td style="width: 20px; height: 20px;">&nbsp;</td>
+                </tr>
+                
+                <tr>
+                  <td style="width: 20px; height: 20px;">&nbsp;</td>
+
+                  <td style="height: 20px;" valign="middle">
+                  <p>This email was sent to: alex.kraker@gmail.com</p>
+                  <p>This email was sent by: Republic Wireless<br>
+                    900 Main Campus Drive, Suite 500 Raleigh, NC, 27606, USA</p>
+                  </td>
+
+                  <td style="width: 20px; height: 20px;">&nbsp;</td>
+                </tr>
+                
+                <tr style="height: 20px;">
+                  <td colspan="3">
+                    <table border="0" cellpadding="0" cellspacing="0" style="width: 650px">
+                      <tr>
+                        <td style="width: 325px"><img src="http://image.mail.republicwireless.com/lib/fe9a13707560007f71/m/1/spacer.png" style="min-width:325px; min-height:1px; display:block;" width="325px" height="1"></td>
+
+                        <td style="width: 325px"><img src="http://image.mail.republicwireless.com/lib/fe9a13707560007f71/m/1/spacer.png" style="min-width:325px; min-height:1px; display:block;" width="325px" height="1"></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+            <!-- End Subscriber Management and Legal -->
+            
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+<!-- KISS Identify -->
+<img src="http://trk.kissmetrics.com/e?_k=8216fa8d8852d2c65f72f2df6769d06698af5df4&_n=Viewed+Email&_p=alex.kraker@gmail.com">
+<!-- End KISS Identify -->
+  
+</div>
+
+
+</body></html>

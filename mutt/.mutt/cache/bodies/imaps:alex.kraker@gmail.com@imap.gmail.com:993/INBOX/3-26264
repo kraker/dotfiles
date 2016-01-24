@@ -1,0 +1,140 @@
+Delivered-To: alex.kraker@gmail.com
+Received: by 10.107.137.165 with SMTP id t37csp1859747ioi;
+        Sun, 17 Jan 2016 10:57:06 -0800 (PST)
+X-Received: by 10.98.65.148 with SMTP id g20mr31104074pfd.21.1453057026613;
+        Sun, 17 Jan 2016 10:57:06 -0800 (PST)
+Return-Path: <Amy@schedulepal.com>
+Received: from na01-bn1-obe.outbound.protection.outlook.com (mail-bn1bon0068.outbound.protection.outlook.com. [157.56.111.68])
+        by mx.google.com with ESMTPS id tr2si33557476pac.112.2016.01.17.10.57.05
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Sun, 17 Jan 2016 10:57:06 -0800 (PST)
+Received-SPF: pass (google.com: domain of Amy@schedulepal.com designates 157.56.111.68 as permitted sender) client-ip=157.56.111.68;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of Amy@schedulepal.com designates 157.56.111.68 as permitted sender) smtp.mailfrom=Amy@schedulepal.com;
+       dkim=pass header.i=@netorg783731.onmicrosoft.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=netorg783731.onmicrosoft.com; s=selector1-schedulepal-com;
+ h=From:To:Date:Subject:Message-ID:Content-Type:MIME-Version;
+ bh=H1biXRfd+Jp4+MqBhOBSZWIYTqlBHS2QzBSJduALyx0=;
+ b=M+VZjkR2OnIB5pQlIeEedidHa2bZNTyjTyjrhugRO+NjFKbY7ZOCDZaMG1xHRYIj5FbfriJj6AYkCx6mqxcuM8DIsjYzqJwxdChDQ8pouxTqYLKc6y0SbVXxoDCnhX5HjiDk0bBFf76rSGLMVEDTcL+NczACftDT3SkEBX6k2Co=
+Received: from BLUPR18MB0241.namprd18.prod.outlook.com (10.162.236.144) by
+ BLUPR18MB0241.namprd18.prod.outlook.com (10.162.236.144) with Microsoft SMTP
+ Server (TLS) id 15.1.365.19; Sun, 17 Jan 2016 18:57:04 +0000
+Received: from BLUPR18MB0241.namprd18.prod.outlook.com ([10.162.236.144]) by
+ BLUPR18MB0241.namprd18.prod.outlook.com ([10.162.236.144]) with mapi id
+ 15.01.0365.023; Sun, 17 Jan 2016 18:57:04 +0000
+From: Amy Anderson <Amy@schedulepal.com>
+To: Evan Niessen-Derry <eniessenderry@gmail.com>
+CC: Alexander Kraker <alex.kraker@gmail.com>
+Subject: Re: Happy New Year
+Thread-Topic: Happy New Year
+Thread-Index: AQHRRBLzUW3TV9u2fUGbyUCev03fxJ7nX2EAgBjKLqo=
+Date: Sun, 17 Jan 2016 18:57:04 +0000
+Message-ID: <C8BD00DE-1366-4F77-BA18-1D761397573A@schedulepal.com>
+References: <1D6F8D59-6308-4DD5-8540-23E40B7CB38F@schedulepal.com>,<CABO7=CP4ocAd=Un=juSLjrUHJkNNpwkqEFG+2pq35H85oB-oeg@mail.gmail.com>
+In-Reply-To: <CABO7=CP4ocAd=Un=juSLjrUHJkNNpwkqEFG+2pq35H85oB-oeg@mail.gmail.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: spf=none (sender IP is )
+ smtp.mailfrom=Amy@schedulepal.com; 
+x-originating-ip: [2601:449:201:cf13:186f:4bc5:8e5d:2f8c]
+x-microsoft-exchange-diagnostics: 1;BLUPR18MB0241;5:CLgqUq9J3M+tlCVDp6Un801uAwzGkXfA+kHMbTzW8f0vLKEwnORHf2ItDBoEYfo7BdRmj7iyWPYX5/ind8hRhKowwAgees3NabNyH3W8ehjBgPgafpPMIosr9CByfVevBEUgNman4Duv9YAy7PTnpg==;24:6t8suRyaM0Y1igU8egeR86T+MF3geJ/463SfYP+d+k8j2XtQxewUBuQaYY4qctvkpjyq8h0tAPCXCOguBndzCUXNPmMEKjPfBVEgfNTT25g=
+x-microsoft-antispam: UriScan:;BCL:0;PCL:0;RULEID:;SRVR:BLUPR18MB0241;
+x-ms-office365-filtering-correlation-id: df412b63-20d3-4b10-c56d-08d31f6ffd7a
+x-microsoft-antispam-prvs: <BLUPR18MB024181353BDA2EB5B0897279B8CF0@BLUPR18MB0241.namprd18.prod.outlook.com>
+x-exchange-antispam-report-test: UriScan:;
+x-exchange-antispam-report-cfa-test: BCL:0;PCL:0;RULEID:(601004)(2401047)(520078)(8121501046)(5005006)(3002001)(10201501046);SRVR:BLUPR18MB0241;BCL:0;PCL:0;RULEID:;SRVR:BLUPR18MB0241;
+x-forefront-prvs: 082465FB26
+x-forefront-antispam-report: SFV:NSPM;SFS:(10009020)(24454002)(377454003)(189002)(199003)(92566002)(33656002)(2906002)(105586002)(5002640100001)(450100001)(2950100001)(40100003)(86362001)(82746002)(189998001)(97736004)(99286002)(106116001)(50986999)(77096005)(83716003)(87936001)(54356999)(5001960100002)(19580405001)(19580395003)(5004730100002)(110136002)(1411001)(1096002)(4326007)(16236675004)(102836003)(586003)(81156007)(101416001)(76176999)(106356001)(122556002)(1220700001)(80792005)(11100500001)(5008740100001)(36756003)(6116002)(2900100001)(10400500002)(3826002)(104396002);DIR:OUT;SFP:1101;SCL:1;SRVR:BLUPR18MB0241;H:BLUPR18MB0241.namprd18.prod.outlook.com;FPR:;SPF:None;PTR:InfoNoRecords;MX:1;A:1;LANG:en;
+received-spf: None (protection.outlook.com: schedulepal.com does not designate
+ permitted sender hosts)
+spamdiagnosticoutput: 1:23
+spamdiagnosticmetadata: NSPM
+Content-Type: multipart/alternative;
+	boundary="_000_C8BD00DE13664F77BA181D761397573Aschedulepalcom_"
+MIME-Version: 1.0
+X-OriginatorOrg: schedulepal.com
+X-MS-Exchange-CrossTenant-originalarrivaltime: 17 Jan 2016 18:57:04.1384
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 4857a86e-9236-455d-857e-c81f44e68fe8
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BLUPR18MB0241
+
+--_000_C8BD00DE13664F77BA181D761397573Aschedulepalcom_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+I guess I need you tax ID number or SSN as well as your address. Can you se=
+nd that too?
+
+On Jan 1, 2016, at 6:23 PM, Evan Niessen-Derry <eniessenderry@gmail.com<mai=
+lto:eniessenderry@gmail.com>> wrote:
+
+
+You too :)
+
+My address is 1668 Dayton Ave, Apt 8, St Paul, MN 55104.
+
+Peace,
+Evan
+
+On Dec 31, 2015 3:33 PM, "Amy Anderson" <Amy@schedulepal.com<mailto:Amy@sch=
+edulepal.com>> wrote:
+I hope you both had a happy holidays and will have a wonderful new year!
+
+Can you send me your addresses so I can do 1099's in January?
+
+So excited to see our dream come true in 2016!!!
+
+Thank you,
+Amy Anderson
+SchedulePal
+
+--_000_C8BD00DE13664F77BA181D761397573Aschedulepalcom_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+</head>
+<body dir=3D"auto">
+<div></div>
+<div><span style=3D"background-color: rgba(255, 255, 255, 0);">I guess I ne=
+ed you tax ID number or SSN as well as your address. Can you send that too?=
+</span></div>
+<div><br>
+On Jan 1, 2016, at 6:23 PM, Evan Niessen-Derry &lt;<a href=3D"mailto:eniess=
+enderry@gmail.com">eniessenderry@gmail.com</a>&gt; wrote:<br>
+<br>
+</div>
+<div>
+<p dir=3D"ltr">You too :)</p>
+<p dir=3D"ltr">My address is 1668 Dayton Ave, Apt 8, St Paul, MN 55104.</p>
+<p dir=3D"ltr">Peace, <br>
+Evan</p>
+<div class=3D"gmail_quote">On Dec 31, 2015 3:33 PM, &quot;Amy Anderson&quot=
+; &lt;<a href=3D"mailto:Amy@schedulepal.com">Amy@schedulepal.com</a>&gt; wr=
+ote:<br type=3D"attribution">
+<blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1p=
+x #ccc solid;padding-left:1ex">
+I hope you both had a happy holidays and will have a wonderful new year!<br=
+>
+<br>
+Can you send me your addresses so I can do 1099's in January?<br>
+<br>
+So excited to see our dream come true in 2016!!!<br>
+<br>
+Thank you,<br>
+Amy Anderson<br>
+SchedulePal<br>
+</blockquote>
+</div>
+</div>
+</body>
+</html>
+
+--_000_C8BD00DE13664F77BA181D761397573Aschedulepalcom_--

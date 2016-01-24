@@ -1,0 +1,123 @@
+Delivered-To: alex.kraker@gmail.com
+Received: by 10.107.137.165 with SMTP id t37csp525721ioi;
+        Sat, 23 Jan 2016 07:08:48 -0800 (PST)
+X-Received: by 10.28.3.134 with SMTP id 128mr8528687wmd.92.1453561728712;
+        Sat, 23 Jan 2016 07:08:48 -0800 (PST)
+Return-Path: <php-bbs@archlinux.org>
+Received: from luna.archlinux.org (luna.archlinux.org. [5.9.250.164])
+        by mx.google.com with ESMTPS id qr6si15553206wjc.206.2016.01.23.07.08.48
+        for <alex.kraker@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 23 Jan 2016 07:08:48 -0800 (PST)
+Received-SPF: pass (google.com: domain of php-bbs@archlinux.org designates 5.9.250.164 as permitted sender) client-ip=5.9.250.164;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of php-bbs@archlinux.org designates 5.9.250.164 as permitted sender) smtp.mailfrom=php-bbs@archlinux.org
+Received: by luna.archlinux.org (Postfix, from userid 997)
+	id 4D49A2805F; Sat, 23 Jan 2016 15:08:48 +0000 (UTC)
+To: alex.kraker@gmail.com
+Subject: New topic in forum: 'Newbie Corner'
+From: "Arch Linux Forums Mailer" <noreply@archlinux.org>
+Date: Sat, 23 Jan 2016 15:08:48 +0000
+MIME-Version: 1.0
+Content-transfer-encoding: 8bit
+Content-type: text/plain; charset=utf-8
+X-Mailer: FluxBB Mailer
+Message-Id: <20160123150848.4D49A2805F@luna.archlinux.org>
+
+Kemikal has posted a new topic 'Unable to connect to wireless device' in the forum 'Newbie Corner', to which you are subscribed.
+
+The topic is located at https://bbs.archlinux.org/viewtopic.php?id=207958
+
+The message reads as follows:
+-----------------------------------------------------------------------
+
+The device I have is a T-LINK TL-WN823N wifi dongle.
+
+This device worked out of the box with the rtl8291cu driver included in the kernel.
+
+However, it would disconnect every 1-5 minutes, and I would have to disconnect it and reconnect it.
+
+The wiki ([https://wiki.archlinux.org/index.php/Wireless_network_configuration#rtl8192cu]) suggests that I try the AUR package for the driver. [https://aur.archlinux.org/packages/8192cu-dkms/]
+
+I installed the AUR package and it worked.
+
+However, now I have upgraded from linux 4-3.3.2 to linux 4-3.3.3, it doesn't work any more.
+
+Some sanity checks:
+
+$ pacman -Qi linux
+
+Name           : linux
+Version        : 4.3.3-3
+Description    : The Linux kernel and modules
+Architecture   : x86_64
+URL            : http://www.kernel.org/
+Licences       : GPL2
+Groups         : base
+Provides       : None
+Depends On     : coreutils  linux-firmware  kmod  mkinitcpio>=0.7
+Optional Deps  : crda: to set the correct wireless channels of your country
+Required By    : None
+Optional For   : None
+Conflicts With : None
+Replaces       : None
+Installed Size :  74.11 MiB
+Packager       : Tobias Powalowski <tpowa@archlinux.org>
+Build Date     : Wed 20 Jan 2016 07:13:40 UTC
+Install Date   : Wed 20 Jan 2016 22:05:43 UTC
+Install Reason : Explicitly installed
+Install Script : Yes
+Validated By   : Signature
+
+
+$ uname -a
+
+Linux jackshannon 4.3.3-3-ARCH #1 SMP PREEMPT Wed Jan 20 08:12:23 CET 2016 x86_64 GNU/Linux
+
+It doesn't seem to appear here:
+
+$ lspci -nn
+
+00:00.0 Host bridge [0600]: Intel Corporation 4th Gen Core Processor DRAM Controller [8086:0c00] (rev 06)
+00:02.0 VGA compatible controller [0300]: Intel Corporation Xeon E3-1200 v3/4th Gen Core Processor Integrated Graphics Controller [8086:0412] (rev 06)
+00:03.0 Audio device [0403]: Intel Corporation Xeon E3-1200 v3/4th Gen Core Processor HD Audio Controller [8086:0c0c] (rev 06)
+00:14.0 USB controller [0c03]: Intel Corporation 8 Series/C220 Series Chipset Family USB xHCI [8086:8c31] (rev 05)
+00:16.0 Communication controller [0780]: Intel Corporation 8 Series/C220 Series Chipset Family MEI Controller #1 [8086:8c3a] (rev 04)
+00:1a.0 USB controller [0c03]: Intel Corporation 8 Series/C220 Series Chipset Family USB EHCI #2 [8086:8c2d] (rev 05)
+00:1b.0 Audio device [0403]: Intel Corporation 8 Series/C220 Series Chipset High Definition Audio Controller [8086:8c20] (rev 05)
+00:1c.0 PCI bridge [0604]: Intel Corporation 8 Series/C220 Series Chipset Family PCI Express Root Port #1 [8086:8c10] (rev d5)
+00:1c.2 PCI bridge [0604]: Intel Corporation 8 Series/C220 Series Chipset Family PCI Express Root Port #3 [8086:8c14] (rev d5)
+00:1c.3 PCI bridge [0604]: Intel Corporation 8 Series/C220 Series Chipset Family PCI Express Root Port #4 [8086:8c16] (rev d5)
+00:1d.0 USB controller [0c03]: Intel Corporation 8 Series/C220 Series Chipset Family USB EHCI #1 [8086:8c26] (rev 05)
+00:1f.0 ISA bridge [0601]: Intel Corporation C220 Series Chipset Family H81 Express LPC Controller [8086:8c5c] (rev 05)
+00:1f.2 SATA controller [0106]: Intel Corporation 8 Series/C220 Series Chipset Family 6-port SATA Controller 1 [AHCI mode] [8086:8c02] (rev 05)
+00:1f.3 SMBus [0c05]: Intel Corporation 8 Series/C220 Series Chipset Family SMBus Controller [8086:8c22] (rev 05)
+02:00.0 Ethernet controller [0200]: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller [10ec:8168] (rev 0c)
+03:00.0 USB controller [0c03]: VIA Technologies, Inc. VL805 USB 3.0 Host Controller [1106:3483] (rev 01)
+
+It is enp0s20u5:
+
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default 
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: enp2s0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether 40:8d:5c:7e:0e:9e brd ff:ff:ff:ff:ff:ff
+3: enp0s20u5: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether 60:e3:27:17:90:77 brd ff:ff:ff:ff:ff:ff
+
+I see that the state is DOWN, so I tried to make it UP:
+
+$ sudo ip link set enp0s20u5 up
+(This returned no output)
+
+$ iw dev
+(This returned no output)
+
+What do I need to do to make it work?
+
+-----------------------------------------------------------------------
+
+You can unsubscribe by going to https://bbs.archlinux.org/misc.php?action=unsubscribe&fid=23
+
+--
+Arch Linux Forums Mailer
+(Do not reply to this message)

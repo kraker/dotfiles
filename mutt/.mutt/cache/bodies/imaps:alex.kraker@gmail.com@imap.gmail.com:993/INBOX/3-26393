@@ -1,0 +1,42 @@
+Delivered-To: alex.kraker@gmail.com
+Received: by 10.107.137.165 with SMTP id t37csp702029ioi;
+        Sat, 23 Jan 2016 14:31:19 -0800 (PST)
+X-Received: by 10.194.117.169 with SMTP id kf9mr9798994wjb.122.1453588279122;
+        Sat, 23 Jan 2016 14:31:19 -0800 (PST)
+Return-Path: <php-bbs@archlinux.org>
+Received: from luna.archlinux.org (luna.archlinux.org. [2a01:4f8:160:3033::2])
+        by mx.google.com with ESMTPS id q134si13752349wmb.96.2016.01.23.14.31.18
+        for <alex.kraker@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 23 Jan 2016 14:31:19 -0800 (PST)
+Received-SPF: pass (google.com: domain of php-bbs@archlinux.org designates 2a01:4f8:160:3033::2 as permitted sender) client-ip=2a01:4f8:160:3033::2;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of php-bbs@archlinux.org designates 2a01:4f8:160:3033::2 as permitted sender) smtp.mailfrom=php-bbs@archlinux.org
+Received: by luna.archlinux.org (Postfix, from userid 997)
+	id A479B280C3; Sat, 23 Jan 2016 22:31:18 +0000 (UTC)
+To: alex.kraker@gmail.com
+Subject: Reply to topic: 'The little things that make you go 'ooh, nice''
+From: "Arch Linux Forums Mailer" <noreply@archlinux.org>
+Date: Sat, 23 Jan 2016 22:31:18 +0000
+MIME-Version: 1.0
+Content-transfer-encoding: 8bit
+Content-type: text/plain; charset=utf-8
+X-Mailer: FluxBB Mailer
+Message-Id: <20160123223118.A479B280C3@luna.archlinux.org>
+
+Trilby has replied to the topic 'The little things that make you go 'ooh, nice'' to which you are subscribed. There may be more new replies, but this is the only notification you will receive until you visit the board again.
+
+The post is located at https://bbs.archlinux.org/viewtopic.php?pid=1598375#p1598375
+
+The message reads as follows:
+-----------------------------------------------------------------------
+
+Yup, I've seen the unicomp ones.
+
+-----------------------------------------------------------------------
+
+You can unsubscribe by going to https://bbs.archlinux.org/misc.php?action=unsubscribe&tid=65318
+
+--
+Arch Linux Forums Mailer
+(Do not reply to this message)

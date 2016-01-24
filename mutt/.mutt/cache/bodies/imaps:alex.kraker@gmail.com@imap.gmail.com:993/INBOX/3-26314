@@ -1,0 +1,96 @@
+Delivered-To: alex.kraker@gmail.com
+Received: by 10.107.137.165 with SMTP id t37csp100899ioi;
+        Thu, 21 Jan 2016 01:15:32 -0800 (PST)
+X-Received: by 10.28.52.134 with SMTP id b128mr8308337wma.99.1453367732772;
+        Thu, 21 Jan 2016 01:15:32 -0800 (PST)
+Return-Path: <php-bbs@archlinux.org>
+Received: from luna.archlinux.org (luna.archlinux.org. [2a01:4f8:160:3033::2])
+        by mx.google.com with ESMTPS id t189si46136619wmf.48.2016.01.21.01.15.32
+        for <alex.kraker@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 21 Jan 2016 01:15:32 -0800 (PST)
+Received-SPF: pass (google.com: domain of php-bbs@archlinux.org designates 2a01:4f8:160:3033::2 as permitted sender) client-ip=2a01:4f8:160:3033::2;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of php-bbs@archlinux.org designates 2a01:4f8:160:3033::2 as permitted sender) smtp.mailfrom=php-bbs@archlinux.org
+Received: by luna.archlinux.org (Postfix, from userid 997)
+	id 6E9B02935F; Thu, 21 Jan 2016 09:15:32 +0000 (UTC)
+To: alex.kraker@gmail.com
+Subject: New topic in forum: 'Newbie Corner'
+From: "Arch Linux Forums Mailer" <noreply@archlinux.org>
+Date: Thu, 21 Jan 2016 09:15:32 +0000
+MIME-Version: 1.0
+Content-transfer-encoding: 8bit
+Content-type: text/plain; charset=utf-8
+X-Mailer: FluxBB Mailer
+Message-Id: <20160121091532.6E9B02935F@luna.archlinux.org>
+
+Kirkx has posted a new topic 'Fallback Video Driver for Xorg Server v1.18' in the forum 'Newbie Corner', to which you are subscribed.
+
+The topic is located at https://bbs.archlinux.org/viewtopic.php?id=207866
+
+The message reads as follows:
+-----------------------------------------------------------------------
+
+I have a very basic system with only the following packages installed
+
+- base
+- base-devel
+- xorg (xorg-server, xorg-server-utils, xorg-xinit, xorg-twm, xorg-xclock, xterm)
+
+Before installing the nouveau or nvidia-340xx driver (for my GeForce 8500 GT card) I would like to try running the system using only the fallback video driver, just to see what it feels like.
+
+Question #1
+
+What is the official/preferred fallback driver for xorg v1.18? According to Xorg wiki it is xf86-video-vesa but this information seems to be outdated ("Driver installation" section):
+
+[https://wiki.archlinux.org/index.php/Xorg]
+
+The vesa driver apparently doesn't work with xorg after v1.15:
+
+[https://bbs.archlinux.org/viewtopic.php?id=186905]
+
+The fallback drivers suggested on the thread quoted above are:
+
+xf86-video-modesetting
+xf86-video-fbdev
+
+The modesetting driver apparently conflicts with xorg-server 1.18.0-4:
+
+[https://www.archlinux.org/packages/extra/i686/xorg-server/]
+
+So the right fallback driver seems to be xf86-video-fbdev. Is this conclusion correct or have I missed somthing?
+
+Question #2
+
+Assuming that xf86-video-fbdev is indeed the best fallback driver, how can you confirm that it is properly loaded on startup?
+
+lspci command incorrectly identifies the driver as nouveau although noveau is not even installed on the system:
+
+lspci -k | grep VGA -A 2
+
+01:00.0 VGA compatible controller: NVIDIA Corporation G86 [GeForce 8500 GT] (rev a1)
+	Subsystem: eVga.com. Corp. Device c793
+	Kernel driver in use: nouveau
+
+pacman -Qi nouveau
+error: package 'nouveau' was not found 
+
+This probably happens because mesa and mesa-libgl were pulled as dependencies during xorg installation and they are usually used together with nouveau:
+
+pacman -Qs nouveau
+local/mesa 11.1.1-1
+an open-source implementaion of the OpenGL specification 
+
+The command below confirms that xf86-video-fbdev is really installed:
+
+pacman -Qs xf86-video-fbdev
+local/xf86-video-fbdev 0.4.4-5 (xorg-drivers xorg)
+X.Org framebuffer video driver
+
+-----------------------------------------------------------------------
+
+You can unsubscribe by going to https://bbs.archlinux.org/misc.php?action=unsubscribe&fid=23
+
+--
+Arch Linux Forums Mailer
+(Do not reply to this message)

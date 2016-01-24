@@ -1,0 +1,93 @@
+## Theme kindly inspired from
+## http://nongeekshandbook.blogspot.ie/2009/03/mutt-color-configuration.html
+## Adapted by alex.kraker@gmail.com for native terminal background/foreground
+## and other adjustments
+
+## Colours for items in the index
+color index color9 default ~N # New
+color index color9 default ~O # Old - brightred looks bad
+color index color6 default ~R # Read
+color index color4 default ~D # Deleted Mails - use dark color as they are already "dealt with"
+color index color5 default ~Q # Replied
+color index color9 default ~F # Flagged -
+color index color0 color2 ~T # Tagged -
+
+mono index bold ~N
+mono index bold ~F
+mono index bold ~T
+
+## Highlights inside the body of a message.
+
+## URLs
+color body color13 default "(http|https|ftp|news|telnet|finger)://[^ \"\t\r\n]*"
+color body color13 default "mailto:[-a-z_0-9.]+@[-a-z_0-9.]+"
+mono body bold "(http|https|ftp|news|telnet|finger)://[^ \"\t\r\n]*"
+mono body bold "mailto:[-a-z_0-9.]+@[-a-z_0-9.]+"
+
+## Email addresses.
+color body color10 default "[-a-z_0-9.%$]+@[-a-z_0-9.]+\\.[-a-z][-a-z]+"
+
+## Header
+color header color2 default "^from:"
+color header color2 default "^to:"
+color header color2 default "^cc:"
+color header color2 default "^date:"
+color header color3 default "^newsgroups:"
+color header color3 default "^reply-to:"
+color header color14 default "^subject:"
+color header color9 default "^x-spam-rule:"
+color header color2 default "^x-mailer:"
+color header color3 default "^message-id:"
+color header color3 default "^Organization:"
+color header color3 default "^Organisation:"
+color header color3 default "^User-Agent:"
+color header color3 default "^message-id: .*pine"
+color header color3 default "^X-Fnord:"
+color header color3 default "^X-WebTV-Stationery:"
+
+color header color9 default "^x-spam-rule:"
+color header color2 default "^x-mailer:"
+color header color3 default "^message-id:"
+color header color3 default "^Organization:"
+color header color3 default "^Organisation:"
+color header color3 default "^User-Agent:"
+color header color3 default "^message-id: .*pine"
+color header color3 default "^X-Fnord:"
+color header color3 default "^X-WebTV-Stationery:"
+color header color3 default "^X-Message-Flag:"
+color header color3 default "^X-Spam-Status:"
+color header color3 default "^X-SpamProbe:"
+color header color9 default "^X-SpamProbe: SPAM"
+
+## Coloring quoted text - coloring the first 7 levels:
+color quoted color6 default
+color quoted1 color3 default
+color quoted2 color9 default
+color quoted3 color2 default
+color quoted4 color6 default
+color quoted5 color3 default
+color quoted6 color9 default
+color quoted7 color2 default
+
+## Default color definitions
+#color hdrdefault color7 color2
+color signature color13 default
+color indicator color0 color6
+color attachment color0 color2
+color error color9 default
+color message color7 default
+color search color15 color5
+color status color11 blue
+color tree brightblue default
+color normal color7 default
+color tilde color2 default
+color bold color11 default
+color underline color5 default
+color markers color14 default
+
+mono message bold
+
+## Colour definitions when on a mono screen
+mono bold bold
+mono underline underline
+mono indicator reverse

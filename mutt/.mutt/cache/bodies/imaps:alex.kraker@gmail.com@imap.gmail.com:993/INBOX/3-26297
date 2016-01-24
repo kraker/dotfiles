@@ -1,0 +1,195 @@
+Delivered-To: alex.kraker@gmail.com
+Received: by 10.107.137.165 with SMTP id t37csp3291604ioi;
+        Tue, 19 Jan 2016 14:43:47 -0800 (PST)
+X-Received: by 10.28.0.132 with SMTP id 126mr412187wma.67.1453243426930;
+        Tue, 19 Jan 2016 14:43:46 -0800 (PST)
+Return-Path: <eniessenderry@gmail.com>
+Received: from mail-wm0-f44.google.com (mail-wm0-f44.google.com. [74.125.82.44])
+        by mx.google.com with ESMTPS id qs3si48972768wjc.230.2016.01.19.14.43.46
+        for <alex.kraker@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 19 Jan 2016 14:43:46 -0800 (PST)
+Received-SPF: pass (google.com: domain of eniessenderry@gmail.com designates 74.125.82.44 as permitted sender) client-ip=74.125.82.44;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of eniessenderry@gmail.com designates 74.125.82.44 as permitted sender) smtp.mailfrom=eniessenderry@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-wm0-f44.google.com with SMTP id n5so1204wmn.0
+        for <alex.kraker@gmail.com>; Tue, 19 Jan 2016 14:43:46 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :cc:content-type;
+        bh=xSMN8ukM2jaawUGmFR5wvy3sy+t2/4JfaXynBVD+jmE=;
+        b=k6iWX808Ppbzw8uAOURhQiE1V1LN4UaiEUwcO2OhHozalNzh/3hYx4K/OYKQ0ClxLG
+         N3q8vxFim52pSMmuWPQJanQMSyaKANLjIn+2Fe+1KDwrrklH5tRHecbdZByWCCbFKn3x
+         Bo64ybI51zkF+kitSPtWfHZvYde7UmLwcuq1E4GrmHJsRnQcTJcpKdjEtM1gbUBq9R4+
+         fn11s/SGgSq1YX1nwXUZ6L/gr2CSy+R8hvpy+oq+96RMOWgHdNzQZLKY7mhR1p7yGZYQ
+         1umy+rTsJ4zYvr0EnPpNrwzBqyuAwHWqRASOAdwfq9ZaLhp2rlTw3GO/wJnlYxVco2/q
+         7Wrg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:date
+         :message-id:subject:from:to:cc:content-type;
+        bh=xSMN8ukM2jaawUGmFR5wvy3sy+t2/4JfaXynBVD+jmE=;
+        b=ByRu9oN3xStFZpG7BuXUXH1hDHwH4AZc9oFvNDBwwvx5JGWeHx9uzWb684SQijaoPd
+         uLRvPFIRPm0+k7rE8uIYzK9AKEKwJImhJ2uI5sT5Pyt23tOON/LfQLkOZrrAb7kAVhPj
+         1Nnp/52bsEuGEMk3bPzsA1clohTHsmzpOD4Q0aHb6bXpNWbTStNNhWRwLrLTOChIX9U3
+         Hd/J5eFmMR72Wv2FI3mAEDBWtBR/W2zFgpPkD2PYDeD/VL0veympRdQgGB3FcF5pinEE
+         Jb1cFPOFA39kpBVkcsnkg5MEwk/Y1cCLw1TiXpex1SXkUMqd9egCru78bCr7kjWqAMB3
+         GJjg==
+X-Gm-Message-State: AG10YOSpsZbWCIjfnVVlWss4msNCc6CN7faJVviJJGativhITON3sVwGudK0CsuSIVNmMg4khgykvFyfk3nJyg==
+MIME-Version: 1.0
+X-Received: by 10.28.97.135 with SMTP id v129mr413390wmb.78.1453243426634;
+ Tue, 19 Jan 2016 14:43:46 -0800 (PST)
+Received: by 10.27.11.169 with HTTP; Tue, 19 Jan 2016 14:43:46 -0800 (PST)
+Received: by 10.27.11.169 with HTTP; Tue, 19 Jan 2016 14:43:46 -0800 (PST)
+In-Reply-To: <EC6B5C47-0AA8-4D96-858C-061C16BD96D7@schedulepal.com>
+References: <1D6F8D59-6308-4DD5-8540-23E40B7CB38F@schedulepal.com>
+	<CABO7=CP4ocAd=Un=juSLjrUHJkNNpwkqEFG+2pq35H85oB-oeg@mail.gmail.com>
+	<C8BD00DE-1366-4F77-BA18-1D761397573A@schedulepal.com>
+	<CABO7=CMxAfhHjNLVvSjWQtu0wciXUj1c-LU=-8OU+zRinB10qA@mail.gmail.com>
+	<CABO7=CP3sPotWyXHdtyi3ymoVoQO8iiA-X4M0gJwHqYE_+G+kQ@mail.gmail.com>
+	<EC6B5C47-0AA8-4D96-858C-061C16BD96D7@schedulepal.com>
+Date: Tue, 19 Jan 2016 16:43:46 -0600
+Message-ID: <CABO7=CMTgN4Zokou3v+H+bN8w8Qo5D1W3xOr7hjxY7Ho4_N-Gg@mail.gmail.com>
+Subject: Re: Happy New Year
+From: Evan Niessen-Derry <eniessenderry@gmail.com>
+To: Amy Anderson <Amy@schedulepal.com>
+Cc: Alexander Kraker <alex.kraker@gmail.com>
+Content-Type: multipart/alternative; boundary=001a1148fd703782f50529b79a59
+
+--001a1148fd703782f50529b79a59
+Content-Type: text/plain; charset=UTF-8
+
+Sounds good.
+On Jan 19, 2016 4:42 PM, "Amy Anderson" <Amy@schedulepal.com> wrote:
+
+> Sure I should be home after 6:30, call anytime
+>
+> On Jan 19, 2016, at 3:14 PM, Evan Niessen-Derry <eniessenderry@gmail.com>
+> wrote:
+>
+> Ok, turns out it's the ssn that you need. I'd rather avoid sending it
+> through email, given email's insecurity, but how about over the phone?
+> On Jan 19, 2016 3:03 PM, "Evan Niessen-Derry" <eniessenderry@gmail.com>
+> wrote:
+>
+>> Let me see if I can find my tax id. Otherwise, if you have the signal
+>> messenger app, or if we can meet in person, I can give you my ssn. Or, if
+>> you have a pgp/gpg key I can email it to you.
+>>
+>> Lemme dig around for my tax id.
+>> On Jan 17, 2016 12:57 PM, "Amy Anderson" <Amy@schedulepal.com> wrote:
+>>
+>>> I guess I need you tax ID number or SSN as well as your address. Can you
+>>> send that too?
+>>>
+>>> On Jan 1, 2016, at 6:23 PM, Evan Niessen-Derry <eniessenderry@gmail.com>
+>>> wrote:
+>>>
+>>> You too :)
+>>>
+>>> My address is 1668 Dayton Ave, Apt 8, St Paul, MN 55104.
+>>>
+>>> Peace,
+>>> Evan
+>>> On Dec 31, 2015 3:33 PM, "Amy Anderson" <Amy@schedulepal.com> wrote:
+>>>
+>>>> I hope you both had a happy holidays and will have a wonderful new year!
+>>>>
+>>>> Can you send me your addresses so I can do 1099's in January?
+>>>>
+>>>> So excited to see our dream come true in 2016!!!
+>>>>
+>>>> Thank you,
+>>>> Amy Anderson
+>>>> SchedulePal
+>>>>
+>>>
+
+--001a1148fd703782f50529b79a59
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<p dir=3D"ltr">Sounds good. </p>
+<div class=3D"gmail_quote">On Jan 19, 2016 4:42 PM, &quot;Amy Anderson&quot=
+; &lt;<a href=3D"mailto:Amy@schedulepal.com">Amy@schedulepal.com</a>&gt; wr=
+ote:<br type=3D"attribution"><blockquote class=3D"gmail_quote" style=3D"mar=
+gin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">
+
+
+
+<div dir=3D"auto">
+<div></div>
+<div>Sure I should be home after 6:30, call anytime</div>
+<div><br>
+On Jan 19, 2016, at 3:14 PM, Evan Niessen-Derry &lt;<a href=3D"mailto:enies=
+senderry@gmail.com" target=3D"_blank">eniessenderry@gmail.com</a>&gt; wrote=
+:<br>
+<br>
+</div>
+<div>
+<p dir=3D"ltr">Ok, turns out it&#39;s the ssn that you need. I&#39;d rather=
+ avoid sending it through email, given email&#39;s insecurity, but how abou=
+t over the phone?
+</p>
+<div class=3D"gmail_quote">On Jan 19, 2016 3:03 PM, &quot;Evan Niessen-Derr=
+y&quot; &lt;<a href=3D"mailto:eniessenderry@gmail.com" target=3D"_blank">en=
+iessenderry@gmail.com</a>&gt; wrote:<br type=3D"attribution">
+<blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1p=
+x #ccc solid;padding-left:1ex">
+<p dir=3D"ltr">Let me see if I can find my tax id. Otherwise, if you have t=
+he signal messenger app, or if we can meet in person, I can give you my ssn=
+. Or, if you have a pgp/gpg key I can email it to you.</p>
+<p dir=3D"ltr">Lemme dig around for my tax id.</p>
+<div class=3D"gmail_quote">On Jan 17, 2016 12:57 PM, &quot;Amy Anderson&quo=
+t; &lt;<a href=3D"mailto:Amy@schedulepal.com" target=3D"_blank">Amy@schedul=
+epal.com</a>&gt; wrote:<br type=3D"attribution">
+<blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1p=
+x #ccc solid;padding-left:1ex">
+<div dir=3D"auto">
+<div></div>
+<div><span style=3D"background-color:rgba(255,255,255,0)">I guess I need yo=
+u tax ID number or SSN as well as your address. Can you send that too?</spa=
+n></div>
+<div><br>
+On Jan 1, 2016, at 6:23 PM, Evan Niessen-Derry &lt;<a href=3D"mailto:eniess=
+enderry@gmail.com" target=3D"_blank">eniessenderry@gmail.com</a>&gt; wrote:=
+<br>
+<br>
+</div>
+<div>
+<p dir=3D"ltr">You too :)</p>
+<p dir=3D"ltr">My address is 1668 Dayton Ave, Apt 8, St Paul, MN 55104.</p>
+<p dir=3D"ltr">Peace, <br>
+Evan</p>
+<div class=3D"gmail_quote">On Dec 31, 2015 3:33 PM, &quot;Amy Anderson&quot=
+; &lt;<a href=3D"mailto:Amy@schedulepal.com" target=3D"_blank">Amy@schedule=
+pal.com</a>&gt; wrote:<br type=3D"attribution">
+<blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1p=
+x #ccc solid;padding-left:1ex">
+I hope you both had a happy holidays and will have a wonderful new year!<br=
+>
+<br>
+Can you send me your addresses so I can do 1099&#39;s in January?<br>
+<br>
+So excited to see our dream come true in 2016!!!<br>
+<br>
+Thank you,<br>
+Amy Anderson<br>
+SchedulePal<br>
+</blockquote>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+
+</blockquote></div>
+
+--001a1148fd703782f50529b79a59--
