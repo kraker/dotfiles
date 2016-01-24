@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+battStatus=$(acpi | awk '{print $3}')
+battLevel=$(acpi | awk '{print $4}')
+battLevel=${battLevel%,}
+battLevel=${battLevel%\%}
+
+if [[ $1 == "--notify" ]]
+then
+    if [[ "$battLevel" -lt 30 ]] && [[ ! $battStatus == 'Charging,' ]]
+    then
+        notify-send -t 180000 -u critical -a "Low Battery" "$battLevel%"
+    fi
+else
+    echo "$battLevel%"
+fi

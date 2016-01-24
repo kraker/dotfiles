@@ -1,3 +1,6 @@
 [user]
 	email = alex.kraker@gmail.com
 	name = Alex Kraker
+[core]
+	autocrlf = input
+	safecrlf = true

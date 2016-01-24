@@ -2,6 +2,7 @@
 
 # Environment Variables
 set PATH ~/bin $PATH
+set GIT_EDITOR nvim
 
 # Path to Oh My Fish install.
 set -gx OMF_PATH "/home/akraker/.local/share/omf"
