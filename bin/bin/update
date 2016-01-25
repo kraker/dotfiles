@@ -1,0 +1,22 @@
+#!/bin/bash
+# Update system
+
+# check if super
+if [ $(id -u) != "0" ]; then
+    echo "You must be the superuser to run this script" >&2
+    exit 1
+fi
+
+# first clean-up orphaned packages, etc.
+/home/akraker/bin/cleanup
+
+# Update mirrors
+reflector --verbose --country 'United States' \
+	-l 200 -p http --sort rate --save /etc/pacman.d/mirrorlist
+
+# Update System
+pacman -Syyu --noconfirm
+
+# Save backup list of packages
+pacman -Qqen > /home/akraker/dropbox/pkglist.txt		# Official Repos
+pacman -Qqem > /home/akraker/dropbox/aurpkglist.txt		# AUR

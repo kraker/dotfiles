@@ -1,0 +1,35 @@
+#!/bin/sh
+REPOSITORY=akraker@172.20.20.20://mnt/media/backups/laptop
+
+# Backup all of system
+# excluded directories
+# compression high
+
+borg create -v --stats										\
+    $REPOSITORY::`hostname`-`date +%F-%R`					\
+	--compression zlib,6									\
+    /                                       				\
+    --exclude /home/*/.cache                    			\
+	--exclude /home/*/.config								\
+	--exclude /home/*/.cargo								\
+	--exclude /home/*/.recoll								\
+	--exclude /home/*/.mozilla								\
+    --exclude /home/akraker/media							\
+	--exclude /home/akraker/podcasts						\
+	--exclude /home/akraker/mail							\
+	--exclude /home/akraker/builds							\
+    --exclude /dev/											\
+	--exclude /proc											\
+	--exclude /sys/											\
+	--exclude /tmp/											\
+	--exclude /run/											\
+	--exclude /mnt/											\
+	--exclude /lost+found
+
+# Use the `prune` subcommand to maintain 7 daily, 4 weekly and 6 monthly
+# archives of THIS machine. --prefix `hostname`- is very important to
+# limit prune's operation to this machine's archives and not apply to
+# other machine's archives also.
+borg prune -v $REPOSITORY --prefix `hostname`- \
+    --keep-hourly=24 --keep-daily=7 --keep-weekly=4 --keep-monthly=6
+

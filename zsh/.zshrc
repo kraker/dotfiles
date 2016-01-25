@@ -6,6 +6,7 @@ setopt appendhistory autocd extendedglob nomatch notify
 unsetopt beep
 bindkey -v
 # End of lines configured by zsh-newuser-install
+#
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/akraker/.zshrc'
 
@@ -18,6 +19,9 @@ compinit
 # Environment variables
 COLORFGBG="default,default" # Necessary for proper mutt transparent bg
 PATH=~/bin:$PATH		# Add ~/bin to $PATH
+GNUPGHOME=~/.gnupg
+GPG_TTY=$(tty)
+export GPG_TTY
 
 # Colored prompt
 autoload -U promptinit
@@ -58,12 +62,12 @@ setopt completealiases
 
 # Help command like bash
 
-autoload -U run-help
-autoload run-help-git
-autoload run-help-svn
-autoload run-help-svk
-unalias run-help
-alias help=run-help
+#autoload -U run-help
+#autoload run-help-git
+#autoload run-help-svn
+#autoload run-help-svk
+#unalias run-help
+#alias help=run-help
 
 # Ignore duplicates in history
 setopt HIST_IGNORE_DUPS

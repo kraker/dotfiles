@@ -1,0 +1,9 @@
+#!/bin/bash
+# cleanup system
+
+# remove all cached packages not currently installed 
+pacman -Sc --noconfirm
+# remove all cached packages except for most recent 3 versions
+paccache -r
+# remove all orphaned packages
+pacman -Rns --noconfirm $(pacman -Qtdq)

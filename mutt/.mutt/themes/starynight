@@ -4,13 +4,13 @@
 ## and other adjustments
 
 ## Colours for items in the index
-color index color9 default ~N # New
-color index color9 default ~O # Old - brightred looks bad
-color index color6 default ~R # Read
+color index color13 default ~N # New
+color index color13 default ~O # Old - brightred looks bad
+color index color12 default ~R # Read
 color index color4 default ~D # Deleted Mails - use dark color as they are already "dealt with"
-color index color5 default ~Q # Replied
-color index color9 default ~F # Flagged -
-color index color0 color2 ~T # Tagged -
+color index color2 default ~Q # Replied
+color index color1 default ~F # Flagged -
+color index color3 color2 ~T # Tagged -
 
 mono index bold ~N
 mono index bold ~F
@@ -19,19 +19,19 @@ mono index bold ~T
 ## Highlights inside the body of a message.
 
 ## URLs
-color body color13 default "(http|https|ftp|news|telnet|finger)://[^ \"\t\r\n]*"
-color body color13 default "mailto:[-a-z_0-9.]+@[-a-z_0-9.]+"
+color body color12 default "(http|https|ftp|news|telnet|finger)://[^ \"\t\r\n]*"
+color body color12 default "mailto:[-a-z_0-9.]+@[-a-z_0-9.]+"
 mono body bold "(http|https|ftp|news|telnet|finger)://[^ \"\t\r\n]*"
 mono body bold "mailto:[-a-z_0-9.]+@[-a-z_0-9.]+"
 
 ## Email addresses.
-color body color10 default "[-a-z_0-9.%$]+@[-a-z_0-9.]+\\.[-a-z][-a-z]+"
+color body color2 default "[-a-z_0-9.%$]+@[-a-z_0-9.]+\\.[-a-z][-a-z]+"
 
 ## Header
 color header color2 default "^from:"
 color header color2 default "^to:"
-color header color2 default "^cc:"
-color header color2 default "^date:"
+color header color6 default "^cc:"
+color header color6 default "^date:"
 color header color3 default "^newsgroups:"
 color header color3 default "^reply-to:"
 color header color14 default "^subject:"

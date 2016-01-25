@@ -3,6 +3,7 @@
 
 [general]
 ui = ttyui
+pythonfile = ~/bin/offlineimap.py
 # List of accounts to be synced, separated by a comma.
 accounts = Gmail
 
@@ -24,7 +25,7 @@ localfolders = ~/mail/Gmail
 # Remote repos can be IMAP or Gmail, the latter being a preconfigured IMAP.
 type = Gmail
 remoteuser = alex.kraker@gmail.com
-remotepass = bikeman27
+remotepasseval = get_pass()
 realdelete = no
 maxconnections = 3
 # Necessary as of OfflineIMAP 6.5.4

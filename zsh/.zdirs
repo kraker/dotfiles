@@ -1,3 +1,6 @@
+/backup
+/backup/snapshot
+/backup/snapshot/rsync
 /home/akraker/.i3
 /home/akraker
 /home/akraker/.i3/themes
@@ -16,4 +19,3 @@
 /boot/loader
 /boot
 /home/akraker/videos
-/etc/zsh
