@@ -1,8 +1,10 @@
+/var/abs/community/urbanterror
+/var/abs/community
+/home/akraker
 /backup
 /backup/snapshot
 /backup/snapshot/rsync
 /home/akraker/.i3
-/home/akraker
 /home/akraker/.i3/themes
 /usr/bin
 /home/akraker/media/music
@@ -17,5 +19,3 @@
 /usr/local/sbin
 /etc
 /boot/loader
-/boot
-/home/akraker/videos

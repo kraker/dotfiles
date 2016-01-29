@@ -19,6 +19,7 @@ compinit
 # Environment variables
 COLORFGBG="default,default" # Necessary for proper mutt transparent bg
 PATH=~/bin:$PATH		# Add ~/bin to $PATH
+EDITOR=nvim
 GNUPGHOME=~/.gnupg
 GPG_TTY=$(tty)
 export GPG_TTY

@@ -3,6 +3,9 @@
 # Environment Variables
 set PATH ~/bin $PATH
 set GIT_EDITOR nvim
+set EDITOR nvim
+set COLORTERM urxvt
+set GPG_TTY (tty)
 
 # Set vi mode
 fish_vi_mode
