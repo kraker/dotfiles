@@ -1,0 +1,402 @@
+(quit)
+quit
+(defn lots-of-args [a b c d] (str/join "-" [a b c d]))
+(use 'str)
+deps
+quit
+(string)
+(use 'string)
+string?
+(require '[clojure.core :as core])
+(core/string)
+(core/string?)
+str 
+(str "t")
+(str/join)
+(str/join 
+)
+quit
+(#(println %) "hello")
+(#(println %1 %2) "hello" " world")
+(defn square [x]
+(* x x))
+(square 2)
+(declare down)
+(defn up [n]
+(if (< n 10)
+(down (+ 2 n)) n))
+(defn down [n]
+(up (dec n)))
+(up 1)
+(->> (range 10) (map inc) (interpose 5) (reduce +))
+(range 10)
+(->> (range 10) (map inc)
+)
+(->> (range 10) (map inc) (interpose 5))
+(map inc (range 10))
+(defn print-args [& args]
+(println args))
+(print-args "a" "b" "c")
+(defn print-args [arg1 & [arg2]]
+(println
+(if arg2
+"got two arguments"
+"got one argument")))
+(print-args "bar")
+(print-args "bar" "baz")
+(print-args "bar" "baz" "foo")
+(defn login [{:keys [user pass]}]
+  (and (= user "bob") (= pass "secret")))
+(login {:user "bob" :pass "secret"})
+1
+1N
+1.2
+1.2M
+1m2e4
+1.2e4
+1.2e4M
+0x3a
+1/3
+\a
+"hi"
+(let [width 10 height 20 thickness 2]
+(println "hello from inside the 'let'.")
+(* width height thickness))
+(let [x 2
+x (* x x)
+x (+ x 1)]
+x)
+(def v [:a :b :c])
+(nth v 1)
+(v 1)
+(first v)
+(rest v)
+(next v)
+(last v)
+(split "hello there" #" ")
+(require '[clojure.string :as str])
+(str/split "hello there" #" ")
+(str/join ["hello" "there"])
+(str/join " 
+" ["hello" "there"])
+(str/replace "hello there" "ll" "LL")
+(= [1 2 3] '(1 2 3))
+(def my-items ["shirt" "coat" "hat"])
+(doseq [i my-items]
+(println i))
+(dotimes [i 10]
+  (println "counting:" i))
+(let [[game-a game-b game-c game-3] games])
+(def games [:chess :checkers :backgammon :cards])
+(let [[game-a game-b game-c game-d] games])
+(println games)
+(println game-a)
+(let [[game-a game-b game-c game-d] games]
+(println game-a))
+(defn announce-treasure-location
+[{lat :lat lng :lng}]
+(println (str "Treasure lat: " lat))
+(println (str "Treasure lng: " lng)))
+(announce-treasure-location {:lat 28.22 :lng 81.33})
+(#(identity %&) 1 "blarg" :yip)
+(reduce + [1 2 3 4 5])
+(iterate inc 5)
+(take 5 (iterate inc 5))
+(loop [accum []
+i 1]
+(if (= i 10)
+accum
+(recur (conj accum i)
+(inc i))))
+(def my-atom (atom {:foo 1}))
+@my-atom
+(swap! my-atom update-in [:foo] inc)
+@my-atom
+(when (< 10 11) (print "hey") 10)
+(:a {:a nil :b 2})
+{:b {:a nil :b 2})
+(:b {:a nil :b 2})
+(:c {:a nil :b 2})
+(contains? :c {:a nil :b 2})
+(keyword? :c {:a nil :b 2})
+(nil? :a {:a nil :b 2})
+(#(nil? %) :a {:a nil :b 2})
+(nil? nil)
+(nil? :c {:a nil :b 2})
+(#(inc %) :b {:a nil :b 2})
+((fn [x] inc x) :b {:a nil :b 2})
+(contains? :c {:a nil :b 2})
+(contains? 1 [1 2 3])
+(for [x (range 3 7)] (* x x))
+(for [x [0 1 2 3 4 5]
+:let [y (* x 3)]
+:when (even? y)]
+y)
+(for [[x y] (partition 2 (range 20))]
+(+ x y)))
+(partition 2 (range 20))
+(partition 2 (range 10))
+(if true 1 0)
+(if-not false 1 0)
+(let [[a b c d e] [0 1 2 3 4]] [c e])
+\q
+(quit)
+(require 'spelling-corrector)
+(quit)
+(require 'spelling-corrector)
+(hash-map 0 [:a :b :c])
+(zipmap 0 [:a :b :c])
+(zipmap 0 :a)
+(zipmap [:a] [0])
+(quit)
+(get [1 2 3] 3)
+(get 3 [1 2 3])
+(last [1 2 3])
+(first [1 2 3])
+(count [1 2 3 4 5])
+(get 5 [1 2 3 4 5])
+(- 1 (count [1 2 3 4 5]))
+(- (count [1 2 3 4 5]) 1)
+(#(get (- (count [1 2 3 4 5]))
+)
+(#(get (- (count %)) 1) [1 2 3 4 5])
+(#(get (- (count %) 1) %) [1 2 3 4 5])
+(get 4 [1 2 3 4 5])
+(get [1 2 3 4 5] 4)
+(4 [1 2 3 4 5])
+(#(get % (- (count %) 1)) [1 2 3 4 5])
+(count '(1 2 3))
+(get '(1 2 3) 2)
+(peek [1 2 3])
+(peek '(1 2 3))
+(#(get % (- (count %) 1)) '(5 4 3))
+(nth '(1 2 3))
+(nth 3 '(1 2 3 4))
+(nth '(1 2 3 4) 3)
+(nth [1 2 3 4] 3)
+(#(nth % (dec 2 (count %))) '(1 2 3 4 5)
+)
+(#(nth % (- (count %) 2)) '(1 2 3 4 5))
+#(nth 2 '(1 2 3))
+(nth 2 '(1 2 3))
+(nth '(1 2 3) 2)
+(nth 2 [1 2 3])
+(nth [1 2 3] 2)
+(nth '(1 2 3) 2)
+(require '[spelling-corrector])
+(in-ns 'spelling-corrector)
+(require 'spelling-corrector)
+(in-ns user)
+(quit)
+(list 1 2 3)
+(def time-ranges [[0 2] [1 3] [0 3] [4 6] [5 7] [4 7]])
+(def time-ranges ([0 2] [1 3] [0 3] [4 6] [5 7] [4 7]))
+(def time-ranges '([0 2] [1 3] [0 3] [4 6] [5 7] [4 7]))
+(print time-ranges)
+(hash-set time-ranges)
+(< 2 3)
+(< 3 2)
+(< [0 2] [1 3])
+([0 2] 1)
+(< ([0 2] 1) ([1 3] 0))
+(> ([0 2] 1) ([1 3] 0))
+(first time-ranges)
+(> ((first time-ranges) 1) ((second time-ranges) 0))
+(defn compare [time-ranges
+] (> ((first time-ranges) 1) ((second time-ranges) 0))
+)
+(doc compare)
+(quit)
+(compare [0 2] [1 3])
+(reduce + [1 2 3 4 5])
+({:a nil :b 2} :a)
+(true? nil)
+(false? ({:a nil :b 2} :b))
+(#(false? (%2 %1)) :a {:a nil :b 2})
+(#(true? (%2 %1)) :a {:a nil :b 2})
+(true? ({:a nil :b 2} :a))
+(#(println %2 %1) :a {:a nil :b 2})
+(if-not (%2 %1) (true) (false))
+(contains? :c {:a nil :b 2})
+(contains? {:a nil :b2} :c)
+(contains? {:a nil :b 2} :c)
+(nil? {:a nil :b 2} :a)
+(quit)
+(range 2)
+(for [x [0 1 2 3 4 5]
+:let [y (* x 3)]
+:when (even? y)]
+y)
+exit
+(seq '(1 2 3 4 5))
+(last '(1 2 3 4 5))
+(last (seq '(1 2 3 4 5)))
+((fn [x] last (seq x)) '(1 2 3 4 5))
+((fn [x] (last (seq x)) '(1 2 3 4 5))
+)
+((fn [x] (last (seq x))) '(1 2 3 4 5))
+((fn [x] ->> (seq x) last) '(1 2 3 4 5))
+((fn [x] (->> (seq x) last)) '(1 2 3 4 5))
+(pop (seq "abc"))
+(seq "abc")
+(pop (\a \b \c))
+(peek (\a \b \c))
+(peek '(\a \b \c))
+(peek (seq '(1 2 3)))
+(pop (seq ('1 2 3)))
+(def sentence "Hello World")
+(doseq [elements col]
+  (println elements))
+(doseq [letters sentence]
+  (println letters))
+(doseq [elements sentence]
+)
+(doseq [elements sentence
+        y 0]
+  (do
+    (pop elements)
+    (inc y)))
+(doseq [letters sentence
+        y 0]
+  (do
+    (println letters)))
+(def set #{4 2 1})
+(quit)
+(def nums #{4 2 1})
+(sequencee nums)
+(seq nums)
+(reduce + (seq nums))
+(def nums [1 2 3 4 5])
+(nums)
+(println nums)
+(reverse nums)
+(last nums)
+(pop nums)
+(take last nums)
+(take 4 nums)
+(assoc {} :a 1 :b 2 :c 3)
+(assoc {:a 1} :a "changed" :b 2 :c 3)
+(defn my-first [[first-thing]] first-thing)
+(my-first ["oven" "bike" "war-axe"])
+(defn my-second [[first-thing]] first-thing first-thing)
+(my-second ["oven" "bike" "war-axe"])
+(count (sorted-set 5 7 2 7))
+(quit)
+((fn [new-map [key val]] new-map) {:a 1})
+(rseq 
+"racecar")
+(seq "racecar")
+(rseq (seq "racecar"))
+(reverse "racecar")
+(+ 1 1)
+(defn fibonacci [n] (dotimes n 
+)
+(let [li '(1 1)]
+ (reverse (dotimes 3 (cons (+ (first li) (first (rest li)) li)))))
+(def fib '(1 1))
+(cons (+ (first fib) (first (rest fib))))
+(cons (+ (first fib) (first (rest fib))) fib)
+(defn fibcons [fib] (cons (+ (first fib) (first (rest fib))) fib))
+fib
+(fibcons fib)
+(dotimes [n 5] (fibcons fib))
+(fibcons (fibcons fib))
+(take 5 (iterate fibcons fib))
+(reverse (last (take 5 (iterate fibcons fib))))
+(->> (iterate fibcons fib) (take 5) reverse last)
+(->> (iterate fibcons fib) (take 5) last reverse)
+(fn [[a b]] [b (+' a b)])
+((fn [[a b]] [b (+' a b)]) [0 1])
+(+' 1 2)
+(+ 1 2)
+(take 10 (map first (iterate (fn [[a b]] [b (+' a b)]) [0 1]))))
+(defn fib [n] (+ (fib (- n 1)) (fib (- n 2))))
+(fib 1)
+(fib 2)
+(fib 3)
+(- 2 1)
+(- 2 2)
+(defn fib [n] 
+  (if (<= n 1)
+    n
+    (+ (fib (- n 1)) (fib (- n 2)))))
+(fib 2)
+(fib 3)
+(fib 4)
+(fib 5)
+(defn fib
+  ([n]
+     (fib [0 1] n))
+  ([x, n]
+     (if (< (count x) n) 
+       (fib (conj x (+ (last x) (nth x (- (count x) 2)))) n)
+       x)))
+(fib 3)
+(fib 4)
+(defn fib
+  ([n]
+     (fib [0 1] n))
+  ([x, n]
+     (if (< (count x) n) 
+       (fib (conj x (+ (last x) (nth x (- (count x) 2)))) n)
+    
+))))
+(defn fib
+([n]
+(defn fib3 [n] 
+  (take n 
+    (map first (iterate (fn [[a b]] [b (+ a b)]) [0 1]))))
+)))
+(defn fib3 [n] 
+  (take n 
+    (map first (iterate (fn [[a b]] [b (+ a b)]) [0 1]))))
+(fib 4)
+(fib3 4)
+(take 5 (iterate (fn [[a b]] [b (+ a b)]) [0 1]))
+(map first (iterate (fn [[a b]] [b (+ a b)]) [0 1]))
+(take 5 (map first (iterate (fn [[a b]] [b (+ a b)]) [0 1])))
+(when (= 1 2) (print "hey" 10)
+)
+(rem num div)
+(rem 10 9)
+(map identity {:sunlight-reaction "Glitter!"})
+(quit)
+(sort (list 1 8 3 4))
+(reverse (sort (list 1 8 3 4)))
+(peek (reverse (sort (list 1 8 3 4))))
+((fn [& li] (--> li sort reverse peek)) 1 2 3 4 5)
+((fn [& li] (peek (reverse (sort (list li))))) 1 2 3 4 5)
+((fn [& li] (peek (reverse (sort li)))) 1 2 3 4 5)
+(quit)
+(take 100 (for [x (range 100000000) y (range 1000000) :while (< y x)] [x y]))
+(for [x (range 16) :let [y (* x x) z (* x x x)]] [x y z])
+(quit)
+(into [] {1 2, 3 4})
+(type 'a)
+(quit)
+(re-seq #
+)
+(re-seq #"[A-Z]" "Hello World")
+(clojure.string/join (re-seq #"[A-Z]" "Hello World"))
+((fn [str] (clojure.string/join (re-seq #"[A-Z]" str))) "Hello World!")
+(doseq [li '(1 2 3 4 5)] (prn li))
+(doseq [li '(1 2 3 4 5)] (cons li))
+(doseq [li '(1 2 3 4 5)] (cons li li))
+(doseq [li '(1 2 3 4 5)] (cons li '()))
+(let [li '(1 2 3 4 5)] (doseq [n li] (conj '(li li) '()))))
+(let [li '(1 2 3 4 5)] (doseq [n li] (conj '(li li) '())))
+(let [li '(1 2 3 4 5) l2 '()] (doseq [n li] (conj '(n n) l2)) (prn l2))
+(reduce #(conj %1 %2 %2) '(1 2 3 4 5))
+(reduce #(conj %1 %2 %2) [] '(1 2 3 4 5))
+(conj '(1 2) '(1 2))
+(reduce
+  (fn [primes number]
+    (if (some zero? (map (partial mod number) primes))
+      primes
+      (conj primes number)))
+  [2]
+  (take 1000 (iterate inc 3)))
+(apply max [1 2 3])
+(source ->)
+(interface? java.util.Map)
+(class-info String)

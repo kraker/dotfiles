@@ -32,6 +32,7 @@ hi ColorColumn 		ctermbg=234
 set textwidth		=79
 set colorcolumn		=+1
 set number
+set relativenumber
 "set spell "spelllang=en_us
 set autoindent
 set smartindent

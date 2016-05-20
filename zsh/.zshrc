@@ -24,6 +24,11 @@ GNUPGHOME=~/.gnupg
 GPG_TTY=$(tty)
 export GPG_TTY
 
+# start ssh-agent and add seed with github key
+eval "$(ssh-agent -s)"
+#ssh-add ~/.ssh/github
+ssh-add ~/.ssh/gitlab
+
 # Colored prompt
 autoload -U promptinit
 promptinit

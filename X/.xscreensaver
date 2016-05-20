@@ -2,7 +2,7 @@
 # Written by xscreensaver-demo 5.34 for akraker on Mon Jan  4 21:16:27 2016.
 # http://www.jwz.org/xscreensaver/
 
-timeout:	0:45:00
+timeout:	0:10:00
 cycle:		0:03:00
 lock:		True
 lockTimeout:	0:00:00
@@ -11,7 +11,7 @@ visualID:	default
 installColormap:    True
 verbose:	False
 timestamp:	True
-splash:		True
+splash:		False
 splashDuration:	0:00:05
 demoCommand:	xscreensaver-demo
 prefsCommand:	xscreensaver-demo -prefs
@@ -28,7 +28,7 @@ dpmsEnabled:	True
 dpmsQuickOff:	False
 dpmsStandby:	0:30:00
 dpmsSuspend:	1:00:00
-dpmsOff:	4:00:00
+dpmsOff:	2:00:00
 grabDesktopImages:  True
 grabVideoFrames:    False
 chooseRandomImages: False

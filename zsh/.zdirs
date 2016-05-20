@@ -1,6 +1,9 @@
+/home/akraker/clojure/schedulepal
+/home/akraker
+/home/akraker/clojure/cljs-calendar
+/home/akraker/torrents
 /var/abs/community/urbanterror
 /var/abs/community
-/home/akraker
 /backup
 /backup/snapshot
 /backup/snapshot/rsync
@@ -12,10 +15,5 @@
 /home/akraker/builds/xcolors
 /home/akraker/builds
 /home/akraker/.Xresources.d
-/home/akraker/torrents
 /home/akraker/files/todo
 /home/akraker/files
-/home/akraker/media
-/usr/local/sbin
-/etc
-/boot/loader

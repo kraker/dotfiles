@@ -10,7 +10,7 @@ URxvt.cursorBlink: 		true
 ! Native transparency
 URxvt*inheritPixmap:		true
 URxvt*.transparent:		true 
-URxvt*.shading: 		30 	! 0-99 darkens 101-200 lightens
+URxvt*.shading: 		30	! 0-99 darkens 101-200 lightens
 
 ! Font
 URxvt.font: 			xft:Terminus:size=14
