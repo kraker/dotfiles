@@ -44,10 +44,9 @@
 "==== Text Processing ====
 "
 	set nowrap
-	set textwidth=80						" Set textwidth to 80 columns
-	set wrapmargin=2						" Not sure what this does...but auto-wraps?
-" Enable 'spell' for markdown files
-	autocmd FileType markdown setlocal spell
+	set textwidth=80							" Set textwidth to 80 columns
+	set wrapmargin=2							" Not sure what this does...but auto-wraps?
+	autocmd FileType markdown setlocal spell	" Enable 'spell' for markdown files
 
 
 "==== Folding ====
@@ -251,5 +250,3 @@ let g:bullets_enabled_file_types = ['markdown']		" Plugin works on *.md files
 		let zlink = join(['[]', '(', getreg("*"), ')'], '')
 		let @a = zlink
 	endfunction
-
-	vim:tw=80:ts=2
