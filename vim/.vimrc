@@ -251,3 +251,5 @@ let g:bullets_enabled_file_types = ['markdown']		" Plugin works on *.md files
 		let zlink = join(['[]', '(', getreg("*"), ')'], '')
 		let @a = zlink
 	endfunction
+
+	vim:tw=80:ts=2
