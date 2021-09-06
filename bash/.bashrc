@@ -40,3 +40,5 @@ export LEDGER_FILE=~/finance/2021.journal
 alias vi=vimx				
 alias vim=vimx
 alias wiki='vim ~/wiki/_index.md'	# alias 'wiki' to VimWiki Index
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin

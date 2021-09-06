@@ -7,11 +7,13 @@
 " Enter the current millenium
 	set nocompatible							" Set this early so folding works
 
+
 "==== Tabs ====
 "
 	set tabstop=2
 	set softtabstop=2
 	set shiftwidth=2
+	set autoindent
 	filetype indent on						" Load filetype-specific indent files
 	filetype plugin indent on			" Enable plugin based indents
 
@@ -52,7 +54,7 @@
 	set showmatch									" highlight matching [{()}]
 	set splitbelow								" Horizontal splits are below current buffer
 	set colorcolumn=81						" Set vertical line
-	set conceallevel=2						" Conceal links, formatting, etc for *.md files	
+	set conceallevel=2						" Conceal links, formatting, etc for *.md files
 	set termwinsize=15x0					" Set terminal window size
 " Enable syntax and plugins
 	syntax enable
@@ -105,7 +107,7 @@
 	noremap <Left> <nop>
 	noremap <Right> <nop>
 
-" Map <leader>ww to open my '~/wiki/_index.md' because wiki.vim 
+" Map <leader>ww to open my '~/wiki/_index.md' because wiki.vim
 " doesn't allow me to override this configuration easily
 	nnoremap <leader>ww :e ~/wiki/_index.md<CR>
 
@@ -117,8 +119,9 @@
 
 "==== Misc. ====
 "
-" Enable yanking to system clipboard for Fedora 
-	set clipboard=unnamedplus
+" Enable yanking to system clipboard for Fedora
+	"set clipboard=unnamedplus
+	" I'm not sure what this does, disabling until I know I need it...
 
 "==== Plugins ====
 "
@@ -131,7 +134,12 @@
 	" https://github.com/tpope
 		Plug 'tpope/vim-sensible'							" vim-sensible
 		Plug 'tpope/vim-surround'							" vim-surround
-		Plug 'tpope/vim-commentary'						" vim-commentary
+	" I haven't needed this yet...
+		"Plug 'tpope/vim-commentary'						" vim-commentary
+
+	" Pretty parens
+	" Not necessary...
+		"Plug 'luochen1990/rainbow'
 
 	" FZF is a blazing fast fuzzy-finder. Like ctrlp.vim but better.
 	" fzf.vim requires fzf, ag, ripgrep, and bat be installed
@@ -140,9 +148,9 @@
 
 	" I dare you to find a better note-taking and web-page building syntax than
 	" Markdown. Markdown seems pretty future-proof to boot since it's just text.
-		Plug 'plasticboy/vim-markdown'				" vim-markdown, syntax hl & folding
-		Plug 'godlygeek/tabular'							" Required by vim-markdown for fmt tables
-	
+		Plug 'plasticboy/vim-markdown'				" Syntax hl & folding, motions too!
+		Plug 'godlygeek/tabular'							" Required by vim-markdown to fmt tables
+
 	" Use wiki.vim w/Markdown and some custom functions to manage our personal
 	" Zettelkasten. There are some promissing projects for managing a personal
 	" Zettelkasten for neovim.  But we're not ready to make the leap from vim to
@@ -155,9 +163,16 @@
 
 	" Make VIM a Python IDE
 	" See: https://medium.com/nerd-for-tech/vim-as-an-ide-for-python-2021-f922da6d2cfe
+	" Vim is a text editor, not an IDE. That said, linting is nice to have.
 		Plug 'dense-analysis/ale'							" ale, asynchronous syntax checking
-		Plug 'neoclide/coc.nvim', {'branch': 'release'}	" Code completion
-		Plug 'Vimjas/vim-python-pep8-indent'	" nice PEP8 compliant indentation
+
+	" It's probably better to learn good Python practices the hard way first...
+		"Plug 'Vimjas/vim-python-pep8-indent'	" nice PEP8 compliant indentation
+	" I should probably get better at navigating using vim defaults first...
+		"Plug 'jeetsukumaran/vim-pythonsense'	" python text objects and motions
+
+	" One thing at a time, since ale offers completion, disabling for now...
+		"Plug 'neoclide/coc.nvim', {'branch': 'release'}	" coc.nvim, Code completion
 
 	" Vimwiki is more heavy handed than we would like and uses it's own syntax hl
 	" and folding for Markdown. But it lacks features and doesn't do a very good
@@ -193,9 +208,12 @@
 "==== Plugin Configs ====
 "
 
+"---- rainbow ----
+	"let g:rainbow_active = 1
+
 "---- vim-markdown ----
 	let g:vim_markdown_frontmatter = 1			" YAML frontmatter syntax highlighting
-	let g:vim_markdown_autowrite = 1				" Auto-write when following link 
+	let g:vim_markdown_autowrite = 1				" Auto-write when following link
 	let g:vim_markdown_new_list_item_indent = 0		" Don't auto-indent new li's
 	let g:vim_markdown_conceal_code_blocks = 0		" Show fenced code-blocks
 
@@ -203,7 +221,7 @@
 "---- wiki.vim ----
 	let g:wiki_root = '~/wiki'						" Set wiki root
 	let g:wiki_link_extension = '.md'			" Set extension for wiki's is '.md'
-	let g:wiki_link_target_type = 'md'		" 
+	let g:wiki_link_target_type = 'md'		"
 	let g:wiki_filetypes = ['md']					" Wiki files are markdown filetype
 	let g:wiki_write_on_nav = 1						" Save current buffer before navigating
 
@@ -215,7 +233,7 @@
 		let date = strftime(date_format)
 		let title = substitute(tolower(a:description), '\s\+', '-', 'g')
 		let link = date . '-' . title
-		return link 
+		return link
 	endfunction
 
 " Set new zettel template
@@ -224,12 +242,12 @@
 				\		'source_filename': '.template.md'},
 				\	]
 " Custom function to create a capitalized title from the 'context.name' string
-" provided by the wiki.vim plugin.  	
+" provided by the wiki.vim plugin.
 	function Title(context)
 		" Get title from context.name, remove leading numbers,
 		" and title-case the string
 		let name = a:context.name
-		" Remove leading numbers, split into words at '-' characters, and join with 
+		" Remove leading numbers, split into words at '-' characters, and join with
 		" spaces in-between words
 		let lowercase_title = join(split(substitute(name, '[0-9]\+-', '', 'g'), '-'), ' ')
 		" title-case the string using substitution
@@ -253,34 +271,41 @@
 
 
 "---- bullets.vim ----
-	let g:bullets_enabled_file_types = ['markdown']		" Plugin works on *.md files
+	let g:bullets_enabled_file_types = ['markdown']		" Enable for *.md files
 
 
 "---- ale ---
 " See: https://medium.com/nerd-for-tech/vim-as-an-ide-for-python-2021-f922da6d2cfe
-	let g:ale_linters = {'python': 'all'}
-	let g:ale_fixers = {'python': ['isort', 
-																\	'yapf', 
-																\ 'remove_trailing_lines', 
-																\	'trim_whitespace']}
-	let g:ale_lsp_suggestions = 1
+	" Let all work on these filetypes
+	"let g:ale_sign_error = '✘'
+	"let g:ale_sign_warning = '⚠'
+	" Note: linters that ale uses must be installed separately
+	let g:ale_linters = {
+		\	'python': 'all',
+		\	'vim': 'all',
+		\	'markdown': 'all'}
+	" Remove trailing lines and trim whitespace on all files by default
+	let g:ale_fixers = {
+		\	'*': ['remove_trailing_lines', 'trim_whitespace'],
+		\	'python': ['isort', 'yapf']}
+	"let g:ale_lsp_suggestions = 1
 	let g:ale_fix_on_save = 1
-	let g:ale_go_gofmt_options = '-s'
-	let g:ale_go_gometalinter_options = '— enable=gosimple — enable=staticcheck'
-	let g:ale_completion_enabled = 0	" Disable completion when using something else
-	let g:ale_echo_msg_error_str = 'E'
-	let g:ale_echo_msg_warning_str = 'W'
-	let g:ale_echo_msg_format = '[%linter%] [%severity%] %code: %%s'
+	"let g:ale_go_gofmt_options = '-s'
+	"let g:ale_go_gometalinter_options = '— enable=gosimple — enable=staticcheck'
+	let g:ale_completion_enabled = 1	" Disable completion when using something else
+	"let g:ale_echo_msg_error_str = 'E'
+	"let g:ale_echo_msg_warning_str = 'W'
+	"let g:ale_echo_msg_format = '[%linter%] [%severity%] %code: %%s'
 
 
 "---- notational-fzf-vim ----
 " We no longer use this plugin, but leaving configs here for posterity
 " Search these directories in NV
-	"let g:nv_search_paths = ['~/wiki', 
-	"											\	'~/work/code', 
-	"											\	'~/work/docs', 
-	"											\	'~/work/mediawiki', 
-	"											\	'~/work/wiki']	
+	"let g:nv_search_paths = ['~/wiki',
+	"											\	'~/work/code',
+	"											\	'~/work/docs',
+	"											\	'~/work/mediawiki',
+	"											\	'~/work/wiki']
 	"let g:nv_create_note_window = 'split'	" New notes are created in vertical split
 
 
@@ -291,6 +316,6 @@
 	function ZettelLink()
 		" Grabs whatever was yanked into the "* register with 'ctrl-y' from
 		" fzf_action's and returns a string in the format of a markdown link
-		let zlink = join(['[]', '(', getreg("*"), ')'], '')
+		let zlink = join(['[]', '(', getreg('*'), ')'], '')
 		let @a = zlink
 	endfunction
