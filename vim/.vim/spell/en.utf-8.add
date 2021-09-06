@@ -96,3 +96,6 @@ metacharacters
 POSIX
 Taskwarrior
 Timewarrior
+Ansible
+gitlab
+dotfiles

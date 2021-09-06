@@ -7,7 +7,6 @@
 " Enter the current millenium
 	set nocompatible							" Set this early so folding works
 
-
 "==== Tabs ====
 "
 	set tabstop=2
@@ -15,6 +14,26 @@
 	set shiftwidth=2
 	filetype indent on						" Load filetype-specific indent files
 	filetype plugin indent on			" Enable plugin based indents
+
+" Python specific configs
+" PEP 8 standards
+" https://realpython.com/vim-and-python-a-match-made-in-heaven/
+	au BufNewFile,BufRead *.py
+		\ set tabstop=4
+		\ set softtabstop=4
+		\ set shiftwidth=4
+		\ set textwidth=79
+		\ set expandtab
+		\ set autoindent
+		\ set fileformat=unix
+
+" Full stack web dev configs
+" https://realpython.com/vim-and-python-a-match-made-in-heaven/
+	au BufNewFile,BufRead *.js, *.html, *.css
+		\ set tabstop=2
+		\ set softtabstop=2
+		\ set shiftwidth=2
+
 
 " Tabs are not spaces because tabs are easier to read for the visually impaired.
 " Excepting when the language requires. Python for example.
@@ -108,9 +127,11 @@
 " https://github.com/junegunn/vim-plug
 	call plug#begin('~/.vim/plugged')				" <- Make sure to set folder
 
-	" tpope, the original 'plugin artist'
+	" tpope, the original 'Vim plugin artist'
+	" https://github.com/tpope
 		Plug 'tpope/vim-sensible'							" vim-sensible
 		Plug 'tpope/vim-surround'							" vim-surround
+		Plug 'tpope/vim-commentary'						" vim-commentary
 
 	" FZF is a blazing fast fuzzy-finder. Like ctrlp.vim but better.
 	" fzf.vim requires fzf, ag, ripgrep, and bat be installed
@@ -131,6 +152,12 @@
 	" doesn't seem like very future-proof solution.
 		Plug 'lervag/wiki.vim'								" wiki.vim, like Vimwiki for minimalists
 		Plug 'dkarter/bullets.vim'						" Renumbers ordered lists!
+
+	" Make VIM a Python IDE
+	" See: https://medium.com/nerd-for-tech/vim-as-an-ide-for-python-2021-f922da6d2cfe
+		Plug 'dense-analysis/ale'							" ale, asynchronous syntax checking
+		Plug 'neoclide/coc.nvim', {'branch': 'release'}	" Code completion
+		Plug 'Vimjas/vim-python-pep8-indent'	" nice PEP8 compliant indentation
 
 	" Vimwiki is more heavy handed than we would like and uses it's own syntax hl
 	" and folding for Markdown. But it lacks features and doesn't do a very good
@@ -226,7 +253,24 @@
 
 
 "---- bullets.vim ----
-let g:bullets_enabled_file_types = ['markdown']		" Plugin works on *.md files
+	let g:bullets_enabled_file_types = ['markdown']		" Plugin works on *.md files
+
+
+"---- ale ---
+" See: https://medium.com/nerd-for-tech/vim-as-an-ide-for-python-2021-f922da6d2cfe
+	let g:ale_linters = {'python': 'all'}
+	let g:ale_fixers = {'python': ['isort', 
+																\	'yapf', 
+																\ 'remove_trailing_lines', 
+																\	'trim_whitespace']}
+	let g:ale_lsp_suggestions = 1
+	let g:ale_fix_on_save = 1
+	let g:ale_go_gofmt_options = '-s'
+	let g:ale_go_gometalinter_options = '— enable=gosimple — enable=staticcheck'
+	let g:ale_completion_enabled = 0	" Disable completion when using something else
+	let g:ale_echo_msg_error_str = 'E'
+	let g:ale_echo_msg_warning_str = 'W'
+	let g:ale_echo_msg_format = '[%linter%] [%severity%] %code: %%s'
 
 
 "---- notational-fzf-vim ----
