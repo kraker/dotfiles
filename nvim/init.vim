@@ -99,13 +99,14 @@ scriptencoding utf-8
     "set foldnestmax=10                 " 10 nested fold max
 
 " Bash specific folding
-    augroup Bash
-        autocmd!
-        autocmd FileType sh
-            \ let g:sh_fold_enabled=5
-            \ let g:is_bash=1
-            \ set foldmethod=marker
-    augroup END
+    "augroup Bash
+    "    autocmd!
+    "    autocmd FileType sh
+    "        \ let g:sh_fold_enabled=5
+    "        \ let g:is_bash=1
+    "        \ set foldmethod=marker
+    "augroup END
+    " ^ is broken somehow...
 
 " ledger specific folding
     augroup Ledger
@@ -141,10 +142,25 @@ scriptencoding utf-8
 " Call custom function for creating ZettelLinks from filenames yanked from fzf
 " window and then paste the link from the register. Puts you in insert mode so
 " you can write the description
-    nnoremap <C-Z> :call ZettelLink()<CR>"apF[a
+    nnoremap <c-z> :call ZettelLink()<CR>"apF[a
 
-" Map <ESC> to enter normal mode when in terminal
+" Map <ESC> to enter normal mode in terminal buffer
     "tnoremap <Esc> <C-\><C-n>
+    " ^ this messes up the fuzzy finder in fzf when you type <ESC>...
+    " Solution: https://github.com/junegunn/fzf.vim/issues/544
+    tnoremap <expr> <Esc> (&filetype == "fzf") ? "<Esc>" : "<c-\><c-n>"
+" Open terminal in split
+    nnoremap <leader>t :split term://bash<CR>i
+
+" Find files using Telescope command-line sugar.
+    nnoremap <leader>ff <cmd>Telescope find_files<cr>
+    nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+    nnoremap <leader>fb <cmd>Telescope buffers<cr>
+    nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
+" Map strip trailing whitespace
+" See: https://vim.fandom.com/wiki/Remove_unwanted_spaces
+    nnoremap <leader>dtw :%s/\s\+$//e<CR>
 
 
 "==== Misc. ====
@@ -207,6 +223,27 @@ scriptencoding utf-8
     " vim-ledger
         Plug 'ledger/vim-ledger'        " vim plugin for ledger/hledger
 
+    " telescope.nvim
+        Plug 'nvim-lua/plenary.nvim'
+        Plug 'nvim-telescope/telescope.nvim'
+    " Optional dependencies for telescope.nvim
+        Plug 'sharkdp/bat'
+        Plug 'sharkdp/fd'
+        Plug 'BurntSushi/ripgrep'
+        Plug 'nvim-treesitter/nvim-treesitter'
+        Plug 'neovim/nvim-lspconfig'
+        Plug 'kyazdani42/nvim-web-devicons'
+
+    " nerveux.nvim
+        "Plug 'nvim-lua/popup.nvim'
+        "Plug 'pyrho/nerveux.nvim'
+
+    " neuron.nvim
+    " Plugin throws errors, not sure why, didn't spend too much time
+    " troubleshooting it...
+        "Plug 'oberblastmeister/neuron.nvim'
+        "Plug 'nvim-lua/popup.nvim'
+
     " Vimwiki is more heavy handed than we would like and uses it's own syntax hl
     " and folding for Markdown. But it lacks features and doesn't do a very good
     " job at handling *.md it seems. Plugins like vim-markdown seem better suited to
@@ -250,7 +287,7 @@ scriptencoding utf-8
 
 " Set function for creating new links
     let g:wiki_map_link_create = 'LinkCreate'
-    function LinkCreate(description)
+    function LinkCreate(description) abort
         " Custom function for creating links
         let date_format = '%Y%m%d%H%M%S'
         let date = strftime(date_format)
@@ -260,11 +297,8 @@ scriptencoding utf-8
     endfunction
 
 " Set new zettel template
-" Note: 'source_filename' must be an absolute path otherwise wiki.vim won't
-" always be able to find your template. 'wiki_templates' doesn't understand
-" relative file-pathing like `~/wiki/.template.md` for example.
     let g:wiki_templates = [
-        \ {'match_re': '.*',
+        \ {'match_re'       : '.*',
         \  'source_filename': '/home/akraker/wiki/.template.md'}
         \]
 " Custom function to create a capitalized title from the 'context.name' string
@@ -284,7 +318,6 @@ scriptencoding utf-8
         let title = substitute(lowercase_title, '\<.', '\u&', 'g')
         return title
     endfunction
-
 
 "---- fzf.vim ----
 " Set 'fzf_action' so that we can _yank_ file-names to the paste buffer
@@ -317,13 +350,27 @@ scriptencoding utf-8
         \ '*'       : ['remove_trailing_lines', 'trim_whitespace'],
         \ 'python'  : ['isort', 'yapf']}
     "let g:ale_lsp_suggestions = 1
-    let g:ale_fix_on_save = 1
+    let g:ale_fix_on_save = 0
     "let g:ale_go_gofmt_options = '-s'
     "let g:ale_go_gometalinter_options = '— enable=gosimple — enable=staticcheck'
     let g:ale_completion_enabled = 1    " Enable completion in ale
     "let g:ale_echo_msg_error_str = 'E'
     "let g:ale_echo_msg_warning_str = 'W'
     "let g:ale_echo_msg_format = '[%linter%] [%severity%] %code: %%s'
+
+"---- neveux.nvim ----
+    "lua require 'nerveux'.setup()
+
+"---- neuron.nvim ----
+"lua << EOF
+"require('neuron').setup({
+"    virtual_titles = true,
+"    mappings = true,
+"    run = nil, -- function to run when in neuron dir
+"    neuron_dir = '~/wiki', -- the directory of all of your notes, expanded by default (currently supports only one directory for notes, find a way to detect neuron.dhall to use any directory)
+"    leader = 'gz', -- the leader key to for all mappings, remember with 'go zettel'
+"})
+"EOF
 
 "---- notational-fzf-vim ----
 " We no longer use this plugin, but leaving configs here for posterity
