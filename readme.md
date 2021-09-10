@@ -1,6 +1,6 @@
 # Dotfiles
 
-Update: I'm not running Arch anymore. 
+2021-09-10 Update: I'm not running Arch anymore, _BTW_. 
 Many of these dotfiles were running on that system and are now probably defunct.
 Right now the only thing really of note is I've put a lot of work into my
 `.vimrc`. 

@@ -111,7 +111,7 @@ scriptencoding utf-8
 " ledger specific folding
     augroup Ledger
         autocmd!
-	autocmd FileType ledger set foldmethod=syntax
+        autocmd FileType ledger set foldmethod=syntax
     augroup END
 
 " Save folds on close
