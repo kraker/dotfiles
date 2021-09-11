@@ -13,12 +13,12 @@ URxvt*.transparent:		true
 URxvt*.shading: 		30	! 0-99 darkens 101-200 lightens
 
 ! Font
-URxvt.font: 			xft:Terminus:size=14
+URxvt.font: 			xft:Monospace:size=12
 URxvt.intensityStyles:		true
 
 ! Formatting
-URxvt.lineSpace: 		3
-URxvt.internalBorder: 		20
+URxvt.lineSpace: 		1
+URxvt.internalBorder: 		5
 
 ! Highlighting
 URxvt.highlightColor: 		yellow
@@ -31,5 +31,5 @@ URxvt.url-launcher: 		/usr/bin/chromium
 URxvt.matcher.button: 		1
 
 ! Color URLs (all underlines...)
-URxvt.colorUL:			magenta
-URxvt.underlineColor:		blue
+!URxvt.colorUL:			magenta
+!URxvt.underlineColor:		blue

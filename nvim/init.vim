@@ -66,7 +66,7 @@ scriptencoding utf-8
 
 "==== Visuals ====
 "
-    set relativenumber                  " Set relative line numbers
+    set number                  " Set relative line numbers
     "set cursorline                      " Highlight cursorline
     set showcmd                         " show command in bottom bar
     set wildmenu                        " Visual autocomplete for command menu
@@ -95,7 +95,7 @@ scriptencoding utf-8
 "
     set foldenable                      " Enable folds by default
     set foldmethod=syntax               " Default foldmethod is 'syntax'
-    set foldlevel=2                     " Set fold level
+    set foldlevel=4                     " Set fold level
     "set foldnestmax=10                 " 10 nested fold max
 
 " Bash specific folding
@@ -153,28 +153,31 @@ scriptencoding utf-8
     nnoremap <leader>t :split term://bash<CR>i
 
 " Find files using Telescope command-line sugar.
-    nnoremap <leader>ff <cmd>Telescope find_files<cr>
-    nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-    nnoremap <leader>fb <cmd>Telescope buffers<cr>
-    nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+    "nnoremap <leader>ff <cmd>Telescope find_files<cr>
+    "nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+    "nnoremap <leader>fb <cmd>Telescope buffers<cr>
+    "nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " Map strip trailing whitespace
 " See: https://vim.fandom.com/wiki/Remove_unwanted_spaces
     nnoremap <leader>dtw :%s/\s\+$//e<CR>
 
+" markdown table format
+    nnoremap <leader>mtf :TableFormat<CR>
+
 
 "==== Misc. ====
 "
 " Enable yanking to system clipboard for Fedora
-	"set clipboard=unnamedplus
-	" I'm not sure what this does, disabling until I know I need it...
+    "set clipboard=unnamedplus
+    " I'm not sure what this does, disabling until I know I need it...
 
 "==== Plugins ====
 "
 " vim-plug plugin manager
 " We love it's simplicity
 " https://github.com/junegunn/vim-plug
-    call plug#begin()				" <- Make sure to set folder
+    call plug#begin()                " <- Make sure to set folder
 
     " tpope, the original 'Vim plugin artist'
     " https://github.com/tpope
@@ -213,9 +216,9 @@ scriptencoding utf-8
         Plug 'dense-analysis/ale'       " ale, asynchronous syntax checking
 
     " It's probably better to learn good Python practices the hard way first...
-        "Plug 'Vimjas/vim-python-pep8-indent'	" nice PEP8 compliant indentation
+        "Plug 'Vimjas/vim-python-pep8-indent'    " nice PEP8 compliant indentation
     " I should probably get better at navigating using vim defaults first...
-        "Plug 'jeetsukumaran/vim-pythonsense'	" python text objects and motions
+        "Plug 'jeetsukumaran/vim-pythonsense'    " python text objects and motions
 
     " One thing at a time, since ale offers completion, disabling for now...
         "Plug 'neoclide/coc.nvim', {'branch': 'release'}    " coc.nvim, Code completion
@@ -224,15 +227,15 @@ scriptencoding utf-8
         Plug 'ledger/vim-ledger'        " vim plugin for ledger/hledger
 
     " telescope.nvim
-        Plug 'nvim-lua/plenary.nvim'
-        Plug 'nvim-telescope/telescope.nvim'
+        "Plug 'nvim-lua/plenary.nvim'
+        "Plug 'nvim-telescope/telescope.nvim'
     " Optional dependencies for telescope.nvim
-        Plug 'sharkdp/bat'
-        Plug 'sharkdp/fd'
-        Plug 'BurntSushi/ripgrep'
-        Plug 'nvim-treesitter/nvim-treesitter'
-        Plug 'neovim/nvim-lspconfig'
-        Plug 'kyazdani42/nvim-web-devicons'
+        "Plug 'sharkdp/bat'
+        "Plug 'sharkdp/fd'
+        "Plug 'BurntSushi/ripgrep'
+        "Plug 'nvim-treesitter/nvim-treesitter'
+        "Plug 'neovim/nvim-lspconfig'
+        "Plug 'kyazdani42/nvim-web-devicons'
 
     " nerveux.nvim
         "Plug 'nvim-lua/popup.nvim'
@@ -275,7 +278,7 @@ scriptencoding utf-8
 "---- vim-markdown ----
     let g:vim_markdown_frontmatter = 1      " YAML frontmatter syntax highlight
     let g:vim_markdown_autowrite = 1        " Auto-write when following link
-    let g:vim_markdown_new_list_item_indent = 0	    " Don't auto-indent new li's
+    let g:vim_markdown_new_list_item_indent = 0        " Don't auto-indent new li's
     let g:vim_markdown_conceal_code_blocks = 0      " Show fenced code-blocks
 
 "---- wiki.vim ----
@@ -283,7 +286,7 @@ scriptencoding utf-8
     let g:wiki_link_extension = '.md'       " Set extension for wiki's is '.md'
     let g:wiki_link_target_type = 'md'
     let g:wiki_filetypes = ['md']           " Wiki files are markdown filetype
-    let g:wiki_write_on_nav = 1	            " Save current buffer before navigating
+    let g:wiki_write_on_nav = 1                " Save current buffer before navigating
 
 " Set function for creating new links
     let g:wiki_map_link_create = 'LinkCreate'
@@ -333,11 +336,11 @@ scriptencoding utf-8
     " the current buffer
 
 "---- bullets.vim ----
-    let g:bullets_enabled_file_types = ['markdown']		" Enable for *.md files
+    let g:bullets_enabled_file_types = ['markdown']        " Enable for *.md files
 
 "---- ale ---
 " See: https://medium.com/nerd-for-tech/vim-as-an-ide-for-python-2021-f922da6d2cfe
-    " Let all work on these filetypes
+    let g:ale_enabled = 0
     "let g:ale_sign_error = '✘'
     "let g:ale_sign_warning = '⚠'
     " Note: linters that ale uses must be installed separately
@@ -375,12 +378,12 @@ scriptencoding utf-8
 "---- notational-fzf-vim ----
 " We no longer use this plugin, but leaving configs here for posterity
 " Search these directories in NV
-	"let g:nv_search_paths = ['~/wiki',
-	"											\	'~/work/code',
-	"											\	'~/work/docs',
-	"											\	'~/work/mediawiki',
-	"											\	'~/work/wiki']
-	"let g:nv_create_note_window = 'split'	" New notes are created in vertical split
+    "let g:nv_search_paths = ['~/wiki',
+    "                                            \    '~/work/code',
+    "                                            \    '~/work/docs',
+    "                                            \    '~/work/mediawiki',
+    "                                            \    '~/work/wiki']
+    "let g:nv_create_note_window = 'split'    " New notes are created in vertical split
 
 "==== END Plugin Configs ====
 
