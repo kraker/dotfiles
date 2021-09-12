@@ -4,4 +4,4 @@
 #include ".Xresources.d/rxvt-unicode"
 #include ".Xresources.d/fonts"
 #include ".Xresources.d/xscreensaver"
-#include ".Xresources.d/themes/tango"
+#include ".Xresources.d/themes/tender"

@@ -1,0 +1,39 @@
+! Tender color scheme, made by jacoborus
+! adapted by Jose Esparza
+
+! special
+URxvt.foreground:   #eeeeee
+URxvt.background:   #282828
+URxvt.cursorColor:  #eeeeee
+
+! black
+URxvt.color0:       #282828
+URxvt.color8:       #4c4c4c
+
+! red
+URxvt.color1:       #f43753
+URxvt.color9:       #f43753
+
+! green
+URxvt.color2:       #c9d05c
+URxvt.color10:      #c9d05c
+
+! yellow
+URxvt.color3:       #ffc24b
+URxvt.color11:      #ffc24b
+
+! blue
+URxvt.color4:       #b3deef
+URxvt.color12:      #b3deef
+
+! magenta
+URxvt.color5:       #d3b987
+URxvt.color13:      #d3b987
+
+! cyan
+URxvt.color6:       #73cef4
+URxvt.color14:      #73cef4
+
+! white
+URxvt.color7:       #eeeeee
+URxvt.color15:      #feffff
