@@ -155,3 +155,7 @@
 {"description":"fix search function notes.alexkraker.net","entry":"20210907T003009Z","modified":"20210907T003009Z","status":"pending","uuid":"b827ec92-86b2-4b03-9212-6dce62db2532"}
 {"description":"install ledger-cli","entry":"20210907T003312Z","modified":"20210907T003312Z","status":"pending","uuid":"8876d2de-29ce-41c8-b1ce-bc12740ff9d3"}
 {"description":"Review Backups_3_Baremetal_Client wiki","entry":"20210909T205333Z","modified":"20210909T205333Z","status":"pending","tags":["work"],"uuid":"3ab35d34-1686-4a0f-ae1c-5681a278e559"}
+{"description":"fix tmux clipboard integration","entry":"20210912T175845Z","modified":"20210912T175845Z","status":"pending","uuid":"d1b443f9-c9b6-4694-a662-00ca837e832d"}
+{"description":"fix terminal height","entry":"20210912T175934Z","modified":"20210912T175934Z","status":"pending","tags":["vim"],"uuid":"e9f66937-1c54-492e-8e63-75968af526b3"}
+{"description":"pay xfinity","entry":"20210912T193214Z","modified":"20210912T193214Z","status":"pending","uuid":"eb01d5c7-87ed-4094-9d61-752c25c402c2"}
+{"description":"setup tmux","end":"20210912T193222Z","entry":"20210421T132711Z","modified":"20210912T193222Z","status":"completed","tags":["computer"],"uuid":"387d8947-e27b-4ad4-8dc6-dccdd4149c01"}

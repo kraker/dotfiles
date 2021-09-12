@@ -538,3 +538,16 @@ new [description:"install ledger-cli" entry:"1630974792" modified:"1630974792" s
 time 1631220813
 new [description:"Review Backups_3_Baremetal_Client wiki" entry:"1631220813" modified:"1631220813" status:"pending" tags:"work" uuid:"3ab35d34-1686-4a0f-ae1c-5681a278e559"]
 ---
+time 1631469525
+new [description:"fix tmux clipboard integration" entry:"1631469525" modified:"1631469525" status:"pending" uuid:"d1b443f9-c9b6-4694-a662-00ca837e832d"]
+---
+time 1631469574
+new [description:"fix terminal height" entry:"1631469574" modified:"1631469574" status:"pending" tags:"vim" uuid:"e9f66937-1c54-492e-8e63-75968af526b3"]
+---
+time 1631475134
+new [description:"pay xfinity" entry:"1631475134" modified:"1631475134" status:"pending" uuid:"eb01d5c7-87ed-4094-9d61-752c25c402c2"]
+---
+time 1631475142
+old [description:"setup tmux" entry:"1619011631" modified:"1630875330" status:"pending" tags:"computer" uuid:"387d8947-e27b-4ad4-8dc6-dccdd4149c01"]
+new [description:"setup tmux" end:"1631475142" entry:"1619011631" modified:"1631475142" status:"completed" tags:"computer" uuid:"387d8947-e27b-4ad4-8dc6-dccdd4149c01"]
+---

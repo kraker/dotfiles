@@ -1,4 +1,12 @@
 # .bashrc
+#
+# Author: Alex Kraker
+# Email: alex@alexkraker.com
+# Github: github.com/kraker
+
+# Load ble.sh by default in interactive sessions of `bash`
+# See: https://github.com/akinomyoga/ble.sh
+[[ $- == *i* ]] && source ~/.local/share/blesh/ble.sh --noattach
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
@@ -49,3 +57,6 @@ alias ts='timew summary :ids'
 alias t='timew'
 alias st='start'
 alias sp='stop'
+
+# Attach to ble.sh (this should be last line of .bashrc)
+[[ ${BLE_VERSION-} ]] && ble-attach
