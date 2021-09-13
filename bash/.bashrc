@@ -10,53 +10,79 @@
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
+    . /etc/bashrc
 fi
 
-# User specific environment
+#### Runtime Environment ####
+
+## PATH ##
+
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
 then
     PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
+
+# Go paths
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 
 # Configure certain dirs in ~/bin to be in my path
 #PATH="$HOME/bin/bash:$HOME/bin/bash/udemy_bash_course:$PATH"
 
 # I no longer use emacs...
 #PATH="$HOME/.emacs.d/bin:$PATH"
-export PATH
-# Go paths
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
+#export PATH
 
+## Other Env Vars ##
+
+export LEDGER_FILE=~/finance/2021.journal
+# Other confs that are 'nice to have...'
 umask 0002                              # make sharing directories easier
 export HISTCONTROL=ignoredups           # Ignore duplicates in history
 export HISTSIZE=5000                    # A sane default for this
 
 # Set vi/m mode
-export EDITOR=nvim
-set -o vi
+export EDITOR=nvim                      # set $EDITOR to nvim
+
+if [[ $- == *i* ]]; then                # In interactive session
+    set -o vi                           # set shell to 'vi-mode'
+fi
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 
-# User specific aliases and functions
+#### END Runtime Environment ####
+
+
+#### Aliases ####
 
 alias l.='ls -d .* --color=auto'
-alias ll='ls -l --color=auto'
-alias emacs="emacs -nw"                 # run emacs in terminal always
-export LEDGER_FILE=~/finance/2021.journal
+alias ll='ls -lA --color=auto'
 
-# Alias vi/m, to nvim 
+# emacs
+alias emacs="emacs -nw"                 # run emacs in terminal always
+
+# vi, vim, nvim
 alias vi=nvim				
 alias vim=nvim
 alias wiki='nvim ~/wiki/_index.md'	# alias 'wiki' to VimWiki Index
 
-# Timewarrior aliases
-alias ts='timew summary :ids'
-alias t='timew'
-alias st='start'
-alias sp='stop'
+# Timewarrior
+alias t='timew'                         # t - timew
+alias ts='timew summary :ids'           # ts - summary
+alias tst='timew start'                 # tst - start
+alias tsp='timew stop'                  # tsp - stop
+
+# Taskwarrior
+alias tw='task'                         # tw - task
+alias twa='task add'                    # twa - task add
+
+#### END Aliases ####
+
+
+#### Prompt ####
+PS1="\e[0;35m[\u@\h \e[0;36m\W\e[0m\e[0;35m]\$ \e[0m"
+#PS1="\e[0;35m[\u@\h \W]\$ \e[0m"
 
 # Attach to ble.sh (this should be last line of .bashrc)
 [[ ${BLE_VERSION-} ]] && ble-attach
