@@ -18785,3 +18785,313 @@ txn:
   type: interval
   before: 
   after: {"id":0,"start":"20210910T214934Z","tags":["P help davidbi"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20210910T214934Z","tags":["P help davidbi"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20210910T214934Z","end":"20210913T125438Z","tags":["P help davidbi"]}
+  type: interval
+  before: 
+  after: {"id":0,"start":"20210913T125438Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20210913T125438Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20210913T125438Z","end":"20210913T125848Z"}
+  type: interval
+  before: 
+  after: {"id":0,"start":"20210913T125848Z","tags":["LAPOs"]}
+txn:
+  type: interval
+  before: {"id":2,"start":"20210913T125438Z","end":"20210913T125848Z"}
+  after: 
+  type: interval
+  before: {"id":3,"start":"20210910T214934Z","end":"20210913T125438Z","tags":["P help davidbi"]}
+  after: 
+txn:
+  type: interval
+  before: {"id":1,"start":"20210913T125848Z","tags":["LAPOs"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20210913T125848Z","end":"20210913T132013Z","tags":["LAPOs"]}
+  type: interval
+  before: 
+  after: {"id":0,"start":"20210913T132013Z","tags":["CH 5891621"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20210913T132013Z","tags":["CH 5891621"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20210913T132013Z","end":"20210913T133949Z","tags":["CH 5891621"]}
+  type: interval
+  before: 
+  after: {"id":0,"start":"20210913T133949Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20210913T133949Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20210913T133949Z","end":"20210913T134227Z"}
+  type: interval
+  before: 
+  after: {"id":0,"start":"20210913T134227Z","tags":["CH 5891689"]}
+txn:
+  type: interval
+  before: {"id":2,"start":"20210913T133949Z","end":"20210913T134227Z"}
+  after: 
+txn:
+  type: interval
+  before: {"id":1,"start":"20210913T134227Z","tags":["CH 5891689"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20210913T134227Z","end":"20210913T143139Z","tags":["CH 5891689"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20210913T143839Z","tags":["T 5889552"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20210913T143839Z","tags":["T 5889552"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20210913T143839Z","end":"20210913T145500Z","tags":["T 5889552"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20210913T150000Z","end":"20210913T150500Z","tags":["CH 5891874"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20210913T151033Z","tags":["LAPOs"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20210913T151033Z","tags":["LAPOs"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20210913T151033Z","end":"20210913T152044Z","tags":["LAPOs"]}
+  type: interval
+  before: 
+  after: {"id":0,"start":"20210913T152044Z","tags":["CH 5891914"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20210913T152044Z","tags":["CH 5891914"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20210913T152044Z","end":"20210913T153227Z","tags":["CH 5891914"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20210913T162238Z","tags":["T 5865075"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20210913T162238Z","tags":["T 5865075"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20210913T162238Z","end":"20210913T162500Z","tags":["T 5865075"]}
+  type: interval
+  before: 
+  after: {"id":1,"start":"20210913T163000Z","tags":["T 5865075"]}
+  type: interval
+  before: 
+  after: {"id":0,"start":"20210913T162500Z","end":"20210913T163000Z","tags":["assist coworkers"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20210913T163000Z","tags":["T 5865075"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20210913T163000Z","end":"20210913T163522Z","tags":["T 5865075"]}
+  type: interval
+  before: 
+  after: {"id":0,"start":"20210913T163522Z","tags":["CH 5892141"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20210913T163522Z","tags":["CH 5892141"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20210913T163522Z","end":"20210913T164414Z","tags":["CH 5892141"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20210913T164641Z","tags":["T 5865075"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20210913T164641Z","tags":["T 5865075"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20210913T164641Z","end":"20210913T170733Z","tags":["T 5865075"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20210913T181812Z","tags":["T 5892141"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20210913T181812Z","tags":["T 5892141"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20210913T181812Z","end":"20210913T183343Z","tags":["T 5892141"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20210913T183425Z","tags":["T 5889552"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20210913T183425Z","tags":["T 5889552"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20210913T183425Z","end":"20210913T185001Z","tags":["T 5889552"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20210913T190139Z","tags":["T 5886103"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20210913T190139Z","tags":["T 5886103"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20210913T190139Z","end":"20210913T191504Z","tags":["T 5886103"]}
+  type: interval
+  before: 
+  after: {"id":0,"start":"20210913T191504Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20210913T191504Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20210913T191504Z","end":"20210913T192000Z"}
+  type: interval
+  before: 
+  after: {"id":1,"start":"20210913T193000Z"}
+  type: interval
+  before: 
+  after: {"id":0,"start":"20210913T192000Z","end":"20210913T193000Z","tags":["break"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20210913T193000Z"}
+  after: 
+  type: interval
+  before: {"id":2,"start":"20210913T192000Z","end":"20210913T193000Z","tags":["break"]}
+  after: 
+  type: interval
+  before: {"id":3,"start":"20210913T191504Z","end":"20210913T192000Z"}
+  after: 
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20210913T193106Z","tags":["T 5886103"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20210913T193106Z","tags":["T 5886103"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20210913T193106Z","end":"20210913T194859Z","tags":["T 5886103"]}
+  type: interval
+  before: 
+  after: {"id":0,"start":"20210913T194859Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20210913T194859Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20210913T194859Z","end":"20210913T194905Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20210913T194859Z","end":"20210913T194905Z"}
+  after: 
+txn:
+  type: interval
+  before: {"id":1,"start":"20210913T193106Z","end":"20210913T194859Z","tags":["T 5886103"]}
+  after: 
+txn:
+  type: interval
+  before: {"id":1,"start":"20210913T190139Z","end":"20210913T191504Z","tags":["T 5886103"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20210913T190139Z","end":"20210913T191500Z","tags":["T 5886103"]}
+  type: interval
+  before: 
+  after: {"id":0,"start":"20210913T191500Z","end":"20210913T193000Z","tags":["break"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20210913T193000Z","end":"20210913T205000Z","tags":["assist coworkers"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20210913T193000Z","end":"20210913T205000Z","tags":["assist coworkers"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20210913T193000Z","end":"20210913T195000Z","tags":["assist coworkers"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20210913T195348Z","tags":["T 5886103"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20210913T195348Z","tags":["T 5886103"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20210913T195348Z","end":"20210913T200503Z","tags":["T 5886103"]}
+  type: interval
+  before: 
+  after: {"id":0,"start":"20210913T200503Z","tags":["CH 5892691"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20210913T200503Z","tags":["CH 5892691"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20210913T200503Z","end":"20210913T205124Z","tags":["CH 5892691"]}
+  type: interval
+  before: 
+  after: {"id":0,"start":"20210913T205124Z","tags":["CH 5892768"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20210913T205124Z","tags":["CH 5892768"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20210913T205124Z","end":"20210913T205742Z","tags":["CH 5892768"]}
+  type: interval
+  before: 
+  after: {"id":0,"start":"20210913T205742Z","tags":["CH 5892832"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20210913T205742Z","tags":["CH 5892832"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20210913T205742Z","end":"20210913T211606Z","tags":["CH 5892832"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20210913T213036Z","tags":["T 5889552"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20210913T213036Z","tags":["T 5889552"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20210913T213036Z","end":"20210913T222851Z","tags":["T 5889552"]}
