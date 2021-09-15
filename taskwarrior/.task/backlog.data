@@ -159,3 +159,6 @@
 {"description":"fix terminal height","entry":"20210912T175934Z","modified":"20210912T175934Z","status":"pending","tags":["vim"],"uuid":"e9f66937-1c54-492e-8e63-75968af526b3"}
 {"description":"pay xfinity","entry":"20210912T193214Z","modified":"20210912T193214Z","status":"pending","uuid":"eb01d5c7-87ed-4094-9d61-752c25c402c2"}
 {"description":"setup tmux","end":"20210912T193222Z","entry":"20210421T132711Z","modified":"20210912T193222Z","status":"completed","tags":["computer"],"uuid":"387d8947-e27b-4ad4-8dc6-dccdd4149c01"}
+{"description":"hugo server startup function","entry":"20210914T111906Z","modified":"20210914T111906Z","status":"pending","uuid":"80afa900-6bb6-4347-8fb2-468331342636"}
+{"description":"set wiki_fzf...create_key in wiki.vim","entry":"20210914T112902Z","modified":"20210914T112902Z","status":"pending","uuid":"86ce1fb7-75e1-4101-9622-f85595577b0a"}
+{"description":"fix clipboard indicator, or install Arch (btw)?","entry":"20210915T115258Z","modified":"20210915T115258Z","status":"pending","uuid":"800c2845-e198-477a-aa0b-768d016f504a"}

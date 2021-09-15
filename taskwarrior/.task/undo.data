@@ -551,3 +551,12 @@ time 1631475142
 old [description:"setup tmux" entry:"1619011631" modified:"1630875330" status:"pending" tags:"computer" uuid:"387d8947-e27b-4ad4-8dc6-dccdd4149c01"]
 new [description:"setup tmux" end:"1631475142" entry:"1619011631" modified:"1631475142" status:"completed" tags:"computer" uuid:"387d8947-e27b-4ad4-8dc6-dccdd4149c01"]
 ---
+time 1631618346
+new [description:"hugo server startup function" entry:"1631618346" modified:"1631618346" status:"pending" uuid:"80afa900-6bb6-4347-8fb2-468331342636"]
+---
+time 1631618942
+new [description:"set wiki_fzf...create_key in wiki.vim" entry:"1631618942" modified:"1631618942" status:"pending" uuid:"86ce1fb7-75e1-4101-9622-f85595577b0a"]
+---
+time 1631706778
+new [description:"fix clipboard indicator, or install Arch (btw)?" entry:"1631706778" modified:"1631706778" status:"pending" uuid:"800c2845-e198-477a-aa0b-768d016f504a"]
+---

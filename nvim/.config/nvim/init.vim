@@ -349,11 +349,20 @@ scriptencoding utf-8
   let g:vim_markdown_folding_style_pythonic = 0 " Folding in 'pythonic' style
 
 "---- wiki.vim ----
-  let g:wiki_root = '~/wiki'        " Set wiki root
-  let g:wiki_link_extension = '.md'     " Set extension for wiki's is '.md'
-  let g:wiki_link_target_type = 'md'
+  let g:wiki_root = '~/wiki'          " Set wiki root
+  let g:wiki_link_extension = '.md'   " Set extension for wiki's is '.md'
+  let g:wiki_link_target_type = 'md'  " Determines type of link used when creating links
   let g:wiki_filetypes = ['md']       " Wiki files are markdown filetype
-  let g:wiki_write_on_nav = 1        " Save current buffer before navigating
+  let g:wiki_write_on_nav = 1         " Save current buffer before navigating
+  let g:wiki_journal = {
+      \ 'name' : 'journal',
+      \ 'frequency' : 'daily',
+      \ 'date_format' : {
+      \ 'daily' : '%Y-%m-%d',
+      \ 'weekly' : '%Y_w%V',
+      \ 'monthly' : '%Y_m%m',
+      \ },
+      \}
 
 " Set function for creating new links
   let g:wiki_map_link_create = 'LinkCreate'
@@ -368,8 +377,10 @@ scriptencoding utf-8
 
 " Set new zettel template
   let g:wiki_templates = [
-      \ {'match_re' : '.*',
-      \  'source_filename' : '/home/akraker/wiki/.template.md'}
+      \ { 'match_re' : '\d\{4}-\d\{2}-\d\{2}',
+      \   'source_filename' : '/home/akraker/wiki/.journal.md' },
+      \ { 'match_re' : '.\+',
+      \   'source_filename' : '/home/akraker/wiki/.template.md'}
       \]
 " Custom function to create a capitalized title from the 'context.name' string
 " provided by the wiki.vim plugin.

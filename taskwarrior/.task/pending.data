@@ -47,3 +47,6 @@
 [description:"fix tmux clipboard integration" entry:"1631469525" modified:"1631469525" status:"pending" uuid:"d1b443f9-c9b6-4694-a662-00ca837e832d"]
 [description:"fix terminal height" entry:"1631469574" modified:"1631469574" status:"pending" tags:"vim" uuid:"e9f66937-1c54-492e-8e63-75968af526b3"]
 [description:"pay xfinity" entry:"1631475134" modified:"1631475134" status:"pending" uuid:"eb01d5c7-87ed-4094-9d61-752c25c402c2"]
+[description:"hugo server startup function" entry:"1631618346" modified:"1631618346" status:"pending" uuid:"80afa900-6bb6-4347-8fb2-468331342636"]
+[description:"set wiki_fzf...create_key in wiki.vim" entry:"1631618942" modified:"1631618942" status:"pending" uuid:"86ce1fb7-75e1-4101-9622-f85595577b0a"]
+[description:"fix clipboard indicator, or install Arch (btw)?" entry:"1631706778" modified:"1631706778" status:"pending" uuid:"800c2845-e198-477a-aa0b-768d016f504a"]
