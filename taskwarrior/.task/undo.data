@@ -560,3 +560,12 @@ new [description:"set wiki_fzf...create_key in wiki.vim" entry:"1631618942" modi
 time 1631706778
 new [description:"fix clipboard indicator, or install Arch (btw)?" entry:"1631706778" modified:"1631706778" status:"pending" uuid:"800c2845-e198-477a-aa0b-768d016f504a"]
 ---
+time 1631722803
+new [description:"Virtualization FAQ scope of support" entry:"1631722803" modified:"1631722803" status:"pending" uuid:"c76ee612-6198-4eb3-a308-1fb93fa23b97"]
+---
+time 1631795043
+new [description:"Automatically put you in insert mode for creating tags when creating a new zettel" entry:"1631795043" modified:"1631795043" status:"pending" tags:"vim" uuid:"a8041c78-c65c-4b8a-962a-0bbb9137402a"]
+---
+time 1631886745
+new [description:"Wiki article on find" entry:"1631886745" modified:"1631886745" status:"pending" tags:"work" uuid:"5c7a4edb-2368-413a-9be0-c1e139cee7e1"]
+---

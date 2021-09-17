@@ -6,7 +6,7 @@
 
 # Load ble.sh by default in interactive sessions of `bash`
 # See: https://github.com/akinomyoga/ble.sh
-[[ $- == *i* ]] && source ~/.local/share/blesh/ble.sh --noattach
+#[[ $- == *i* ]] && source ~/.local/share/blesh/ble.sh --noattach
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
@@ -67,15 +67,23 @@ alias vi=nvim
 alias vim=nvim
 alias wiki='nvim ~/wiki/_index.md'	# alias 'wiki' to VimWiki Index
 
+# texinfo using vi keybindings
+alias info='info --vi-keys'
+
+# SSH
+#alias ssh='TERM=linux ssh'
+
 # Timewarrior
-alias t='timew'                         # t - timew
-alias ts='timew summary :ids'           # ts - summary
-alias tst='timew start'                 # tst - start
-alias tsp='timew stop'                  # tsp - stop
+alias t='timew'                         # t     - timew
+alias ts='timew summary :ids'           # ts    - summary
+alias tt='timew track'                  # tt    - track
+alias td='timew delete'                 # td    - delete
+alias tst='timew start'                 # tst   - start
+alias tsp='timew stop'                  # tsp   - stop
 
 # Taskwarrior
-alias tw='task'                         # tw - task
-alias twa='task add'                    # twa - task add
+alias tw='task'                         # tw    - task
+alias twa='task add'                    # twa   - task add
 
 #### END Aliases ####
 
@@ -85,4 +93,4 @@ PS1="\e[0;35m[\u@\h \e[0;36m\W\e[0m\e[0;35m]\$ \e[0m"
 #PS1="\e[0;35m[\u@\h \W]\$ \e[0m"
 
 # Attach to ble.sh (this should be last line of .bashrc)
-[[ ${BLE_VERSION-} ]] && ble-attach
+#[[ ${BLE_VERSION-} ]] && ble-attach

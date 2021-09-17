@@ -1,4 +1,4 @@
-! rxvt-unicode Xresources alex.kraker@gmail.com
+! rxvt-unicode Xresources alex@alexkraker.com
 
 ! General Settings
 URxvt.saveLines: 		2000
