@@ -137,8 +137,11 @@ scriptencoding utf-8
   set shiftwidth=4
   set expandtab
   "set autoindent
-  filetype indent on              " Load filetype-specific indent files
+  "filetype indent on              " Load filetype-specific indent files
   filetype plugin indent on       " Enable plugin based indents
+" Enable syntax and plugins
+  syntax enable
+  "filetype plugin on
 
 " Python specific configs
 " PEP 8 standards
@@ -193,6 +196,18 @@ scriptencoding utf-8
         \ expandtab
   augroup END
 
+  augroup shellscript_indents
+    autocmd!
+    autocmd FileType sh setlocal
+        \ tabstop=2
+        \ softtabstop=2
+        \ shiftwidth=2
+        \ foldmethod=indent
+    autocmd FileType sh let g:sh_fold_enabled=5
+    autocmd FileType sh let g:is_bash=1
+    autocmd FileType sh let g:is_sh=1
+  augroup END
+
 
 "==== Visuals ====
 "
@@ -207,9 +222,6 @@ scriptencoding utf-8
   set conceallevel=2          " Conceal links/formatting for *.md files
 " termwinsize is incompatible with neovim
   "set termwinsize=15x0        " Set terminal window size
-" Enable syntax and plugins
-  syntax enable
-  filetype plugin on
 " Highlight vertical column a specific color
   highlight ColorColumn ctermbg=0
 " Theme
@@ -244,14 +256,14 @@ scriptencoding utf-8
   set nowrap
   set textwidth=80          " Set textwidth to 80 columns
   set wrapmargin=2          " Allow 2 chars over 80th col before
-                    " wrapping text
+                            " wrapping text
 
 "==== Folding ====
 "
   set foldenable            " Enable folds by default
-  set foldmethod=syntax         " Default foldmethod is 'syntax'
-  set foldlevel=2           " Set fold level
-  "set foldnestmax=10         " 10 nested fold max
+  set foldmethod=syntax     " Default foldmethod is 'syntax'
+  set foldlevel=1           " Set fold level
+  "set foldnestmax=10       " 10 nested fold max
 
 " Bash specific folding
   "augroup Bash
@@ -340,13 +352,13 @@ scriptencoding utf-8
   "^ has unintended consequences when not writing code. Need to refactor to only
   "apply when I want it to. Namely when writing code it's ok, but when writing
   "writing it's not.
-  inoremap ( ()<left>
-  inoremap [ []<left>
-  inoremap { {}<left>
-  inoremap {<CR> {<CR>}<ESC>O
-  inoremap {;<CR> {<CR>};<ESC>O
+  "inoremap ( ()<left>
+  "inoremap [ []<left>
+  "inoremap { {}<left>
+  "inoremap {<CR> {<CR>}<ESC>O
+  "inoremap {;<CR> {<CR>};<ESC>O
   " My own additions
-  inoremap ` ``<left>
+  "inoremap ` ``<left>
 
 " Find files using Telescope command-line sugar.
   "nnoremap <leader>ff <cmd>Telescope find_files<cr>

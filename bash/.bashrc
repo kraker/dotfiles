@@ -71,7 +71,7 @@ alias wiki='nvim ~/wiki/_index.md'	# alias 'wiki' to VimWiki Index
 alias info='info --vi-keys'
 
 # SSH
-#alias ssh='TERM=linux ssh'
+alias ssh='TERM=linux ssh'
 
 # Timewarrior
 alias t='timew'                         # t     - timew
@@ -88,8 +88,20 @@ alias twa='task add'                    # twa   - task add
 #### END Aliases ####
 
 
+#### Functions ####
+
+function taocl() {
+    curl -s https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README.md |
+    sed '/cowsay[.]png/d' |
+    pandoc -f markdown -t html |
+    xmlstarlet fo --html --dropdtd |
+    xmlstarlet sel -t -v "(html/body/ul/li[count(p)>0])[$RANDOM mod last()+1]" |
+    xmlstarlet unesc | fmt -80 | iconv -t US | cowsay
+}
+
+
 #### Prompt ####
-PS1="\e[0;35m[\u@\h \e[0;36m\W\e[0m\e[0;35m]\$ \e[0m"
+#PS1="\e[0;35m[\u@\h \e[0;36m\W\e[0m\e[0;35m]\$ \e[0m"
 #PS1="\e[0;35m[\u@\h \W]\$ \e[0m"
 
 # Attach to ble.sh (this should be last line of .bashrc)
