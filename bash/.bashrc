@@ -10,7 +10,7 @@
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
-    . /etc/bashrc
+  . /etc/bashrc
 fi
 
 #### Runtime Environment ####
@@ -19,7 +19,7 @@ fi
 
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
 then
-    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+  PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
 
 # Go paths
@@ -35,19 +35,36 @@ export PATH=$PATH:$GOPATH/bin
 
 ## Other Env Vars ##
 
-export LEDGER_FILE=~/finance/2021.journal
 # Other confs that are 'nice to have...'
 umask 0002                              # make sharing directories easier
 export HISTCONTROL=ignoredups           # Ignore duplicates in history
 export HISTSIZE=5000                    # A sane default for this
 
-# Set vi/m mode
-export EDITOR=nvim                      # set $EDITOR to nvim
+# Use less for pager
+export PAGER=less
+# Colors for less as PAGER and MANPAGER
+#export LESS='-RXF --use-color -Dd+r$Du+b'
+export MANPAGER=less
+#export LESS_TERMCAP_mb=$'\e[1;35m'
+#export LESS_TERMCAP_md=$'\e[1;35m'
+#export LESS_TERMCAP_me=$'\e[0m'
+#export LESS_TERMCAP_se=$'\e[0m'
+#export LESS_TERMCAP_so=$'\e[01;35m'
+#export LESS_TERMCAP_ue=$'\e[0m'
+#export LESS_TERMCAP_us=$'\e[1;4;35m'
 
-if [[ $- == *i* ]]; then                # In interactive session
-    set -o vi                           # set shell to 'vi-mode'
+# Set vi/m mode
+if [[ "$(command -v nvim)" ]]; then
+  export EDITOR='nvim'
+  #export MANPAGER='nvim +Man!'
+  #export MANWIDTH=999
 fi
 
+if [[ $- == *i* ]]; then                # In interactive session
+  set -o vi                           # set shell to 'vi-mode'
+fi
+
+export LEDGER_FILE=~/finance/2021.journal
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 
@@ -63,8 +80,8 @@ alias ll='ls -lA --color=auto'
 alias emacs="emacs -nw"                 # run emacs in terminal always
 
 # vi, vim, nvim
-alias vi=nvim				
-alias vim=nvim
+#alias vi=nvim				
+#alias vim=nvim
 alias wiki='nvim ~/wiki/_index.md'	# alias 'wiki' to VimWiki Index
 
 # texinfo using vi keybindings
@@ -91,16 +108,18 @@ alias twa='task add'                    # twa   - task add
 #### Functions ####
 
 function taocl() {
-    curl -s https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README.md |
-    sed '/cowsay[.]png/d' |
-    pandoc -f markdown -t html |
-    xmlstarlet fo --html --dropdtd |
-    xmlstarlet sel -t -v "(html/body/ul/li[count(p)>0])[$RANDOM mod last()+1]" |
-    xmlstarlet unesc | fmt -80 | iconv -t US | cowsay
+  curl -s https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README.md |
+  sed '/cowsay[.]png/d' |
+  pandoc -f markdown -t html |
+  xmlstarlet fo --html --dropdtd |
+  xmlstarlet sel -t -v "(html/body/ul/li[count(p)>0])[$RANDOM mod last()+1]" |
+  xmlstarlet unesc | fmt -80 | iconv -t US | cowsay
 }
 
-
 #### Prompt ####
+# See: https://tldp.org/HOWTO/Bash-Prompt-HOWTO/x329.html
+PS1="\[\033[1;35m\][\u@\h:\[\033[0;31m\]\w\[\033[1;35m\]]$\[\033[0m\] "
+# ^ Hopefully this doesn't break line-wrap in my terminal
 #PS1="\e[0;35m[\u@\h \e[0;36m\W\e[0m\e[0;35m]\$ \e[0m"
 #PS1="\e[0;35m[\u@\h \W]\$ \e[0m"
 

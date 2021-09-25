@@ -107,6 +107,9 @@ let g:tmuxline_separators = {
     \ 'right_alt' : '<',
     \ 'space'     : ' '}
 
+"---- vim-table-mode ----
+let g:table_mode_corner='|'   " Markdown compatible tables
+
 "---- nerveux.nvim ----
   "lua require 'nerveux'.setup()
 

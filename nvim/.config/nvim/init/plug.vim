@@ -21,7 +21,8 @@ call plug#begin()
 " We've settled on Markdown for note-taking. Future-proof, easy to read/write
 " on it's own, and immensely portable.
   Plug 'plasticboy/vim-markdown'    " Syntax hl & folding, motions too!
-  Plug 'godlygeek/tabular'          " Required by vim-markdown to fmt tables
+  "Plug 'godlygeek/tabular'          " Required by vim-markdown to fmt tables
+  Plug 'dhruvasagar/vim-table-mode' " Better tables
 
 " Use wiki.vim + markdown and some custom functions to manage our personal
 " Zettelkasten. It's the simplest solution we've found that works and fits the

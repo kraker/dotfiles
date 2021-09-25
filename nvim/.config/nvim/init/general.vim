@@ -140,7 +140,7 @@ set wrapmargin=2          " Allow 2 chars over 80th col before
 "
 set foldenable            " Enable folds by default
 set foldmethod=syntax     " Default foldmethod is 'syntax'
-set foldlevel=1           " Set fold level
+set foldlevel=2           " Set fold level
 "set foldnestmax=10       " 10 nested fold max
 
 " Bash specific folding
