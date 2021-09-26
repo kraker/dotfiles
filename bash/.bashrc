@@ -60,9 +60,9 @@ if [[ "$(command -v nvim)" ]]; then
   #export MANWIDTH=999
 fi
 
-if [[ $- == *i* ]]; then                # In interactive session
-  set -o vi                           # set shell to 'vi-mode'
-fi
+#if [[ $- == *i* ]]; then                # In interactive session
+#  set -o vi                           # set shell to 'vi-mode'
+#fi
 
 export LEDGER_FILE=~/finance/2021.journal
 # Uncomment the following line if you don't like systemctl's auto-paging feature:

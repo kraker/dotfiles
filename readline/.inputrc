@@ -1,0 +1,31 @@
+# Bash inputrc
+
+# Set editing-mode to vi for all interpreters that use GNU Readline, Python for
+# example.
+set editing-mode vi
+
+# Show insert and command modes
+set show-mode-in-prompt on              
+
+# Set i=ins and ~=cmd, with corresponding changing cursor
+# See: https://stackoverflow.com/questions/44534678/how-to-change-cursor-shape-depending-on-vi-mode-in-bash
+set vi-cmd-mode-string "\1\e[2 q\2~"
+set vi-ins-mode-string "\1\e[6 q\2i"
+
+# Faster completion
+# Partially complete word and show all possible completions if still ambiguous
+#set show-all-if-ambiguous on
+
+# Enable coloring of completion of filenames
+# See: https://wiki.archlinux.org/title/readline#Colorized_completion
+# Color files by types
+# Note that this may cause completion text blink in some terminals (e.g. xterm).
+set colored-stats On
+# Append char to indicate type
+set visible-stats On
+# Mark symlinked directories
+set mark-symlinked-directories On
+# Color the common prefix
+#set colored-completion-prefix On
+# Color the common prefix in menu-complete
+#set menu-complete-display-prefix On
