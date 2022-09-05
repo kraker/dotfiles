@@ -118,10 +118,16 @@ function taocl() {
 
 #### Prompt ####
 # See: https://tldp.org/HOWTO/Bash-Prompt-HOWTO/x329.html
-PS1="\[\033[1;35m\][\u@\h:\[\033[0;31m\]\w\[\033[1;35m\]]$\[\033[0m\] "
+PS1="\[\033[0;32m\][\u@\h:\[\033[0;31m\]\w\[\033[0;32m\]]$\[\033[0m\] "
 # ^ Hopefully this doesn't break line-wrap in my terminal
 #PS1="\e[0;35m[\u@\h \e[0;36m\W\e[0m\e[0;35m]\$ \e[0m"
 #PS1="\e[0;35m[\u@\h \W]\$ \e[0m"
 
 # Attach to ble.sh (this should be last line of .bashrc)
 #[[ ${BLE_VERSION-} ]] && ble-attach
+# git-prompt
+source ~/.git-prompt.sh
+export GIT_PS1_SHOWDIRTYSTATE=1
+export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+# git-completion
+source ~/.git-completion.bash

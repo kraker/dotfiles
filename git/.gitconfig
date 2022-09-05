@@ -1,8 +1,7 @@
-[user]
-	email = alex.kraker@gmail.com
-	name = Alex Kraker
 [core]
-	autocrlf = input
-	safecrlf = true
-[push]
-	default = simple
+	editor = vim
+[user]
+	name = Alex Kraker
+	email = alex@alexkraker.com
+[init]
+	defaultBranch = main
