@@ -9,8 +9,8 @@ set show-mode-in-prompt on
 
 # Set i=ins and ~=cmd, with corresponding changing cursor
 # See: https://stackoverflow.com/questions/44534678/how-to-change-cursor-shape-depending-on-vi-mode-in-bash
-set vi-cmd-mode-string "\1\e[2 q\2~"
-set vi-ins-mode-string "\1\e[6 q\2i"
+set vi-cmd-mode-string "~"
+set vi-ins-mode-string "i"
 
 # Faster completion
 # Partially complete word and show all possible completions if still ambiguous
