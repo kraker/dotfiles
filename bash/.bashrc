@@ -36,10 +36,13 @@ export MANPAGER=less
 # See: https://tldp.org/HOWTO/Bash-Prompt-HOWTO/x329.html
 # PS1="\[\033[0;32m\][\u@\h:\[\033[0;31m\]\w\[\033[0;32m\]]$\[\033[0m\] "
 
+# https://starship.rs/
+eval "$(starship init bash)"
+
 # git-prompt
-source ~/.git-prompt.sh
-export GIT_PS1_SHOWDIRTYSTATE=1
-export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+#source ~/.git-prompt.sh
+#export GIT_PS1_SHOWDIRTYSTATE=1
+#export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 
 # git-completion
 source ~/.git-completion.bash
