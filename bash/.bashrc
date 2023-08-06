@@ -1,12 +1,32 @@
 # .bashrc
+
+######################################################################
 #
+#
+#           ██████╗  █████╗ ███████╗██╗  ██╗██████╗  ██████╗
+#           ██╔══██╗██╔══██╗██╔════╝██║  ██║██╔══██╗██╔════╝
+#           ██████╔╝███████║███████╗███████║██████╔╝██║
+#           ██╔══██╗██╔══██║╚════██║██╔══██║██╔══██╗██║
+#           ██████╔╝██║  ██║███████║██║  ██║██║  ██║╚██████╗
+#           ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝
+#
+#
+######################################################################
+
 # Author: Alex Kraker
 # Email: alex@alexkraker.com
-# Github: github.com/kraker
+# GitHub: https://github.com/kraker/dotfiles/
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
   . /etc/bashrc
+fi
+
+# Sensible BASH
+# https://github.com/mrzool/bash-sensible/
+# cd ~/bin && wget https://raw.githubusercontent.com/mrzool/bash-sensible/master/sensible.bash
+if [ -f ~/bin/sensible.bash ]; then
+  source ~/bin/sensible.bash
 fi
 
 #######################
@@ -14,8 +34,7 @@ fi
 #######################
 
 # Set PATH
-if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
-then
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
   PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
 
@@ -23,26 +42,21 @@ fi
 #export GOPATH=$HOME/go
 #export PATH=$PATH:$GOPATH/bin
 
-# Other confs that are 'nice to have...'
-umask 0002                              # make sharing directories easier
-export HISTCONTROL=ignoredups           # Ignore duplicates in history
-export HISTSIZE=5000                    # A sane default for this
+# Permissions
+umask 0002                              # Make sharing directories easier
 
-# Use less for pager
+# BASH history
+#export HISTTIMEFORMAT="%F %T "          # Timestamp BASH history
+#export HISTCONTROL=ignoredups           # Ignore duplicates in history
+#export HISTSIZE=10000                   # A sane default for this
+
+# Pagers
 export PAGER=less
 export MANPAGER=less
 
 # BASH Prompt
-# See: https://tldp.org/HOWTO/Bash-Prompt-HOWTO/x329.html
-# PS1="\[\033[0;32m\][\u@\h:\[\033[0;31m\]\w\[\033[0;32m\]]$\[\033[0m\] "
-
 # https://starship.rs/
 eval "$(starship init bash)"
-
-# git-prompt
-#source ~/.git-prompt.sh
-#export GIT_PS1_SHOWDIRTYSTATE=1
-#export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 
 # git-completion
 source ~/.git-completion.bash
@@ -59,6 +73,16 @@ alias emacs="emacs -nw"                 # run emacs in terminal always
 
 # texinfo using vi keybindings
 alias info='info --vi-keys'
+
+# Git
+# https://www.freecodecamp.org/news/bashrc-customization-guide/
+alias gs='git status'
+alias ga='git add'
+alias gaa='git add --all'
+alias gc='git commit'
+alias gl='git log --oneline'
+alias gb='git checkout -b'
+alias gd='git diff'
 
 # SSH
 #alias ssh='TERM=linux ssh'
