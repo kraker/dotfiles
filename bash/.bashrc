@@ -27,6 +27,13 @@ fi
 # cd ~/bin && wget https://raw.githubusercontent.com/mrzool/bash-sensible/master/sensible.bash
 if [ -f ~/bin/sensible.bash ]; then
   source ~/bin/sensible.bash
+else
+  echo "Installing Sensible BASH..."
+  mkdir -p ~/bin
+  cd ~/bin
+  wget https://raw.githubusercontent.com/mrzool/bash-sensible/master/sensible.bash
+  echo "Sensible BASH installed."
+  source ~/bin/sensible.bash
 fi
 
 #######################
@@ -44,11 +51,6 @@ fi
 
 # Permissions
 umask 0002                              # Make sharing directories easier
-
-# BASH history
-#export HISTTIMEFORMAT="%F %T "          # Timestamp BASH history
-#export HISTCONTROL=ignoredups           # Ignore duplicates in history
-#export HISTSIZE=10000                   # A sane default for this
 
 # Pagers
 export PAGER=less
@@ -80,6 +82,7 @@ alias gs='git status'
 alias ga='git add'
 alias gaa='git add --all'
 alias gc='git commit'
+alias gcm='git commit -m'
 alias gl='git log --oneline'
 alias gb='git checkout -b'
 alias gd='git diff'
