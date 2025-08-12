@@ -25,15 +25,18 @@ fi
 # Sensible BASH
 # https://github.com/mrzool/bash-sensible/
 # cd ~/bin && wget https://raw.githubusercontent.com/mrzool/bash-sensible/master/sensible.bash
-if [ -f ~/bin/sensible.bash ]; then
-  source ~/bin/sensible.bash
-else
-  echo "Installing Sensible BASH..."
-  mkdir -p ~/bin
-  cd ~/bin
-  wget https://raw.githubusercontent.com/mrzool/bash-sensible/master/sensible.bash
-  echo "Sensible BASH installed."
-  source ~/bin/sensible.bash
+# Only load in interactive mode since it uses bind commands
+if [[ $- == *i* ]]; then
+  if [ -f ~/bin/sensible.bash ]; then
+    source ~/bin/sensible.bash
+  else
+    echo "Installing Sensible BASH..."
+    mkdir -p ~/bin
+    cd ~/bin
+    wget https://raw.githubusercontent.com/mrzool/bash-sensible/master/sensible.bash
+    echo "Sensible BASH installed."
+    source ~/bin/sensible.bash
+  fi
 fi
 
 #######################
@@ -144,5 +147,7 @@ export SSH_AUTH_SOCK
 complete -C /usr/bin/terraform terraform
 
 # >>>> Vagrant command completion (start)
-. /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/contrib/bash/completion.sh
+if [ -f /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/contrib/bash/completion.sh ]; then
+  . /opt/vagrant/embedded/gems/gems/vagrant-2.4.1/contrib/bash/completion.sh
+fi
 # <<<<  Vagrant command completion (end)
