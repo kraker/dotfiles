@@ -74,7 +74,7 @@ alias l.='ls -d .* --color=auto'
 alias ll='ls -lA --color=auto'
 
 # emacs
-alias emacs="emacs -nw"                 # run emacs in terminal always
+alias emacs="emacs -nw"  # run emacs in terminal always
 
 # texinfo using vi keybindings
 alias info='info --vi-keys'
@@ -91,19 +91,19 @@ alias gb='git checkout -b'
 alias gd='git diff'
 
 # SSH
-#alias ssh='TERM=linux ssh'
+# alias ssh='TERM=linux ssh'
 
 # Timewarrior
-#alias t='timew'                         # t     - timew
-#alias ts='timew summary :ids'           # ts    - summary
-#alias tt='timew track'                  # tt    - track
-#alias td='timew delete'                 # td    - delete
-#alias tst='timew start'                 # tst   - start
-#alias tsp='timew stop'                  # tsp   - stop
+# alias t='timew'                         # t     - timew
+# alias ts='timew summary :ids'           # ts    - summary
+# alias tt='timew track'                  # tt    - track
+# alias td='timew delete'                 # td    - delete
+# alias tst='timew start'                 # tst   - start
+# alias tsp='timew stop'                  # tsp   - stop
 
 # Taskwarrior
-#alias tw='task'                         # tw    - task
-#alias twa='task add'                    # twa   - task add
+# alias tw='task'                         # tw    - task
+# alias twa='task add'                    # twa   - task add
 
 #############
 # Functions #
@@ -143,6 +143,11 @@ then
 fi
 export SSH_AGENT_PID
 export SSH_AUTH_SOCK
+
+###                              ###
+# Random auto-installers           #
+# Don't put anything after this... #
+###                              ###
 
 complete -C /usr/bin/terraform terraform
 
